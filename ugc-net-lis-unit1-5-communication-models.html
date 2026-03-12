@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>संचार — अवधारणा, मॉडल और माध्यम | Communication Models | UGC NET Library Science Unit 1.5 हिंदी Notes</title>
+<meta name="description" content="Communication — Concept, Models (Shannon-Weaver, Lasswell, Berlo SMCR, Osgood-Schramm), Channels, Barriers, Scholarly Communication और Scientific Communication — UGC NET LIS Unit 1.5 सम्पूर्ण हिंदी Notes। 10 FAQs, Tables और Diagrams सहित।">
+<meta name="keywords" content="Communication Models Hindi, Shannon Weaver Model, Lasswell Model, Berlo SMCR Model, Scholarly Communication, Scientific Communication, UGC NET Library Science Unit 1.5, Communication Barriers Hindi, UGC NET LIS Hindi Notes 2024">
+<meta name="robots" content="index, follow">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Fraunces:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Shannon-Weaver flow diagram */
+  .sw-flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0;margin:20px 0}
+  .sw-box{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:12px 14px;text-align:center;min-width:90px}
+  .sw-box .sb-ico{font-size:22px;margin-bottom:5px}
+  .sw-box .sb-en{font-size:11.5px;font-weight:700;color:#fff}
+  .sw-box .sb-hi{font-size:10.5px;color:var(--muted);margin-top:2px}
+  .sw-arrow{color:var(--muted);font-size:20px;padding:0 4px;align-self:center}
+  .sw-noise{background:rgba(239,68,68,.12);border:1.5px dashed rgba(239,68,68,.35);border-radius:8px;padding:8px 12px;text-align:center;font-size:12px;color:#fca5a5;margin-top:-6px}
+  @media(max-width:600px){.sw-flow{gap:4px}.sw-box{min-width:70px;padding:9px 10px}}
+  /* Lasswell formula boxes */
+  .lasswell{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:18px 0}
+  @media(max-width:640px){.lasswell{grid-template-columns:1fr 1fr}}
+  @media(max-width:360px){.lasswell{grid-template-columns:1fr}}
+  .lw-item{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 10px;text-align:center}
+  .lw-q{font-size:13.5px;font-weight:700;color:#f9a8d4;margin-bottom:4px}
+  .lw-label{font-size:11.5px;font-weight:700;color:#fff;margin-bottom:3px}
+  .lw-hi{font-size:11px;color:var(--muted)}
+  /* SMCR diagram */
+  .smcr{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+  @media(max-width:600px){.smcr{grid-template-columns:1fr 1fr}}
+  .smcr-box{border-radius:var(--r);padding:16px 14px;text-align:center}
+  .sm1{background:rgba(236,72,153,.15);border:1.5px solid rgba(236,72,153,.35)}
+  .sm2{background:rgba(139,92,246,.15);border:1.5px solid rgba(139,92,246,.35)}
+  .sm3{background:rgba(6,182,212,.15);border:1.5px solid rgba(6,182,212,.35)}
+  .sm4{background:rgba(16,185,129,.15);border:1.5px solid rgba(16,185,129,.35)}
+  .smcr-letter{font-family:'Fraunces',serif;font-size:28px;font-weight:900;margin-bottom:6px}
+  .sm1 .smcr-letter{color:#f9a8d4} .sm2 .smcr-letter{color:#c4b5fd}
+  .sm3 .smcr-letter{color:#67e8f9} .sm4 .smcr-letter{color:#6ee7b7}
+  .smcr-word{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
+  .smcr-hi{font-size:12px;color:var(--muted);margin-bottom:8px}
+  .smcr-ul{list-style:none;padding:0;text-align:left}
+  .smcr-ul li{font-size:12px;color:#b8c8e0;padding:2px 0 2px 12px;position:relative;line-height:1.6}
+  .smcr-ul li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:10px;top:4px}
+  /* Barrier cards */
+  .barrier-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:20px 0}
+  @media(max-width:640px){.barrier-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:380px){.barrier-grid{grid-template-columns:1fr}}
+  .bar-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:16px 15px}
+  .bar-ico{font-size:26px;margin-bottom:8px}
+  .bar-title{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:6px}
+  .bar-ul{list-style:none;padding:0;margin:0}
+  .bar-ul li{font-size:12.5px;color:#b8c8e0;padding:2px 0 2px 14px;position:relative;line-height:1.6}
+  .bar-ul li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:10px;top:4px}
+  .bc1{border-top:3px solid #ec4899} .bc2{border-top:3px solid #8b5cf6}
+  .bc3{border-top:3px solid #06b6d4} .bc4{border-top:3px solid #f59e0b}
+  .bc5{border-top:3px solid #10b981} .bc6{border-top:3px solid #3b82f6}
+</style>
+</head>
+<body>
+
+<div id="read-bar"></div>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <a href="ugc-net-library-science-complete-syllabus.html" class="back-btn">← Syllabus Index</a>
+  <div class="nav-bc"><span class="nav-dot"></span>Unit I &rsaquo; <span>Topic 1.5 — Communication: Concept, Models &amp; Channels</span></div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-pill">🩷 Unit I · Topic 1.5 · UGC NET Code 59</div>
+    <h1>संचार — अवधारणा, मॉडल और माध्यम
+      <span class="hi">Communication — Concept, Models, Channels, Barriers, Scholarly &amp; Scientific Communication</span>
+    </h1>
+    <p class="hero-desc">UGC NET Library &amp; Information Science — सम्पूर्ण हिंदी नोट्स | Shannon-Weaver · Lasswell · Berlo SMCR · Osgood-Schramm · Scholarly Communication</p>
+    <div class="key-strip">
+      <span class="ks ks1">📡 Communication Concept</span>
+      <span class="ks ks2">📊 Communication Models</span>
+      <span class="ks ks3">📺 Channels &amp; Barriers</span>
+      <span class="ks ks4">📚 Scholarly Communication</span>
+      <span class="ks ks5">🔬 Scientific Communication</span>
+    </div>
+    <div class="hero-meta">
+      <span class="hm">📖 <strong>3200+ शब्द</strong></span>
+      <span class="hm">❓ <strong>10 FAQs</strong></span>
+      <span class="hm">📊 <strong>4 Models</strong></span>
+      <span class="hm">🎯 <strong>Flow Diagrams</strong></span>
+      <span class="hm">⭐ <strong>Important Topic</strong></span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<div class="alt-box" style="margin-top:30px">
+  <strong>🔍 SEO Slug</strong>
+  communication-concept-models-channels-shannon-weaver-lasswell-berlo-smcr-scholarly-scientific-communication-ugc-net-library-science-unit-1-5-hindi
+</div>
+
+<!-- TOC -->
+<div class="toc-box">
+  <div class="toc-title">📑 विषय-सूची (Table of Contents)</div>
+  <ul class="toc-list">
+    <li><a href="#intro"><span class="tnum">01</span>परिचय और परिभाषा</a></li>
+    <li><a href="#snippet"><span class="tnum">02</span>Featured Snippet</a></li>
+    <li><a href="#elements"><span class="tnum">03</span>संचार के तत्व</a></li>
+    <li><a href="#shannon"><span class="tnum">04</span>Shannon-Weaver Model</a></li>
+    <li><a href="#lasswell"><span class="tnum">05</span>Lasswell's Formula</a></li>
+    <li><a href="#berlo"><span class="tnum">06</span>Berlo's SMCR Model</a></li>
+    <li><a href="#schramm"><span class="tnum">07</span>Osgood-Schramm Model</a></li>
+    <li><a href="#channels"><span class="tnum">08</span>संचार के माध्यम</a></li>
+    <li><a href="#barriers"><span class="tnum">09</span>Communication Barriers</a></li>
+    <li><a href="#scholarly"><span class="tnum">10</span>Scholarly Communication</a></li>
+    <li><a href="#scientific"><span class="tnum">11</span>Scientific Communication</a></li>
+    <li><a href="#compare"><span class="tnum">12</span>Models Comparison Table</a></li>
+    <li><a href="#exam"><span class="tnum">13</span>Exam Notes (10 Points)</a></li>
+    <li><a href="#faq"><span class="tnum">14</span>FAQs (10 प्रश्न)</a></li>
+  </ul>
+</div>
+
+<!-- ══════ INTRO ══════ -->
+<h2 class="sec" id="intro"><span class="ico" style="background:rgba(236,72,153,.2)">📡</span>परिचय (Introduction)</h2>
+
+<p>UGC NET Library &amp; Information Science (Code 59) के Unit I का पाँचवाँ Topic है — <strong style="color:#fff">संचार: अवधारणा, मॉडल और माध्यम (Communication: Concept, Models and Channels)</strong>। यह Topic परीक्षा में 2-3 प्रश्नों के रूप में नियमित आता है।</p>
+
+<p>संचार (Communication) मानव समाज की <strong style="color:#fff">सबसे मूलभूत क्रिया</strong> है। जब भी कोई व्यक्ति, संस्था या माध्यम किसी विचार, सूचना या भावना को किसी अन्य तक पहुँचाता है — वह संचार है। Library &amp; Information Science में संचार की अवधारणा विशेष रूप से महत्वपूर्ण है क्योंकि Library का मूल कार्य ही <strong style="color:#fff">सूचना का प्रभावी संचरण (Effective Information Communication)</strong> है।</p>
+
+<p>इस Topic में हम संचार की परिभाषा, प्रमुख Communication Models (Shannon-Weaver, Lasswell, Berlo SMCR, Osgood-Schramm), संचार के माध्यम, Barriers, तथा Scholarly और Scientific Communication का विस्तृत अध्ययन करेंगे।</p>
+
+<div class="callout c-pink">
+  <span class="tag-pill tp1" style="background:#ec4899">UGC NET में महत्व</span>
+  <p>Communication Models — विशेषकर <strong>Shannon-Weaver (1949)</strong> और <strong>Berlo's SMCR (1960)</strong> — UGC NET में सर्वाधिक पूछे जाते हैं। Lasswell's Formula (1948), Scholarly vs Scientific Communication का अंतर और Peer Review प्रक्रिया भी परीक्षा में नियमित आते हैं।</p>
+</div>
+
+<!-- SNIPPET -->
+<h2 class="sec" id="snippet"><span class="ico" style="background:rgba(236,72,153,.2)">⭐</span>Featured Snippet</h2>
+<div class="snippet">
+  <div class="snip-lbl">🎯 Google Featured Snippet</div>
+  <p><strong style="color:#fff">Communication क्या है?</strong> Communication वह प्रक्रिया है जिसमें एक Sender, एक Receiver को किसी माध्यम (Channel) द्वारा सूचना, विचार या भावना प्रेषित करता है। Shannon &amp; Weaver (1949): सूचना स्रोत → Transmitter → Channel (Noise सहित) → Receiver → Destination। Berlo SMCR: Source, Message, Channel, Receiver। Lasswell (1948): Who says What in Which Channel to Whom with What Effect।</p>
+</div>
+
+<!-- ══════ ELEMENTS ══════ -->
+<h2 class="sec" id="elements"><span class="ico" style="background:rgba(236,72,153,.2)">🔧</span>संचार के मूलभूत तत्व</h2>
+
+<p>किसी भी Communication प्रक्रिया में निम्नलिखित <strong style="color:#fff">7 मूलभूत तत्व</strong> होते हैं:</p>
+
+<div class="two-col">
+  <div class="mbox">
+    <div class="ml">📤 प्रेषण पक्ष (Sending Side)</div>
+    <ul>
+      <li><strong>Source / Sender</strong> — सूचना का उद्गम स्रोत</li>
+      <li><strong>Encoding</strong> — विचार को संकेतों में बदलना</li>
+      <li><strong>Message</strong> — प्रेषित विषय-वस्तु</li>
+      <li><strong>Channel / Medium</strong> — संचार का माध्यम</li>
+    </ul>
+  </div>
+  <div class="mbox">
+    <div class="ml">📥 ग्रहण पक्ष (Receiving Side)</div>
+    <ul>
+      <li><strong>Decoding</strong> — संकेतों को समझना</li>
+      <li><strong>Receiver</strong> — सूचना ग्रहणकर्ता</li>
+      <li><strong>Feedback</strong> — प्रतिक्रिया / पुष्टि</li>
+      <li><strong>Noise</strong> — संचार में बाधा</li>
+    </ul>
+  </div>
+</div>
+
+<div class="callout c-purple">
+  <span class="tag-pill tp2">Communication की परिभाषा</span>
+  <p><strong>Aristotle:</strong> "Communication is the process by which a speaker transmits a message through a medium to the audience with some effect."</p>
+  <p><strong>Wilbur Schramm:</strong> "Communication is sharing — it derives from the Latin 'communis' meaning common. When we communicate we are trying to establish a 'commonness' with someone."</p>
+  <p><strong>हिंदी में:</strong> संचार शब्द लैटिन <em>Communis</em> से बना है जिसका अर्थ है <strong>'साझा करना' (Common / Sharing)</strong>। Communication = सूचना, विचार या भावना को प्रेषक से ग्राही तक पहुँचाने की प्रक्रिया।</p>
+</div>
+
+<!-- ══════ SHANNON-WEAVER ══════ -->
+<h2 class="sec" id="shannon"><span class="ico" style="background:rgba(236,72,153,.2)">📡</span>Shannon-Weaver Communication Model (1949)</h2>
+
+<div class="info-box" style="border-top:4px solid #ec4899">
+  <div class="ib-head">
+    <div class="ib-circle" style="background:linear-gradient(135deg,#9d174d,#ec4899)">📡</div>
+    <div class="ib-meta">
+      <h3>Shannon-Weaver Mathematical Model of Communication</h3>
+      <div class="ibm-sub">Claude Shannon &amp; Warren Weaver | Bell Telephone Laboratories | 1949</div>
+    </div>
+    <span class="ib-badge" style="background:rgba(236,72,153,.2);color:#f9a8d4">Most Important</span>
+  </div>
+  <div class="ib-body">
+    <p>Shannon-Weaver Model को <strong style="color:#fff">"Mathematical Theory of Communication"</strong> (1949) में प्रस्तुत किया गया। Claude Shannon ने Bell Telephone Laboratories में Telephone Signal Transmission की समस्याओं को सुलझाने के लिए यह Model बनाया। Warren Weaver ने इसे General Communication Theory के रूप में प्रसारित किया।</p>
+    <p>यह Model <strong style="color:#fff">Linear (एकदिशीय)</strong> है — Sender से Receiver की ओर। इसमें <strong style="color:#fff">Noise</strong> (संचार-विकृति) की अवधारणा पहली बार दी गई।</p>
+
+    <h3 class="sub">Shannon-Weaver Flow — 6 Components</h3>
+    <div class="sw-flow">
+      <div class="sw-box">
+        <div class="sb-ico">💭</div>
+        <div class="sb-en">Information Source</div>
+        <div class="sb-hi">सूचना स्रोत</div>
+      </div>
+      <div class="sw-arrow">→</div>
+      <div class="sw-box">
+        <div class="sb-ico">📻</div>
+        <div class="sb-en">Transmitter</div>
+        <div class="sb-hi">प्रेषक यंत्र</div>
+      </div>
+      <div class="sw-arrow">→</div>
+      <div class="sw-box">
+        <div class="sb-ico">📶</div>
+        <div class="sb-en">Channel</div>
+        <div class="sb-hi">माध्यम</div>
+      </div>
+      <div class="sw-arrow">→</div>
+      <div class="sw-box">
+        <div class="sb-ico">📡</div>
+        <div class="sb-en">Receiver</div>
+        <div class="sb-hi">ग्राही यंत्र</div>
+      </div>
+      <div class="sw-arrow">→</div>
+      <div class="sw-box">
+        <div class="sb-ico">🎯</div>
+        <div class="sb-en">Destination</div>
+        <div class="sb-hi">गंतव्य</div>
+      </div>
+    </div>
+    <div class="sw-noise" style="text-align:center;max-width:400px;margin:6px auto 14px">
+      ⚡ <strong>Noise Source</strong> (शोर / विकृति) — Channel में प्रवेश करती है
+    </div>
+
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">✅ Shannon-Weaver की विशेषताएँ</div>
+        <ul>
+          <li><strong>Linear Model</strong> — एकदिशीय प्रवाह</li>
+          <li>पहला Mathematical Communication Model</li>
+          <li><strong>Noise</strong> की अवधारणा — पहली बार</li>
+          <li>Bit = सूचना की न्यूनतम इकाई</li>
+          <li>Information Entropy की अवधारणा</li>
+          <li>Telephone/Telegraph के लिए Design</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">⚠️ Shannon-Weaver की सीमाएँ</div>
+        <ul>
+          <li>Feedback की अनुपस्थिति</li>
+          <li>मानवीय संचार में Human Factor नहीं</li>
+          <li>एकदिशीय — द्विदिशीय नहीं</li>
+          <li>Context की उपेक्षा</li>
+          <li>केवल Technical Communication</li>
+          <li>Meaning/Semantics पर ध्यान नहीं</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout c-pink">
+      <span class="tag-pill tp1" style="background:#ec4899">Shannon-Weaver Key Facts</span>
+      <p><strong>Claude Shannon</strong> (1916–2001) = "Father of Information Theory"। <strong>1948</strong> में "A Mathematical Theory of Communication" Bell System Technical Journal में Published। <strong>Bit</strong> (Binary Digit) = सूचना की सबसे छोटी इकाई — Shannon ने दिया। <strong>Shannon Entropy (H)</strong> = सूचना की अनिश्चितता का माप।</p>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> Shannon-Weaver Model = 1949। 6 Components: Information Source → Transmitter → Channel → Receiver → Destination + Noise Source। <strong>Noise</strong> = Channel में आने वाली बाधा। <strong>Bit</strong> = सूचना की न्यूनतम इकाई। यह Linear Model है — Feedback नहीं।</div>
+  </div>
+</div>
+
+<div class="alt-box"><strong>🖼️ Image ALT Text #1</strong> Shannon Weaver Communication Model diagram — Information Source Transmitter Channel Noise Receiver Destination Hindi UGC NET LIS</div>
+
+<!-- ══════ LASSWELL ══════ -->
+<h2 class="sec" id="lasswell"><span class="ico" style="background:rgba(139,92,246,.2)">🗣️</span>Lasswell's Communication Formula (1948)</h2>
+
+<div class="info-box" style="border-top:4px solid #8b5cf6">
+  <div class="ib-head">
+    <div class="ib-circle ic2">🗣️</div>
+    <div class="ib-meta">
+      <h3>Lasswell's Communication Formula</h3>
+      <div class="ibm-sub">Harold D. Lasswell | Yale University | 1948 | "The Structure and Function of Communication in Society"</div>
+    </div>
+    <span class="ib-badge bb2">5W Formula</span>
+  </div>
+  <div class="ib-body">
+    <p>Harold D. Lasswell ने 1948 में Mass Communication के लिए एक सरल किंतु व्यापक Formula प्रस्तुत किया — <strong style="color:#fff">"5W Formula"</strong>। यह Model विशेष रूप से <strong style="color:#fff">Mass Media और Political Communication</strong> के संदर्भ में उपयोगी है।</p>
+
+    <h3 class="sub">Lasswell का 5W Formula</h3>
+    <div class="lasswell">
+      <div class="lw-item">
+        <div class="lw-q">WHO?</div>
+        <div class="lw-label">Communicator</div>
+        <div class="lw-hi">कौन? — प्रेषक</div>
+      </div>
+      <div class="lw-item">
+        <div class="lw-q">SAYS WHAT?</div>
+        <div class="lw-label">Message / Content</div>
+        <div class="lw-hi">क्या? — संदेश</div>
+      </div>
+      <div class="lw-item">
+        <div class="lw-q">IN WHICH CHANNEL?</div>
+        <div class="lw-label">Medium / Channel</div>
+        <div class="lw-hi">किस माध्यम से?</div>
+      </div>
+      <div class="lw-item">
+        <div class="lw-q">TO WHOM?</div>
+        <div class="lw-label">Audience / Receiver</div>
+        <div class="lw-hi">किसको? — श्रोता</div>
+      </div>
+      <div class="lw-item">
+        <div class="lw-q">WITH WHAT EFFECT?</div>
+        <div class="lw-label">Effect / Impact</div>
+        <div class="lw-hi">क्या प्रभाव? — परिणाम</div>
+      </div>
+    </div>
+
+    <div class="callout c-purple">
+      <span class="tag-pill tp2">Lasswell Full Statement (1948)</span>
+      <p><em>"A convenient way to describe an act of communication is to answer the following questions: <strong>Who says What in Which Channel to Whom with What Effect?</strong>"</em></p>
+      <p>— Harold D. Lasswell, "The Structure and Function of Communication in Society" (1948)</p>
+    </div>
+
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">✅ Lasswell Model की विशेषताएँ</div>
+        <ul>
+          <li>सरल और याद रखने में आसान</li>
+          <li><strong>Effect</strong> पर विशेष ध्यान</li>
+          <li>Mass Communication के लिए उपयुक्त</li>
+          <li>Propaganda Analysis में उपयोगी</li>
+          <li>5 Research Areas Define करता है</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">⚠️ Lasswell Model की सीमाएँ</div>
+        <ul>
+          <li>Linear Model — Feedback नहीं</li>
+          <li>Noise की अवधारणा नहीं</li>
+          <li>Interpersonal Communication के लिए कम उपयुक्त</li>
+          <li>केवल एकदिशीय प्रवाह</li>
+          <li>Encoding/Decoding Process नहीं</li>
+        </ul>
+      </div>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> Lasswell का Formula = <strong>5W: Who + Says What + In Which Channel + To Whom + With What Effect</strong>। यह 1948 का Model है। इसे "Linear Model" और "Effect-based Model" भी कहते हैं। Harold Lasswell = Political Scientist और Communication Theorist।</div>
+  </div>
+</div>
+
+<!-- ══════ BERLO SMCR ══════ -->
+<h2 class="sec" id="berlo"><span class="ico" style="background:rgba(6,182,212,.2)">📊</span>Berlo's SMCR Model (1960)</h2>
+
+<div class="info-box" style="border-top:4px solid #06b6d4">
+  <div class="ib-head">
+    <div class="ib-circle ic1" style="background:linear-gradient(135deg,#0891b2,#06b6d4)">📊</div>
+    <div class="ib-meta">
+      <h3>Berlo's SMCR Model of Communication</h3>
+      <div class="ibm-sub">David Kenneth Berlo | Michigan State University | "The Process of Communication" (1960)</div>
+    </div>
+    <span class="ib-badge bb1">SMCR = 4 Components</span>
+  </div>
+  <div class="ib-body">
+    <p>David K. Berlo ने 1960 में अपनी पुस्तक <strong style="color:#fff">"The Process of Communication"</strong> में SMCR Model प्रस्तुत किया। यह Model Shannon-Weaver से अधिक व्यापक है क्योंकि इसमें <strong style="color:#fff">प्रत्येक Component के उप-घटकों</strong> का भी विश्लेषण किया गया है।</p>
+    <p>Berlo का मानना था कि Communication की प्रभावशीलता Source और Receiver के बीच <strong style="color:#fff">Fidelity (समानता)</strong> पर निर्भर करती है।</p>
+
+    <h3 class="sub">SMCR — 4 Components विस्तार से</h3>
+    <div class="smcr">
+      <div class="smcr-box sm1">
+        <div class="smcr-letter">S</div>
+        <div class="smcr-word">Source</div>
+        <div class="smcr-hi">प्रेषक</div>
+        <ul class="smcr-ul">
+          <li>Communication Skills</li>
+          <li>Attitudes (दृष्टिकोण)</li>
+          <li>Knowledge</li>
+          <li>Social System</li>
+          <li>Culture (संस्कृति)</li>
+        </ul>
+      </div>
+      <div class="smcr-box sm2">
+        <div class="smcr-letter">M</div>
+        <div class="smcr-word">Message</div>
+        <div class="smcr-hi">संदेश</div>
+        <ul class="smcr-ul">
+          <li>Content (विषय-वस्तु)</li>
+          <li>Elements (तत्व)</li>
+          <li>Treatment (प्रस्तुति)</li>
+          <li>Structure (संरचना)</li>
+          <li>Code (कूट)</li>
+        </ul>
+      </div>
+      <div class="smcr-box sm3">
+        <div class="smcr-letter">C</div>
+        <div class="smcr-word">Channel</div>
+        <div class="smcr-hi">माध्यम</div>
+        <ul class="smcr-ul">
+          <li>Seeing (दृष्टि)</li>
+          <li>Hearing (श्रवण)</li>
+          <li>Touching (स्पर्श)</li>
+          <li>Smelling (गंध)</li>
+          <li>Tasting (स्वाद)</li>
+        </ul>
+      </div>
+      <div class="smcr-box sm4">
+        <div class="smcr-letter">R</div>
+        <div class="smcr-word">Receiver</div>
+        <div class="smcr-hi">ग्राही</div>
+        <ul class="smcr-ul">
+          <li>Communication Skills</li>
+          <li>Attitudes (दृष्टिकोण)</li>
+          <li>Knowledge</li>
+          <li>Social System</li>
+          <li>Culture (संस्कृति)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout c-cyan">
+      <span class="tag-pill tp3" style="background:#06b6d4">Berlo का Fidelity Principle</span>
+      <p>Berlo के अनुसार Communication तभी सफल होगा जब <strong>Source और Receiver के 5 Factors (Skills, Attitudes, Knowledge, Social System, Culture) में अधिकतम समानता (Fidelity)</strong> हो। यानी जितना अधिक Sender और Receiver एक-दूसरे को समझते हैं, उतना ही प्रभावी संचार होगा।</p>
+    </div>
+
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">✅ Berlo SMCR की विशेषताएँ</div>
+        <ul>
+          <li>सबसे विस्तृत Communication Model</li>
+          <li>Human Factors शामिल — Skills, Culture</li>
+          <li>Channel = 5 Human Senses</li>
+          <li>Fidelity Concept — S और R की समानता</li>
+          <li>Interpersonal Communication के लिए उत्तम</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">⚠️ Berlo SMCR की सीमाएँ</div>
+        <ul>
+          <li>Feedback की अनुपस्थिति</li>
+          <li>Noise का उल्लेख नहीं</li>
+          <li>Linear Model — एकदिशीय</li>
+          <li>Digital Communication पर लागू नहीं</li>
+          <li>Context की उपेक्षा</li>
+        </ul>
+      </div>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> Berlo = <strong>SMCR</strong> (Source, Message, Channel, Receiver)। 1960, "The Process of Communication"। Channel = 5 Senses (Seeing, Hearing, Touching, Smelling, Tasting)। Source और Receiver के <strong>5 Factors</strong> (S-A-K-S-C): Skills, Attitudes, Knowledge, Social System, Culture। <strong>Fidelity</strong> = S और R की समानता।</div>
+  </div>
+</div>
+
+<div class="alt-box"><strong>🖼️ Image ALT Text #2</strong> Berlo SMCR Model diagram — Source Message Channel Receiver 5 factors Hindi UGC NET Library Science</div>
+
+<!-- ══════ SCHRAMM ══════ -->
+<h2 class="sec" id="schramm"><span class="ico" style="background:rgba(16,185,129,.2)">🔄</span>Osgood-Schramm Circular Model</h2>
+
+<div class="info-box" style="border-top:4px solid #10b981">
+  <div class="ib-head">
+    <div class="ib-circle ic3">🔄</div>
+    <div class="ib-meta">
+      <h3>Osgood-Schramm Circular Model of Communication</h3>
+      <div class="ibm-sub">Charles E. Osgood &amp; Wilbur Schramm | 1954 | "The Process and Effects of Mass Communication"</div>
+    </div>
+    <span class="ib-badge bb3">Circular / Two-way</span>
+  </div>
+  <div class="ib-body">
+    <p>Osgood-Schramm Model (1954) पहला <strong style="color:#fff">Circular (वृत्ताकार) Communication Model</strong> है। इसमें Shannon-Weaver की सबसे बड़ी कमी — <strong style="color:#fff">Feedback की अनुपस्थिति</strong> — को दूर किया गया।</p>
+    <p>इस Model के अनुसार Communication एक <strong style="color:#fff">द्विदिशीय, निरंतर प्रक्रिया</strong> है जिसमें Sender और Receiver दोनों बारी-बारी से Encode, Decode और Interpret करते हैं।</p>
+
+    <h3 class="sub">Schramm Model के 3 Core Processes</h3>
+    <div class="three-col">
+      <div class="mbox" style="border-top:3px solid #ec4899;text-align:center">
+        <div style="font-size:28px;margin-bottom:8px">📤</div>
+        <div class="ml" style="color:#f9a8d4;text-align:center">Encoding</div>
+        <ul>
+          <li>विचार को संकेत में बदलना</li>
+          <li>Sender द्वारा</li>
+          <li>भाषा, चित्र, संगीत</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid #8b5cf6;text-align:center">
+        <div style="font-size:28px;margin-bottom:8px">🧠</div>
+        <div class="ml" style="color:#c4b5fd;text-align:center">Interpreting</div>
+        <ul>
+          <li>संकेत का अर्थ निकालना</li>
+          <li>Field of Experience</li>
+          <li>Semantic Content</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid #10b981;text-align:center">
+        <div style="font-size:28px;margin-bottom:8px">📥</div>
+        <div class="ml" style="color:#6ee7b7;text-align:center">Decoding</div>
+        <ul>
+          <li>संकेत को समझना</li>
+          <li>Receiver द्वारा</li>
+          <li>Meaning Construction</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout c-green">
+      <span class="tag-pill tp5" style="background:#10b981">Field of Experience</span>
+      <p><strong>Schramm का महत्वपूर्ण Concept:</strong> "Field of Experience" — Communication तभी सफल होता है जब Sender और Receiver के <strong>अनुभव-क्षेत्र (Field of Experience) का कुछ भाग overlap करता हो</strong>। यह Overlap क्षेत्र ही Shared Meaning का आधार है। Berlo के Fidelity Concept से मिलता-जुलता।</p>
+    </div>
+
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">✅ Schramm Model की विशेषताएँ</div>
+        <ul>
+          <li>पहला <strong>Circular / Two-way Model</strong></li>
+          <li><strong>Feedback</strong> शामिल है</li>
+          <li>Encoding, Decoding, Interpreting — तीनों</li>
+          <li>Field of Experience की अवधारणा</li>
+          <li>मानवीय संचार के लिए उपयुक्त</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">🆚 Linear vs Circular Models</div>
+        <ul>
+          <li>Shannon-Weaver = Linear, No Feedback</li>
+          <li>Lasswell = Linear, Effect-focused</li>
+          <li>Berlo SMCR = Linear, Human-focused</li>
+          <li>Schramm = <strong>Circular, Feedback included</strong></li>
+          <li>Two-way = अधिक realistic model</li>
+        </ul>
+      </div>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> Schramm = <strong>पहला Circular Model</strong> (1954)। Encode → Interpret → Decode → Encode (चक्र)। <strong>Field of Experience</strong> = Sender और Receiver के shared experiences। Wilbur Schramm = "Father of Communication Studies"। यह model Feedback को शामिल करने वाला पहला model है।</div>
+  </div>
+</div>
+
+<!-- ══════ CHANNELS ══════ -->
+<h2 class="sec" id="channels"><span class="ico" style="background:rgba(245,158,11,.2)">📺</span>Communication के माध्यम (Channels)</h2>
+
+<p>Communication Channel वह माध्यम है जिससे Message एक स्थान से दूसरे स्थान तक पहुँचता है। LIS में Channels को तीन मुख्य प्रकारों में बाँटा जाता है:</p>
+
+<div class="three-col">
+  <div class="mbox" style="border-top:3px solid #ec4899">
+    <div class="ml" style="color:#f9a8d4">🗣️ Formal Channels (औपचारिक)</div>
+    <ul>
+      <li><strong>Research Journals</strong> — Peer Reviewed</li>
+      <li><strong>Monographs / Books</strong></li>
+      <li><strong>Conference Proceedings</strong></li>
+      <li><strong>Government Reports</strong></li>
+      <li><strong>Patents, Standards</strong></li>
+      <li><strong>Theses &amp; Dissertations</strong></li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid #8b5cf6">
+    <div class="ml" style="color:#c4b5fd">💬 Informal Channels (अनौपचारिक)</div>
+    <ul>
+      <li><strong>Verbal Communication</strong> — बातचीत</li>
+      <li><strong>Personal Letters / Email</strong></li>
+      <li><strong>Preprints / Working Papers</strong></li>
+      <li><strong>Seminars / Discussions</strong></li>
+      <li><strong>Invisible Colleges</strong></li>
+      <li><strong>Social Media</strong></li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid #06b6d4">
+    <div class="ml" style="color:#67e8f9">💻 Electronic Channels (इलेक्ट्रॉनिक)</div>
+    <ul>
+      <li><strong>E-journals, E-books</strong></li>
+      <li><strong>Institutional Repositories</strong></li>
+      <li><strong>Open Access Platforms</strong></li>
+      <li><strong>RSS Feeds, Blogs</strong></li>
+      <li><strong>Social Scholarly Networks</strong></li>
+      <li><strong>Video Lectures, Podcasts</strong></li>
+    </ul>
+  </div>
+</div>
+
+<div class="callout c-amber">
+  <span class="tag-pill tp4">Invisible College</span>
+  <p><strong>Invisible College</strong> = वैज्ञानिकों और विद्वानों का एक अनौपचारिक नेटवर्क जो Personal Letters, Meetings और अनौपचारिक Discussions के माध्यम से Research Ideas share करते हैं। यह Term <strong>Derek J. de Solla Price</strong> ने Popularize किया। आधुनिक Invisible College = Researchgate, Academia.edu, Twitter/X पर Scholar Networks।</p>
+</div>
+
+<!-- ══════ BARRIERS ══════ -->
+<h2 class="sec" id="barriers"><span class="ico" style="background:rgba(245,158,11,.2)">🚧</span>Communication Barriers (संचार में बाधाएँ)</h2>
+
+<div class="barrier-grid">
+  <div class="bar-card bc1">
+    <div class="bar-ico">🗣️</div>
+    <div class="bar-title">Linguistic Barriers (भाषाई)</div>
+    <ul class="bar-ul">
+      <li>भाषा का अंतर</li>
+      <li>Technical Jargon</li>
+      <li>Poor Vocabulary</li>
+      <li>Ambiguous Words</li>
+      <li>Translation Errors</li>
+    </ul>
+  </div>
+  <div class="bar-card bc2">
+    <div class="bar-ico">🧠</div>
+    <div class="bar-title">Psychological Barriers (मनोवैज्ञानिक)</div>
+    <ul class="bar-ul">
+      <li>Preconceived Notions</li>
+      <li>Emotional State</li>
+      <li>Lack of Attention</li>
+      <li>Perception Differences</li>
+      <li>Information Overload</li>
+    </ul>
+  </div>
+  <div class="bar-card bc3">
+    <div class="bar-ico">📡</div>
+    <div class="bar-title">Technical / Channel Noise</div>
+    <ul class="bar-ul">
+      <li>Physical Noise (शोर)</li>
+      <li>Poor Network/Signal</li>
+      <li>Hardware Failure</li>
+      <li>Distorted Transmission</li>
+      <li>Shannon का Noise</li>
+    </ul>
+  </div>
+  <div class="bar-card bc4">
+    <div class="bar-ico">🌍</div>
+    <div class="bar-title">Cultural Barriers (सांस्कृतिक)</div>
+    <ul class="bar-ul">
+      <li>Cultural Differences</li>
+      <li>Different Values</li>
+      <li>Taboos और Norms</li>
+      <li>Non-verbal Signals</li>
+      <li>Religious Barriers</li>
+    </ul>
+  </div>
+  <div class="bar-card bc5">
+    <div class="bar-ico">🏢</div>
+    <div class="bar-title">Organizational Barriers</div>
+    <ul class="bar-ul">
+      <li>Hierarchical Levels</li>
+      <li>Bureaucratic Red Tape</li>
+      <li>Information Filtering</li>
+      <li>Departmental Silos</li>
+      <li>Status Differences</li>
+    </ul>
+  </div>
+  <div class="bar-card bc6">
+    <div class="bar-ico">💻</div>
+    <div class="bar-title">Digital Barriers</div>
+    <ul class="bar-ul">
+      <li>Digital Divide</li>
+      <li>Low Digital Literacy</li>
+      <li>Bandwidth Issues</li>
+      <li>Platform Incompatibility</li>
+      <li>Access Restrictions / Paywall</li>
+    </ul>
+  </div>
+</div>
+
+<div class="net-tip"><strong>UGC NET Tip</strong> Communication Barriers को याद करने का Trick: <strong>L-P-T-C-O-D</strong> → Linguistic, Psychological, Technical (Noise), Cultural, Organizational, Digital। Shannon-Weaver में <strong>Noise</strong> = Technical Barrier। <strong>Digital Divide</strong> = सबसे बड़ा आधुनिक Digital Barrier।</div>
+
+<!-- ══════ SCHOLARLY COMMUNICATION ══════ -->
+<h2 class="sec" id="scholarly"><span class="ico" style="background:rgba(59,130,246,.2)">📚</span>Scholarly Communication — विद्वतापूर्ण संचार</h2>
+
+<div class="info-box" style="border-top:4px solid #3b82f6">
+  <div class="ib-head">
+    <div class="ib-circle ic5">📚</div>
+    <div class="ib-meta">
+      <h3>Scholarly Communication</h3>
+      <div class="ibm-sub">विद्वानों के बीच शोध-ज्ञान का औपचारिक आदान-प्रदान</div>
+    </div>
+    <span class="ib-badge bb5">Research Communication</span>
+  </div>
+  <div class="ib-body">
+    <p><strong style="color:#fff">Scholarly Communication</strong> वह प्रक्रिया है जिसमें विद्वान (Scholars) और शोधकर्ता अपने Research Findings को अन्य विद्वानों तक पहुँचाते हैं — ताकि ज्ञान का संचय, सत्यापन और प्रसार हो सके।</p>
+
+    <h3 class="sub">Scholarly Communication का चक्र</h3>
+    <div class="four-col">
+      <div class="mbox" style="border-top:3px solid #ec4899;text-align:center">
+        <div style="font-size:22px;margin-bottom:6px">🔬</div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#f9a8d4">Step 1</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin:4px 0">Research</div>
+        <div style="font-size:11.5px;color:var(--muted)">शोध कार्य</div>
+      </div>
+      <div class="mbox" style="border-top:3px solid #8b5cf6;text-align:center">
+        <div style="font-size:22px;margin-bottom:6px">✍️</div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#c4b5fd">Step 2</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin:4px 0">Writing</div>
+        <div style="font-size:11.5px;color:var(--muted)">लेखन / Manuscript</div>
+      </div>
+      <div class="mbox" style="border-top:3px solid #06b6d4;text-align:center">
+        <div style="font-size:22px;margin-bottom:6px">👥</div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#67e8f9">Step 3</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin:4px 0">Peer Review</div>
+        <div style="font-size:11.5px;color:var(--muted)">समकक्ष समीक्षा</div>
+      </div>
+      <div class="mbox" style="border-top:3px solid #10b981;text-align:center">
+        <div style="font-size:22px;margin-bottom:6px">📰</div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#6ee7b7">Step 4</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin:4px 0">Publication</div>
+        <div style="font-size:11.5px;color:var(--muted)">प्रकाशन</div>
+      </div>
+    </div>
+
+    <h3 class="sub">Peer Review — समकक्ष समीक्षा</h3>
+    <div class="three-col">
+      <div class="mbox">
+        <div class="ml">📋 Single Blind Review</div>
+        <ul>
+          <li>Reviewer को लेखक का नाम पता है</li>
+          <li>लेखक को Reviewer का नाम नहीं पता</li>
+          <li>सबसे सामान्य प्रकार</li>
+          <li>Bias की संभावना</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">📋 Double Blind Review</div>
+        <ul>
+          <li>लेखक और Reviewer दोनों को एक-दूसरे का नाम नहीं पता</li>
+          <li>सर्वाधिक Objective</li>
+          <li>Bias कम होती है</li>
+          <li>अधिकांश Top Journals</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">📋 Open Peer Review</div>
+        <ul>
+          <li>लेखक और Reviewer दोनों के नाम सार्वजनिक</li>
+          <li>Reviews भी Published होते हैं</li>
+          <li>Open Access Journals में</li>
+          <li>Transparency &gt; Anonymity</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">📚 Scholarly Communication के माध्यम</div>
+        <ul>
+          <li><strong>Peer-reviewed Journals</strong> — Primary</li>
+          <li>Monographs, Edited Books</li>
+          <li>Conference Proceedings</li>
+          <li>Theses &amp; Dissertations</li>
+          <li>Preprints (arXiv, bioRxiv)</li>
+          <li>Institutional Repositories</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">🌐 Open Access Movement</div>
+        <ul>
+          <li><strong>Budapest OA Initiative (2002)</strong></li>
+          <li>Berlin Declaration (2003)</li>
+          <li>Bethesda Statement (2003)</li>
+          <li>Green OA = Self-archiving</li>
+          <li>Gold OA = Publisher OA</li>
+          <li>Diamond OA = Free to read &amp; publish</li>
+        </ul>
+      </div>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> <strong>Budapest Open Access Initiative (2002)</strong> = Open Access Movement की शुरुआत। <strong>Double Blind Peer Review</strong> = सर्वाधिक Objective। <strong>Invisible College</strong> = Informal Scholarly Communication Network (Derek Price)। Green OA = Self-archive in Repository। Gold OA = Journal में Direct Publish।</div>
+  </div>
+</div>
+
+<!-- ══════ SCIENTIFIC COMMUNICATION ══════ -->
+<h2 class="sec" id="scientific"><span class="ico" style="background:rgba(16,185,129,.2)">🔬</span>Scientific Communication — वैज्ञानिक संचार</h2>
+
+<div class="info-box" style="border-top:4px solid #10b981">
+  <div class="ib-head">
+    <div class="ib-circle ic3">🔬</div>
+    <div class="ib-meta">
+      <h3>Scientific Communication</h3>
+      <div class="ibm-sub">वैज्ञानिक खोजों और STI का प्रसार — Formal एवं Informal दोनों माध्यमों से</div>
+    </div>
+    <span class="ib-badge bb3">STI Communication</span>
+  </div>
+  <div class="ib-body">
+    <p><strong style="color:#fff">Scientific Communication</strong> विशेष रूप से <strong style="color:#fff">वैज्ञानिक और तकनीकी सूचना (STI)</strong> के प्रसार से संबंधित है। यह Scholarly Communication का एक विशेष उपसमूह है जिसमें Natural Sciences, Technology, Engineering और Medicine की जानकारी का आदान-प्रदान होता है।</p>
+
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">📋 Scientific Communication के प्रकार</div>
+        <ul>
+          <li><strong>Primary</strong> — Original Research (Journals)</li>
+          <li><strong>Secondary</strong> — Review Articles, Abstracts</li>
+          <li><strong>Tertiary</strong> — Bibliographies, Directories</li>
+          <li><strong>Informal</strong> — Preprints, Seminars</li>
+          <li><strong>Mass</strong> — Science Journalism, PopSci</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">🇮🇳 India में STI Communication</div>
+        <ul>
+          <li><strong>NISCAIR</strong> — STI Publications</li>
+          <li><strong>DESIDOC</strong> — Defence STI</li>
+          <li><strong>CSIR Journals</strong> — Indian Science</li>
+          <li><strong>INFLIBNET</strong> — e-Shodh Sindhu</li>
+          <li><strong>Shodhganga</strong> — Thesis Repository</li>
+          <li><strong>INIS, AGRIS</strong> — International STI</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sub">Scholarly Communication vs Scientific Communication</h3>
+    <div class="scroll-note">← Scroll करें →</div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>पहलू</th>
+            <th>Scholarly Communication</th>
+            <th>Scientific Communication</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="r1"><td><strong>परिभाषा</strong></td><td>सभी Academic विषयों में विद्वानों के बीच ज्ञान का आदान-प्रदान</td><td>विशेष रूप से Science &amp; Technology में STI का प्रसार</td></tr>
+          <tr class="r2"><td><strong>Scope</strong></td><td>व्यापक — Humanities, Social Sciences, Sciences</td><td>संकुचित — Natural Sciences, Technology, Medicine</td></tr>
+          <tr class="r3"><td><strong>प्रमुख माध्यम</strong></td><td>Journals, Books, Conferences, Theses</td><td>Primary Journals, Patents, Preprints, arXiv</td></tr>
+          <tr class="r4"><td><strong>Audience</strong></td><td>विद्वान और शोधकर्ता</td><td>वैज्ञानिक, Engineers, Technologists</td></tr>
+          <tr class="r5"><td><strong>भारतीय संस्था</strong></td><td>UGC, Shodhganga, Universities</td><td>NISCAIR, DESIDOC, CSIR, DST</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> <strong>NISCAIR</strong> = National Institute of Science Communication and Information Resources। INIS = International Nuclear Information System (IAEA)। AGRIS = Agricultural Information System (FAO)। MEDLARS = Medical Literature Analysis and Retrieval System (NLM, USA)। Science Communication के Gatekeepers = Peer Reviewers और Journal Editors।</div>
+  </div>
+</div>
+
+<!-- COMPARE TABLE -->
+<h2 class="sec" id="compare"><span class="ico" style="background:rgba(245,158,11,.2)">📊</span>Communication Models — Master Comparison Table</h2>
+
+<div class="scroll-note">← Scroll करें →</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>विद्वान</th>
+        <th>वर्ष</th>
+        <th>प्रकार</th>
+        <th>मुख्य Concept</th>
+        <th>Feedback</th>
+        <th>Noise</th>
+        <th>सीमा</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="r1">
+        <td><strong>Shannon-Weaver</strong></td>
+        <td>Shannon &amp; Weaver</td>
+        <td>1948/49</td>
+        <td>Linear</td>
+        <td>Mathematical, Bit, Entropy, Noise</td>
+        <td style="color:#ef4444">✗ नहीं</td>
+        <td style="color:#10b981">✓ है</td>
+        <td>केवल Technical</td>
+      </tr>
+      <tr class="r2">
+        <td><strong>Lasswell's Formula</strong></td>
+        <td>Harold Lasswell</td>
+        <td>1948</td>
+        <td>Linear</td>
+        <td>5W: Who, What, Channel, Whom, Effect</td>
+        <td style="color:#ef4444">✗ नहीं</td>
+        <td style="color:#ef4444">✗ नहीं</td>
+        <td>Mass Media तक सीमित</td>
+      </tr>
+      <tr class="r3">
+        <td><strong>Berlo SMCR</strong></td>
+        <td>David K. Berlo</td>
+        <td>1960</td>
+        <td>Linear</td>
+        <td>SMCR, Fidelity, Human Factors (S-A-K-S-C)</td>
+        <td style="color:#ef4444">✗ नहीं</td>
+        <td style="color:#ef4444">✗ नहीं</td>
+        <td>Feedback और Noise नहीं</td>
+      </tr>
+      <tr class="r4">
+        <td><strong>Osgood-Schramm</strong></td>
+        <td>Osgood &amp; Schramm</td>
+        <td>1954</td>
+        <td><strong>Circular</strong></td>
+        <td>Encode, Interpret, Decode, Field of Experience</td>
+        <td style="color:#10b981">✓ है</td>
+        <td style="color:#ef4444">✗ नहीं</td>
+        <td>Noise का उल्लेख नहीं</td>
+      </tr>
+      <tr class="r5">
+        <td><strong>Aristotle's Model</strong></td>
+        <td>Aristotle</td>
+        <td>300 BC</td>
+        <td>Linear</td>
+        <td>Speaker, Speech, Audience — Oratory</td>
+        <td style="color:#ef4444">✗ नहीं</td>
+        <td style="color:#ef4444">✗ नहीं</td>
+        <td>सबसे पुराना, सरलतम</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="alt-box"><strong>🖼️ Image ALT Text #3</strong> Communication Models comparison — Shannon Weaver Lasswell Berlo Schramm comparison table Hindi UGC NET LIS</div>
+
+<!-- EXAM BOX -->
+<div class="exam-box" id="exam">
+  <div class="exam-head">📋 परीक्षा के लिए अतिमहत्वपूर्ण बिंदु (UGC NET Exam Notes)</div>
+  <ul class="exam-ul">
+    <li><strong>Shannon-Weaver Model (1948/49):</strong> Mathematical Model। 6 Components: Information Source → Transmitter → Channel → Receiver → Destination + Noise Source। Claude Shannon = "Father of Information Theory"। <strong>Bit</strong> = सूचना की न्यूनतम इकाई।</li>
+    <li><strong>Lasswell's Formula (1948):</strong> <strong>5W</strong> — Who says What in Which Channel to Whom with What Effect। "The Structure and Function of Communication in Society"। Mass Communication Model।</li>
+    <li><strong>Berlo's SMCR Model (1960):</strong> Source, Message, Channel, Receiver। Channel = 5 Human Senses। S &amp; R के <strong>5 Factors (S-A-K-S-C)</strong>: Skills, Attitudes, Knowledge, Social System, Culture। <strong>Fidelity</strong> = S और R की समानता।</li>
+    <li><strong>Osgood-Schramm Model (1954):</strong> पहला <strong>Circular Model</strong>। Feedback शामिल। Encode → Interpret → Decode। <strong>Field of Experience</strong> = Shared experiences for effective communication।</li>
+    <li><strong>Aristotle's Model (300 BC):</strong> सबसे पुराना Communication Model। Speaker → Speech → Audience। Rhetoric / Oratory पर आधारित।</li>
+    <li><strong>Noise:</strong> Shannon-Weaver में Channel Noise = Technical Barrier। 6 प्रकार की Barriers: Linguistic, Psychological, Technical, Cultural, Organizational, Digital।</li>
+    <li><strong>Invisible College</strong> = Derek J. de Solla Price। Informal Scholarly Communication Network। आधुनिक रूप = ResearchGate, Academia.edu।</li>
+    <li><strong>Peer Review के 3 प्रकार:</strong> Single Blind, Double Blind (सर्वाधिक Objective), Open Peer Review।</li>
+    <li><strong>Open Access (OA):</strong> Budapest OA Initiative (2002), Green OA (Self-archiving), Gold OA (Journal), Diamond OA। Berlin Declaration (2003), Bethesda Statement (2003)।</li>
+    <li><strong>Wilbur Schramm</strong> = "Father of Communication Studies"। <strong>Claude Shannon</strong> = "Father of Information Theory"। <strong>Harold Lasswell</strong> = Political Scientist + Communication Theorist।</li>
+  </ul>
+</div>
+
+<!-- CONCLUSION -->
+<div class="conclusion">
+  <h2 class="sec" style="margin-top:0;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:12px;color:#fff"><span class="ico" style="background:rgba(236,72,153,.15)">✓</span>निष्कर्ष (Conclusion)</h2>
+  <p>Communication Library &amp; Information Science का केंद्रीय विषय है। Shannon-Weaver ने सूचना को Mathematical रूप में परिभाषित किया, Lasswell ने Mass Media Communication को समझाया, Berlo ने Human Factors को Communication में शामिल किया, और Schramm ने पहली बार Circular, Two-way Communication की अवधारणा दी।</p>
+  <p>Scholarly और Scientific Communication के संदर्भ में — Peer Review, Open Access, Invisible Colleges और Digital Repositories आज के युग में ज्ञान के प्रसार के प्रमुख साधन बन गए हैं। एक LIS Professional की भूमिका इन सभी Communication Channels को प्रभावी बनाने में अत्यंत महत्वपूर्ण है।</p>
+</div>
+
+<!-- FAQs -->
+<h2 class="sec" id="faq"><span class="ico" style="background:rgba(236,72,153,.2)">❓</span>FAQs — 10 महत्वपूर्ण प्रश्न</h2>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q1. Shannon-Weaver Model के 6 Components क्या हैं? यह Linear Model क्यों है?</span><span class="ico">+</span></div>
+  <div class="faq-a">Shannon-Weaver Model (1949) के 6 Components: <strong>(1) Information Source</strong> — सूचना का उद्गम, <strong>(2) Transmitter</strong> — संकेतों में बदलकर भेजना (Encoding), <strong>(3) Channel</strong> — प्रसारण माध्यम, <strong>(4) Noise Source</strong> — Channel में आने वाली बाधा, <strong>(5) Receiver</strong> — संकेतों को वापस बदलना (Decoding), <strong>(6) Destination</strong> — अंतिम गंतव्य। यह <strong>Linear Model</strong> इसलिए है क्योंकि सूचना का प्रवाह केवल एकदिशीय है (Source → Destination) और इसमें Feedback की कोई व्यवस्था नहीं है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q2. Lasswell का 5W Formula क्या है? इसे Mass Communication Model क्यों कहते हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a">Harold Lasswell (1948) का Formula: <em>"Who says What in Which Channel to Whom with What Effect?"</em> 5W: <strong>Who</strong> = Communicator (कौन), <strong>Says What</strong> = Message (क्या कहता है), <strong>In Which Channel</strong> = Medium (किस माध्यम से), <strong>To Whom</strong> = Audience (किसको), <strong>With What Effect</strong> = Impact (क्या प्रभाव)। इसे Mass Communication Model कहते हैं क्योंकि यह TV, Radio, Newspaper जैसे Mass Media के Analysis के लिए Design किया गया था, जहाँ एक Sender लाखों Receivers को एकसाथ संदेश भेजता है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q3. Berlo के SMCR Model में Source और Receiver के 5 Factors (S-A-K-S-C) क्या हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a">Berlo के SMCR Model में Source और Receiver दोनों के <strong>5 समान Factors</strong> हैं (S-A-K-S-C): <strong>(1) S — Communication Skills</strong> (बोलना, लिखना, सुनना, पढ़ना), <strong>(2) A — Attitudes</strong> (दृष्टिकोण — खुद के, विषय के, दूसरे के प्रति), <strong>(3) K — Knowledge</strong> (विषय की जानकारी), <strong>(4) S — Social System</strong> (समाज, संस्था, संस्कृति में स्थान), <strong>(5) C — Culture</strong> (सांस्कृतिक पृष्ठभूमि)। Berlo का <strong>Fidelity Principle</strong>: Communication तभी सफल होगा जब Source और Receiver के इन 5 Factors में अधिकतम समानता (Fidelity) हो।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q4. Osgood-Schramm Model को Circular Model क्यों कहते हैं? Field of Experience क्या है?</span><span class="ico">+</span></div>
+  <div class="faq-a">Osgood-Schramm Model (1954) को Circular Model कहते हैं क्योंकि इसमें Communication एक चक्र (Circle) के रूप में चलती है — Sender Encode करता है → Receiver Decode और Interpret करता है → Receiver Encode करके Feedback भेजता है → Sender फिर Decode करता है। यह प्रक्रिया निरंतर चलती रहती है। <strong>Field of Experience</strong> = Sender और Receiver के जीवन के अनुभव, ज्ञान, संस्कृति और भावनाओं का समूह। Communication तभी प्रभावी होती है जब दोनों के Field of Experience का कुछ भाग overlap करे।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q5. Scholarly Communication और Scientific Communication में क्या अंतर है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Scholarly Communication</strong> = सभी Academic Disciplines (Humanities, Social Sciences, Sciences) में विद्वानों के बीच Research का औपचारिक आदान-प्रदान। Peer-reviewed Journals, Books, Theses। <strong>Scientific Communication</strong> = विशेष रूप से Natural Sciences, Technology, Engineering, Medicine (STEM) में STI का प्रसार। Primary Journals, Patents, Preprints (arXiv), NISCAIR Publications। Key Difference: Scholarly = सभी विषय। Scientific = केवल STEM + Technology। Scientific Communication = Scholarly Communication का उपसमूह।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q6. Peer Review के तीन प्रकार क्या हैं? Double Blind क्यों सर्वश्रेष्ठ माना जाता है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>(1) Single Blind Peer Review</strong> — Reviewer को लेखक का नाम पता है, लेखक को Reviewer का नाम नहीं। Bias की संभावना। <strong>(2) Double Blind Peer Review</strong> — दोनों के नाम गुप्त। सर्वाधिक Objective — Reviewer लेखक की Reputation या Institution से प्रभावित नहीं होता, केवल Research की Quality देखता है। <strong>(3) Open Peer Review</strong> — दोनों के नाम सार्वजनिक, Reviews भी Published। Open Access Journals में प्रचलित। Double Blind श्रेष्ठ इसलिए क्योंकि यह <strong>Gender Bias, Institutional Bias और Celebrity Bias</strong> को रोकता है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q7. Invisible College क्या है? इसे किसने Popularize किया?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Invisible College</strong> = वैज्ञानिकों और विद्वानों का एक अनौपचारिक नेटवर्क जो Personal Letters, Informal Meetings, Conferences की Sidelines में Discussions और अनौपचारिक Correspondence के माध्यम से Research Ideas और Findings share करते हैं। यह Term <strong>Robert Boyle</strong> (17वीं सदी) द्वारा प्रयुक्त और <strong>Derek J. de Solla Price (1963)</strong> ने "Little Science, Big Science" पुस्तक में Popularize किया। आधुनिक Invisible College = ResearchGate, Academia.edu, Twitter Scholar Networks। यह Scholarly Communication का Informal Channel है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q8. Open Access के प्रमुख Declarations क्या हैं? Green और Gold OA में क्या अंतर है?</span><span class="ico">+</span></div>
+  <div class="faq-a">Open Access के प्रमुख Declarations: <strong>(1) Budapest Open Access Initiative (BOAI, 2002)</strong> — पहली बार "Open Access" शब्द Official रूप से Define किया। <strong>(2) Berlin Declaration (2003)</strong> — German Research Organizations। <strong>(3) Bethesda Statement (2003)</strong> — Life Sciences। <strong>Green OA</strong> = Researcher अपनी Research को Institutional Repository या Subject Repository (arXiv, PubMed Central) में Self-archive करता है — पहले Subscription Journal में Publish होता है। <strong>Gold OA</strong> = Research सीधे OA Journal में Publish होती है — पढ़ना और Download करना सभी के लिए Free। <strong>Diamond OA</strong> = न लेखक से, न पाठक से — कोई शुल्क नहीं।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q9. Claude Shannon को "Father of Information Theory" क्यों कहते हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Claude Shannon (1916–2001)</strong> को "Father of Information Theory" इसलिए कहते हैं क्योंकि उन्होंने: (1) 1948 में <strong>"A Mathematical Theory of Communication"</strong> (Bell System Technical Journal) में Information को पहली बार Mathematical रूप में Define किया। (2) <strong>Bit (Binary Digit)</strong> = सूचना की सबसे छोटी इकाई — यह Concept दिया। (3) <strong>Shannon Entropy (H)</strong> = Information की Uncertainty का Mathematical Measure। (4) <strong>Channel Capacity</strong> और <strong>Noise</strong> की अवधारणा। (5) Coding Theory की नींव रखी जो आज Computers, Internet और Digital Communication का आधार है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q10. Communication Channels को Formal और Informal में कैसे बाँटा जाता है? LIS में कौन से Channels महत्वपूर्ण हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Formal Channels</strong> = पूर्व-निर्धारित, संस्थागत, Peer-reviewed — Journals, Monographs, Conference Proceedings, Government Reports, Patents, Theses। <strong>Informal Channels</strong> = अनौपचारिक, तात्कालिक — Verbal Communication, Email, Preprints, Seminars, Invisible Colleges, Social Media। LIS में महत्वपूर्ण Channels: <strong>Peer-reviewed Journals</strong> (Primary Scholarly Communication), <strong>Institutional Repositories</strong> (Shodhganga, arXiv), <strong>OPAC</strong> (Library Communication with Users), <strong>CAS/SDI</strong> (Personalised Information Dissemination), <strong>e-Shodh Sindhu</strong> (INFLIBNET — e-Journal Access)। Digital Channels में: Open Access Journals, E-books, Databases।</div>
+</div>
+
+<!-- INTERNAL LINKS -->
+<div class="int-links">
+  <h3>🔗 संबंधित Topics — आगे पढ़ें</h3>
+  <div class="link-grid">
+    <a href="ugc-net-lis-unit1-1-dikw-dark.html" class="lnk">📊 Unit 1.1 — DIKW Hierarchy</a>
+    <a href="ugc-net-lis-unit1-2-information-life-cycle-dark.html" class="lnk">🔄 Unit 1.2 — Information Life Cycle</a>
+    <a href="ugc-net-lis-unit1-3-role-of-information-dark.html" class="lnk">🌐 Unit 1.3 — Role of Information</a>
+    <a href="ugc-net-lis-unit1-4-Information-Science-Knowledge-Society.html" class="lnk">🔬 Unit 1.4 — Information Science</a>
+    <a href="#" class="lnk">🏛️ Unit 1.6 — Information Industry</a>
+    <a href="#" class="lnk">⚖️ Unit 1.7 — IPR and Copyright</a>
+  </div>
+</div>
+
+<!-- SCHEMA -->
+<h2 class="sec" id="schema"><span class="ico" style="background:rgba(236,72,153,.2)">&lt;/&gt;</span>Blogger JSON-LD Schema Markup</h2>
+<p style="font-size:13px;color:var(--muted);margin-bottom:10px">इस Code को Blogger Post के HTML Section में paste करें:</p>
+<div class="schema-wrap">
+<pre id="schemaCode">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "संचार मॉडल | Shannon-Weaver, Lasswell, Berlo SMCR, Schramm | UGC NET LIS Unit 1.5 Hindi",
+  "description": "Communication Models in Hindi — Shannon-Weaver (1949), Lasswell 5W Formula (1948), Berlo SMCR (1960), Osgood-Schramm Circular Model (1954), Scholarly Communication, Peer Review, Open Access — UGC NET Library Science Unit 1.5 Notes.",
+  "inLanguage": "hi",
+  "keywords": "Communication Models Hindi, Shannon Weaver Model, Lasswell Formula, Berlo SMCR, Schramm Circular Model, Scholarly Communication, Peer Review Double Blind, Open Access Budapest, UGC NET LIS Unit 1.5",
+  "author": {"@type": "Person", "name": "UGC NET Library and Information Science Blog"},
+  "publisher": {"@type": "Organization", "name": "UGC NET Library and Information Science"}
+}
+&lt;/script&gt;
+&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Shannon-Weaver Model के 6 Components क्या हैं?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Information Source → Transmitter → Channel (+ Noise Source) → Receiver → Destination। Linear Model, 1949। Bit = सूचना की न्यूनतम इकाई।"}
+    },
+    {
+      "@type": "Question",
+      "name": "Lasswell का 5W Formula क्या है?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Who says What in Which Channel to Whom with What Effect? — Harold Lasswell, 1948। Mass Communication Model।"}
+    },
+    {
+      "@type": "Question",
+      "name": "Berlo के SMCR Model में S-A-K-S-C क्या है?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Skills, Attitudes, Knowledge, Social System, Culture — Source और Receiver दोनों के 5 Factors। Fidelity = S और R की समानता।"}
+    },
+    {
+      "@type": "Question",
+      "name": "Open Access के प्रमुख Declarations कौन से हैं?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Budapest Open Access Initiative (2002), Berlin Declaration (2003), Bethesda Statement (2003)। Green OA = Self-archiving। Gold OA = Publisher OA।"}
+    },
+    {
+      "@type": "Question",
+      "name": "Osgood-Schramm Model की विशेषता क्या है?",
+      "acceptedAnswer": {"@type": "Answer", "text": "पहला Circular Model (1954)। Feedback शामिल। Encode → Interpret → Decode। Field of Experience = Shared experiences for effective communication।"}
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+  <button class="copy-btn" onclick="copySchema()">📋 Schema Code Copy करें</button>
+</div>
+
+</div><!-- /wrap -->
+
+<div class="foot">
+  <strong>UGC NET Library and Information Science Blog</strong> &nbsp;|&nbsp; Unit I · Topic 1.5 — Communication: Concept, Models &amp; Channels<br>
+  <span>Shannon-Weaver · Lasswell 5W · Berlo SMCR · Osgood-Schramm · Scholarly Communication · Open Access</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>सूचना उद्योग क्या है? | Information Industry, Players & Products | UGC NET Library Science Unit 1.6 हिंदी Notes</title>
+<meta name="description" content="Information Industry — परिभाषा, घटक, प्रमुख Players, Information Products & Services, Information Market, Digital Publishing — UGC NET LIS Unit 1.6 सम्पूर्ण हिंदी Notes। 10 FAQs, Tables और Flow Diagrams सहित।">
+<meta name="keywords" content="Information Industry Hindi, सूचना उद्योग, Information Products Services, Information Market, Digital Publishing, Database Publishers, UGC NET Library Science Unit 1.6, Information Economy, UGC NET LIS Hindi Notes 2024">
+<meta name="robots" content="index, follow">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Fraunces:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+/* ══ ROOT VARIABLES — 1.1 exact pattern, blue theme ═════ */
+:root{
+  --bg:#080f1a; --surface:#0f1c2e; --surface2:#162338; --surface3:#1c2d47;
+  --border:rgba(255,255,255,.08); --border2:rgba(255,255,255,.14);
+  --text:#e8eef8; --muted:#7a90b0; --faint:#4a6080;
+  --accent:#f5a623; --accent2:#3b82f6; --green:#10b981; --red:#ef4444;
+  --purple:#8b5cf6; --pink:#ec4899; --cyan:#06b6d4;
+  /* Topic 1.6 accent colours */
+  --a-col:#3b82f6; --b-col:#10b981; --c-col:#8b5cf6; --d-col:#f59e0b;
+  --r:14px; --r-sm:9px;
+  --shadow:0 6px 28px rgba(0,0,0,.45);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans Devanagari',sans-serif;background:var(--bg);color:var(--text);line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased}
+
+/* ══ PROGRESS BAR ════════════════════════════════════════ */
+#read-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--a-col),var(--b-col),var(--c-col),var(--d-col));width:0%;z-index:999;transition:width .1s}
+
+/* ══ BACK NAV ════════════════════════════════════════════ */
+.top-nav{position:sticky;top:0;z-index:100;background:rgba(8,15,26,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:14px}
+.back-btn{display:inline-flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--text);text-decoration:none;transition:all .2s;font-family:inherit;cursor:pointer}
+.back-btn:hover{background:var(--surface2);border-color:var(--border2)}
+.nav-breadcrumb{font-size:12px;color:var(--muted);flex:1}
+.nav-breadcrumb span{color:var(--text);font-weight:600}
+.nav-dot{width:9px;height:9px;border-radius:50%;background:var(--a-col);display:inline-block;margin-right:5px}
+
+/* ══ HERO ════════════════════════════════════════════════ */
+.hero{position:relative;padding:64px 20px 56px;text-align:center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.07) 1px,transparent 1px);background-size:44px 44px;animation:gridMove 22s linear infinite;pointer-events:none}
+.hero-glow{position:absolute;inset:0;background:radial-gradient(ellipse 90% 55% at 50% -10%,rgba(59,130,246,.22) 0%,transparent 65%);pointer-events:none}
+@keyframes gridMove{0%{background-position:0 0,0 0}100%{background-position:44px 44px,44px 44px}}
+.hero-inner{position:relative;z-index:2;max-width:860px;margin:0 auto}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.35);color:#93c5fd;font-size:11px;font-weight:700;padding:5px 16px;border-radius:30px;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:20px;animation:fadeUp .45s ease both}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(26px,5.5vw,52px);font-weight:900;line-height:1.1;color:#fff;margin-bottom:14px;animation:fadeUp .6s ease .1s both}
+.hero h1 .hi{display:block;font-size:.52em;font-family:'Noto Sans Devanagari',sans-serif;font-weight:400;font-style:normal;color:var(--muted);margin-top:9px;letter-spacing:.3px}
+.hero-desc{font-size:14.5px;color:var(--muted);max-width:620px;margin:0 auto 28px;animation:fadeUp .72s ease .18s both}
+
+/* pill strip */
+.ii-strip{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:28px;animation:fadeUp .82s ease .24s both}
+.ip{padding:8px 18px;border-radius:22px;font-size:13px;font-weight:700;border:1.5px solid;display:flex;align-items:center;gap:7px;cursor:default;transition:transform .2s}
+.ip:hover{transform:scale(1.05)}
+.ip-a{background:rgba(59,130,246,.18);border-color:rgba(59,130,246,.4);color:#93c5fd}
+.ip-b{background:rgba(16,185,129,.18);border-color:rgba(16,185,129,.4);color:#6ee7b7}
+.ip-c{background:rgba(139,92,246,.18);border-color:rgba(139,92,246,.4);color:#c4b5fd}
+.ip-d{background:rgba(245,158,11,.18);border-color:rgba(245,158,11,.4);color:#fcd34d}
+.ip-e{background:rgba(6,182,212,.18);border-color:rgba(6,182,212,.4);color:#67e8f9}
+
+/* meta row */
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;animation:fadeUp .9s ease .3s both}
+.hm{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 14px;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.hm strong{color:var(--text)}
+
+/* ══ WRAP ════════════════════════════════════════════════ */
+.wrap{max-width:940px;margin:0 auto;padding:0 18px 70px}
+
+/* ══ TOC ═════════════════════════════════════════════════ */
+.toc-box{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--a-col);border-radius:var(--r);padding:22px 26px;margin:34px 0}
+.toc-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.toc-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+@media(max-width:540px){.toc-list{grid-template-columns:1fr}}
+.toc-list a{font-size:13.5px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:7px;padding:5px 0;transition:color .2s}
+.toc-list a:hover{color:var(--text)}
+.toc-list a .tnum{min-width:24px;height:20px;background:rgba(59,130,246,.2);color:#93c5fd;border-radius:4px;font-size:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center}
+
+/* ══ HEADINGS ════════════════════════════════════════════ */
+h2.sec{font-family:'Fraunces',serif;font-size:clamp(18px,3.5vw,26px);font-weight:900;color:#fff;margin:48px 0 18px;display:flex;align-items:center;gap:13px;padding-bottom:13px;border-bottom:1px solid var(--border)}
+h2.sec .ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ico-blue{background:rgba(59,130,246,.2)} .ico-green{background:rgba(16,185,129,.2)}
+.ico-purple{background:rgba(139,92,246,.2)} .ico-amber{background:rgba(245,158,11,.2)}
+.ico-cyan{background:rgba(6,182,212,.2)}
+h3.sub{font-size:clamp(14px,2.8vw,18px);font-weight:700;color:var(--accent2);margin:22px 0 11px;display:flex;align-items:center;gap:8px}
+h3.sub::before{content:'';width:4px;height:18px;background:var(--accent2);border-radius:3px;flex-shrink:0}
+p{margin-bottom:14px;font-size:15px;line-height:1.92;color:#cad5e8}
+
+/* ══ SNIPPET ══════════════════════════════════════════════ */
+.snippet{background:linear-gradient(135deg,rgba(59,130,246,.1),rgba(16,185,129,.06));border:1px solid rgba(59,130,246,.22);border-left:4px solid var(--a-col);border-radius:0 var(--r) var(--r) 0;padding:20px 24px;margin:26px 0}
+.snip-lbl{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.1px;color:var(--accent2);margin-bottom:9px}
+.snippet p{font-size:15px;color:var(--text);margin:0}
+
+/* ══ CALLOUTS ════════════════════════════════════════════ */
+.callout{padding:15px 20px;border-radius:0 var(--r) var(--r) 0;margin:18px 0}
+.c-blue{background:rgba(59,130,246,.1);border-left:4px solid var(--a-col)}
+.c-green{background:rgba(16,185,129,.1);border-left:4px solid var(--b-col)}
+.c-purple{background:rgba(139,92,246,.1);border-left:4px solid var(--c-col)}
+.c-amber{background:rgba(245,158,11,.1);border-left:4px solid var(--d-col)}
+.c-cyan{background:rgba(6,182,212,.1);border-left:4px solid var(--cyan)}
+.callout p{font-size:14.5px;margin-bottom:8px;color:var(--text);line-height:1.85}
+.callout p:last-child{margin-bottom:0}
+.tag-pill{display:inline-block;color:#fff;font-size:10.5px;font-weight:700;padding:2px 10px;border-radius:4px;margin-right:6px;vertical-align:middle}
+.tp-blue{background:var(--a-col)} .tp-green{background:var(--b-col)}
+.tp-purple{background:var(--c-col)} .tp-amber{background:#d97706} .tp-cyan{background:var(--cyan)}
+
+/* ══ NET TIP ══════════════════════════════════════════════ */
+.net-tip{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-left:4px solid var(--green);border-radius:0 var(--r-sm) var(--r-sm) 0;padding:10px 15px;margin-top:14px;font-size:13.5px;color:#a7f3d0}
+.net-tip strong{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--green);margin-bottom:3px}
+
+/* ══ INFO BOX ════════════════════════════════════════════ */
+.info-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:28px;overflow:hidden}
+.ib-head{display:flex;align-items:center;gap:16px;padding:18px 24px;background:var(--surface2);border-bottom:1px solid var(--border)}
+.ib-circle{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.ic-blue{background:linear-gradient(135deg,#1d4ed8,#3b82f6)}
+.ic-green{background:linear-gradient(135deg,#047857,#10b981)}
+.ic-purple{background:linear-gradient(135deg,#5b21b6,#8b5cf6)}
+.ic-amber{background:linear-gradient(135deg,#b45309,#f59e0b)}
+.ic-cyan{background:linear-gradient(135deg,#0891b2,#06b6d4)}
+.ib-meta{flex:1}
+.ib-meta h3{font-size:19px;font-weight:700;color:#fff;margin:0}
+.ib-meta .ibm-sub{font-size:13px;color:var(--muted);margin-top:2px}
+.ib-badge{font-size:11px;font-weight:700;padding:4px 12px;border-radius:16px;white-space:nowrap}
+.bb-blue{background:rgba(59,130,246,.2);color:#93c5fd}
+.bb-green{background:rgba(16,185,129,.2);color:#6ee7b7}
+.bb-purple{background:rgba(139,92,246,.2);color:#c4b5fd}
+.bb-amber{background:rgba(245,158,11,.2);color:#fcd34d}
+.bb-cyan{background:rgba(6,182,212,.2);color:#67e8f9}
+.ib-body{padding:20px 24px}
+.ib-body p{font-size:14.5px;margin-bottom:12px;color:#cad5e8}
+
+/* ══ TWO / THREE / FOUR COL ══════════════════════════════ */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+@media(max-width:520px){.two-col{grid-template-columns:1fr}}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0}
+@media(max-width:640px){.three-col{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.three-col{grid-template-columns:1fr}}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}
+@media(max-width:700px){.four-col{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.four-col{grid-template-columns:1fr}}
+.mbox{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 15px}
+.mbox .ml{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:8px}
+.mbox ul{list-style:none;padding:0;margin:0}
+.mbox ul li{padding:3px 0 3px 16px;position:relative;line-height:1.7;font-size:13.5px;color:#b8c8e0}
+.mbox ul li::before{content:'▸';position:absolute;left:2px;color:var(--accent);font-size:12px;top:4px}
+.mbox ul li strong{color:var(--text)}
+
+/* ══ SLIST ═══════════════════════════════════════════════ */
+.slist{list-style:none;padding:0;margin:12px 0 18px}
+.slist li{padding:9px 14px 9px 40px;position:relative;font-size:14.5px;border-bottom:1px solid var(--border);line-height:1.78;color:#b8c8e0}
+.slist li:last-child{border-bottom:none}
+.slist li::before{content:'▸';position:absolute;left:14px;color:var(--accent);font-weight:700;font-size:16px;top:10px}
+.slist li strong{color:var(--text)}
+
+/* ══ PLAYER CARDS ════════════════════════════════════════ */
+.player-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+@media(max-width:640px){.player-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.player-grid{grid-template-columns:1fr}}
+.pl-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:18px 16px;transition:transform .25s,box-shadow .25s}
+.pl-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pl-ico{font-size:28px;margin-bottom:10px}
+.pl-title{font-size:14px;font-weight:700;color:#fff;margin-bottom:5px}
+.pl-sub{font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.pl-ul{list-style:none;padding:0}
+.pl-ul li{font-size:12.5px;color:#b8c8e0;padding:2px 0 2px 14px;position:relative;line-height:1.6}
+.pl-ul li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:10px;top:4px}
+.pc1{border-top:3px solid var(--a-col)} .pc2{border-top:3px solid var(--b-col)}
+.pc3{border-top:3px solid var(--c-col)} .pc4{border-top:3px solid var(--d-col)}
+.pc5{border-top:3px solid var(--cyan)} .pc6{border-top:3px solid var(--pink)}
+
+/* ══ VALUE CHAIN ══════════════════════════════════════════ */
+.vc-flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0;margin:22px 0}
+.vc-box{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:13px 16px;text-align:center;min-width:100px}
+.vc-box .vb-ico{font-size:22px;margin-bottom:5px}
+.vc-box .vb-en{font-size:12px;font-weight:700;color:#fff}
+.vc-box .vb-hi{font-size:10.5px;color:var(--muted);margin-top:2px}
+.vc-arrow{color:var(--faint);font-size:20px;padding:0 4px;align-self:center}
+@media(max-width:600px){.vc-flow{gap:6px}.vc-box{min-width:80px;padding:10px 10px}}
+
+/* ══ PRODUCT TYPE CARDS ══════════════════════════════════ */
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}
+@media(max-width:480px){.prod-grid{grid-template-columns:1fr}}
+.prod-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px}
+.pc-head{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.pc-ico{font-size:26px}
+.pc-title{font-size:15px;font-weight:700;color:#fff}
+.pc-badge{font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:12px;margin-left:auto}
+.prod-ul{list-style:none;padding:0;margin:0}
+.prod-ul li{font-size:13px;color:#b8c8e0;padding:4px 0 4px 16px;position:relative;border-bottom:1px solid var(--border);line-height:1.7}
+.prod-ul li:last-child{border-bottom:none}
+.prod-ul li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:11px;top:5px}
+.prod-ul li strong{color:var(--text)}
+
+/* ══ TABLES ══════════════════════════════════════════════ */
+.scroll-note{font-size:11px;color:var(--muted);text-align:right;margin-bottom:5px;display:none}
+@media(max-width:600px){.scroll-note{display:block}}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r);box-shadow:var(--shadow);margin:20px 0}
+.tbl-wrap table{width:100%;min-width:520px;border-collapse:collapse;font-size:13.5px}
+.tbl-wrap thead tr{background:var(--surface3)}
+.tbl-wrap thead th{padding:13px 15px;text-align:left;font-weight:600;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.7px;border-bottom:1px solid var(--border)}
+.tbl-wrap tbody tr{border-bottom:1px solid var(--border);transition:background .15s}
+.tbl-wrap tbody tr:hover{background:var(--surface2)}
+.tbl-wrap tbody td{padding:11px 15px;vertical-align:top;line-height:1.72;color:#b8c8e0}
+.tbl-wrap tbody td strong{color:var(--text)}
+.tbl-wrap tbody tr:last-child{border-bottom:none}
+.r1 td:first-child{border-left:3px solid var(--a-col)}
+.r2 td:first-child{border-left:3px solid var(--b-col)}
+.r3 td:first-child{border-left:3px solid var(--c-col)}
+.r4 td:first-child{border-left:3px solid var(--d-col)}
+.r5 td:first-child{border-left:3px solid var(--cyan)}
+.r6 td:first-child{border-left:3px solid var(--pink)}
+
+/* ══ EXAM BOX ════════════════════════════════════════════ */
+.exam-box{background:rgba(16,185,129,.07);border:1px solid rgba(16,185,129,.22);border-top:4px solid var(--green);border-radius:var(--r);padding:24px 28px;margin:36px 0}
+.exam-head{font-size:17px;font-weight:700;color:#6ee7b7;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.exam-ul{list-style:none;padding:0;margin:0}
+.exam-ul li{padding:9px 14px 9px 36px;position:relative;font-size:14px;border-bottom:1px solid rgba(16,185,129,.12);line-height:1.82;color:#b8c8e0}
+.exam-ul li:last-child{border-bottom:none}
+.exam-ul li::before{content:'✓';position:absolute;left:10px;color:var(--green);font-weight:700}
+.exam-ul li strong{color:#e8eef8}
+
+/* ══ FAQ ═════════════════════════════════════════════════ */
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:10px;overflow:hidden;transition:border-color .25s}
+.faq-item.open{border-color:rgba(59,130,246,.3)}
+.faq-q{background:var(--surface2);border-left:4px solid var(--a-col);padding:14px 20px;font-weight:700;font-size:15px;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;user-select:none;transition:background .2s}
+.faq-q:hover{background:var(--surface3)}
+.faq-q .ico{color:#93c5fd;font-size:22px;flex-shrink:0;transition:transform .3s;margin-top:1px;line-height:1}
+.faq-item.open .ico{transform:rotate(45deg)}
+.faq-a{padding:16px 20px;font-size:14.5px;line-height:1.9;border-top:1px solid var(--border);display:none;color:#b8c8e0}
+.faq-item.open .faq-a{display:block}
+
+/* ══ INTERNAL LINKS ══════════════════════════════════════ */
+.int-links{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:22px 26px;margin:30px 0}
+.int-links h3{font-size:14px;color:var(--text);font-weight:700;margin-bottom:14px}
+.link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.lnk{background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:11px 14px;font-size:13px;color:var(--accent2);font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px;transition:all .2s}
+.lnk:hover{background:var(--surface3);border-color:var(--border2);transform:translateX(3px)}
+
+/* ══ ALT BOX ═════════════════════════════════════════════ */
+.alt-box{background:rgba(245,166,35,.07);border:1px dashed rgba(245,166,35,.3);border-radius:8px;padding:10px 14px;margin:12px 0;font-size:12px;color:#fcd34d}
+.alt-box strong{display:block;margin-bottom:3px;color:var(--accent);font-size:10.5px;text-transform:uppercase;letter-spacing:.5px}
+
+/* ══ SCHEMA ══════════════════════════════════════════════ */
+.schema-wrap{background:#040b14;border:1px solid rgba(59,130,246,.2);border-radius:var(--r);padding:22px;margin:22px 0;overflow-x:auto}
+.schema-wrap pre{color:#7dd3fc;font-family:'Courier New',monospace;font-size:12px;line-height:1.78;white-space:pre}
+.copy-btn{display:inline-flex;align-items:center;gap:7px;background:var(--a-col);color:#fff;border:none;padding:10px 22px;border-radius:8px;font-size:13px;cursor:pointer;margin-top:12px;font-family:inherit;font-weight:700;transition:background .2s}
+.copy-btn:hover{background:#1d4ed8}
+
+/* ══ CONCLUSION ══════════════════════════════════════════ */
+.conclusion{background:linear-gradient(135deg,var(--surface2),rgba(59,130,246,.09),rgba(16,185,129,.06));border:1px solid rgba(59,130,246,.16);border-radius:var(--r);padding:30px 32px;margin:36px 0}
+.conclusion p{font-size:15px;color:#c8d8f0;margin-bottom:12px}
+.conclusion p:last-child{margin-bottom:0}
+
+/* ══ FOOTER ══════════════════════════════════════════════ */
+.foot{text-align:center;padding:30px 18px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);margin-top:40px}
+.foot strong{color:var(--text)}
+
+@media(max-width:600px){
+  .hero{padding:46px 16px 40px}.wrap{padding:0 13px 50px}
+  .ib-head{flex-wrap:wrap}.conclusion{padding:22px 20px}.exam-box{padding:18px 16px}
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+
+<div id="read-bar"></div>
+
+<nav class="top-nav">
+  <a href="ugc-net-library-science-complete-syllabus.html" class="back-btn">← Syllabus Index</a>
+  <div class="nav-breadcrumb"><span class="nav-dot"></span>Unit I &rsaquo; <span>Topic 1.6 — Information Industry, Products &amp; Services</span></div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-pill">🔵 Unit I · Topic 1.6 · UGC NET Code 59</div>
+    <h1>सूचना उद्योग — उत्पाद और सेवाएँ
+      <span class="hi">Information Industry — Players, Products, Services, Market &amp; Digital Publishing</span>
+    </h1>
+    <p class="hero-desc">UGC NET Library &amp; Information Science — सम्पूर्ण हिंदी नोट्स | Information Industry · Value Chain · Database Publishers · Open Access · Information Market</p>
+    <div class="ii-strip">
+      <span class="ip ip-a">🏭 Information Industry</span>
+      <span class="ip ip-b">📦 Products & Services</span>
+      <span class="ip ip-c">🎭 Major Players</span>
+      <span class="ip ip-d">💰 Information Market</span>
+      <span class="ip ip-e">💻 Digital Publishing</span>
+    </div>
+    <div class="hero-meta">
+      <span class="hm">📖 <strong>3200+ शब्द</strong></span>
+      <span class="hm">❓ <strong>10 FAQs</strong></span>
+      <span class="hm">📊 <strong>4 Tables</strong></span>
+      <span class="hm">🏢 <strong>Major Players</strong></span>
+      <span class="hm">⭐ <strong>Important Topic</strong></span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<div class="alt-box" style="margin-top:30px">
+  <strong>🔍 SEO Slug</strong>
+  information-industry-products-services-players-digital-publishing-information-market-ugc-net-library-science-unit-1-6-hindi
+</div>
+
+<!-- TOC -->
+<div class="toc-box">
+  <div class="toc-title">📑 विषय-सूची (Table of Contents)</div>
+  <ul class="toc-list">
+    <li><a href="#intro"><span class="tnum">01</span>परिचय और परिभाषा</a></li>
+    <li><a href="#snippet"><span class="tnum">02</span>Featured Snippet</a></li>
+    <li><a href="#sectors"><span class="tnum">03</span>Industry के प्रमुख क्षेत्र</a></li>
+    <li><a href="#value-chain"><span class="tnum">04</span>Information Value Chain</a></li>
+    <li><a href="#players"><span class="tnum">05</span>Major Players (प्रमुख कंपनियाँ)</a></li>
+    <li><a href="#products"><span class="tnum">06</span>Information Products</a></li>
+    <li><a href="#services"><span class="tnum">07</span>Information Services</a></li>
+    <li><a href="#market"><span class="tnum">08</span>Information Market</a></li>
+    <li><a href="#digital"><span class="tnum">09</span>Digital Publishing</a></li>
+    <li><a href="#india"><span class="tnum">10</span>भारत में सूचना उद्योग</a></li>
+    <li><a href="#compare"><span class="tnum">11</span>Products vs Services तुलना</a></li>
+    <li><a href="#exam"><span class="tnum">12</span>Exam Notes</a></li>
+    <li><a href="#faq"><span class="tnum">13</span>FAQs (10 प्रश्न)</a></li>
+    <li><a href="#schema"><span class="tnum">14</span>Schema Markup</a></li>
+  </ul>
+</div>
+
+<!-- ══════ INTRO ══════ -->
+<h2 class="sec" id="intro"><span class="ico ico-blue">🏭</span>परिचय (Introduction)</h2>
+
+<p>UGC NET Library &amp; Information Science (Code 59) के Unit I का छठा Topic है — <strong style="color:#fff">सूचना उद्योग: उत्पाद, सेवाएँ और बाज़ार (Information Industry: Products, Services and Market)</strong>।</p>
+
+<p><strong style="color:#fff">Information Industry</strong> (सूचना उद्योग) उन सभी संस्थाओं, कंपनियों और संगठनों का समूह है जो <strong style="color:#fff">सूचना के संग्रह, प्रसंस्करण, पैकेजिंग, वितरण और बिक्री</strong> में लगे हैं। यह आधुनिक Knowledge Economy का सबसे तेज़ी से बढ़ता हुआ क्षेत्र है।</p>
+
+<p>Post-Industrial Society में सूचना एक <strong style="color:#fff">मूल्यवान commodity</strong> बन गई है जिसे खरीदा, बेचा और लाइसेंस किया जा सकता है। Information Industry में Publishers, Database Producers, Information Brokers, Online Services, Libraries, Media Companies — सभी शामिल हैं।</p>
+
+<div class="callout c-blue">
+  <span class="tag-pill tp-blue">UGC NET में महत्व</span>
+  <p>Information Industry के प्रमुख Players (Elsevier, Springer, Wiley, Thomson Reuters, ProQuest), Information Products vs Services का अंतर, Value Chain, Open Access और Digital Publishing — ये सभी UGC NET में नियमित रूप से 2-3 प्रश्नों के रूप में आते हैं।</p>
+</div>
+
+<!-- SNIPPET -->
+<h2 class="sec" id="snippet"><span class="ico ico-blue">⭐</span>Featured Snippet</h2>
+<div class="snippet">
+  <div class="snip-lbl">🎯 Google Featured Snippet</div>
+  <p><strong style="color:#fff">Information Industry क्या है?</strong> Information Industry उन सभी संगठनों और कंपनियों का समूह है जो सूचना को एक उत्पाद (Product) या सेवा (Service) के रूप में उत्पादित, पैकेज और वितरित करते हैं। प्रमुख Sectors: Publishing, Database Services, Online Information, Media, Libraries। प्रमुख Players: Elsevier, Springer, Wiley, Thomson Reuters (Clarivate), EBSCO, ProQuest, Google, Wikipedia।</p>
+</div>
+
+<!-- ══════ SECTORS ══════ -->
+<h2 class="sec" id="sectors"><span class="ico ico-blue">🏗️</span>Information Industry के प्रमुख क्षेत्र (Sectors)</h2>
+
+<p>Information Industry को निम्नलिखित प्रमुख Sectors में बाँटा जाता है:</p>
+
+<div class="three-col">
+  <div class="mbox" style="border-top:3px solid var(--a-col)">
+    <div class="ml" style="color:#93c5fd">📚 Publishing Sector</div>
+    <ul>
+      <li><strong>Academic Publishers</strong> — Elsevier, Springer, Wiley</li>
+      <li><strong>Trade Publishers</strong> — Penguin, Oxford</li>
+      <li><strong>Government Publishers</strong> — NISCAIR, CSIR</li>
+      <li><strong>Society Publishers</strong> — ACS, IEEE, ACM</li>
+      <li>E-books, Print Books, Journals</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--b-col)">
+    <div class="ml" style="color:#6ee7b7">🗃️ Database Sector</div>
+    <ul>
+      <li><strong>Bibliographic Databases</strong> — Web of Science, Scopus</li>
+      <li><strong>Full-text Databases</strong> — ScienceDirect, JSTOR</li>
+      <li><strong>Factual Databases</strong> — Statistical, Geographic</li>
+      <li><strong>Image Databases</strong> — Getty, Shutterstock</li>
+      <li>ProQuest, EBSCO, Ovid</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--c-col)">
+    <div class="ml" style="color:#c4b5fd">🌐 Online Services Sector</div>
+    <ul>
+      <li><strong>Search Engines</strong> — Google, Bing</li>
+      <li><strong>Social Networks</strong> — LinkedIn, ResearchGate</li>
+      <li><strong>Cloud Services</strong> — AWS, Google Cloud</li>
+      <li><strong>Open Access</strong> — arXiv, PubMed Central</li>
+      <li>Wikipedia, OpenDOAR</li>
+    </ul>
+  </div>
+</div>
+
+<div class="three-col">
+  <div class="mbox" style="border-top:3px solid var(--d-col)">
+    <div class="ml" style="color:#fcd34d">📺 Media Sector</div>
+    <ul>
+      <li><strong>News Agencies</strong> — Reuters, AP, PTI</li>
+      <li><strong>Broadcasting</strong> — BBC, Doordarshan</li>
+      <li><strong>Digital Media</strong> — Netflix, YouTube</li>
+      <li>Newspapers, Magazines</li>
+      <li>Podcasts, Streaming</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--cyan)">
+    <div class="ml" style="color:#67e8f9">🔬 Scientific & Technical Info</div>
+    <ul>
+      <li><strong>STI Publishers</strong> — Nature, Science</li>
+      <li><strong>Patent Databases</strong> — USPTO, EPO, IPO</li>
+      <li><strong>Standards Bodies</strong> — ISO, BIS, ANSI</li>
+      <li><strong>Report Publishers</strong> — RAND, NIST</li>
+      <li>Technical Reports, Theses</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--pink)">
+    <div class="ml" style="color:#f9a8d4">🏛️ Library & Info Services</div>
+    <ul>
+      <li><strong>Public Libraries</strong> — Community IS</li>
+      <li><strong>Academic Libraries</strong> — University IS</li>
+      <li><strong>Special Libraries</strong> — Corporate, Medical</li>
+      <li><strong>Digital Libraries</strong> — NDL, Europeana</li>
+      <li>ILL, Document Delivery</li>
+    </ul>
+  </div>
+</div>
+
+<div class="net-tip"><strong>UGC NET Tip</strong> Information Industry के 6 Sectors याद करें: <strong>P-D-O-M-S-L</strong> → Publishing, Database, Online Services, Media, Scientific/Technical, Library &amp; Info Services। यह Industry आज GDP का एक बड़ा हिस्सा है — इसे <strong>Quaternary Sector</strong> (Post-Industrial) भी कहते हैं।</div>
+
+<!-- ══════ VALUE CHAIN ══════ -->
+<h2 class="sec" id="value-chain"><span class="ico ico-green">🔗</span>Information Value Chain — सूचना मूल्य श्रृंखला</h2>
+
+<p>Information Value Chain वह प्रक्रिया है जिसमें Raw Data / Information कई चरणों से गुज़रकर अंतिम उपयोगकर्ता तक <strong style="color:#fff">मूल्य-वर्धित (Value-Added) Product या Service</strong> के रूप में पहुँचती है:</p>
+
+<div class="vc-flow">
+  <div class="vc-box" style="border-top:3px solid var(--a-col)">
+    <div class="vb-ico">🔬</div>
+    <div class="vb-en">Creator / Researcher</div>
+    <div class="vb-hi">शोधकर्ता</div>
+  </div>
+  <div class="vc-arrow">→</div>
+  <div class="vc-box" style="border-top:3px solid var(--b-col)">
+    <div class="vb-ico">✍️</div>
+    <div class="vb-en">Author / Writer</div>
+    <div class="vb-hi">लेखक</div>
+  </div>
+  <div class="vc-arrow">→</div>
+  <div class="vc-box" style="border-top:3px solid var(--c-col)">
+    <div class="vb-ico">🏢</div>
+    <div class="vb-en">Publisher</div>
+    <div class="vb-hi">प्रकाशक</div>
+  </div>
+  <div class="vc-arrow">→</div>
+  <div class="vc-box" style="border-top:3px solid var(--d-col)">
+    <div class="vb-ico">🗃️</div>
+    <div class="vb-en">Aggregator / DB</div>
+    <div class="vb-hi">एकत्रीकरण</div>
+  </div>
+  <div class="vc-arrow">→</div>
+  <div class="vc-box" style="border-top:3px solid var(--cyan)">
+    <div class="vb-ico">📚</div>
+    <div class="vb-en">Library / Intermediary</div>
+    <div class="vb-hi">पुस्तकालय</div>
+  </div>
+  <div class="vc-arrow">→</div>
+  <div class="vc-box" style="border-top:3px solid var(--pink)">
+    <div class="vb-ico">👤</div>
+    <div class="vb-en">End User</div>
+    <div class="vb-hi">अंतिम उपयोगकर्ता</div>
+  </div>
+</div>
+
+<div class="callout c-green">
+  <span class="tag-pill tp-green">Value-Added Services</span>
+  <p>प्रत्येक चरण में <strong>मूल्य जुड़ता है (Value is Added)</strong>: Peer Review (Quality Control), Editing (Clarity), Indexing (Discoverability), Aggregation (Access), Reference Service (Guidance)। Robert Taylor के अनुसार — Library = सूचना का Value-Added Intermediary।</p>
+</div>
+
+<div class="net-tip"><strong>UGC NET Tip</strong> Information Value Chain = Creator → Author → Publisher → Aggregator/DB → Library → End User। प्रत्येक चरण में Value Addition होती है। <strong>Disintermediation</strong> = Internet के कारण Library/Intermediary का Skip होना — यह आधुनिक चुनौती है। <strong>Re-intermediation</strong> = Digital Librarians की नई भूमिका।</div>
+
+<!-- ══════ PLAYERS ══════ -->
+<h2 class="sec" id="players"><span class="ico ico-purple">🏢</span>प्रमुख Players — Major Companies</h2>
+
+<div class="player-grid">
+  <div class="pl-card pc1">
+    <div class="pl-ico">📘</div>
+    <div class="pl-title">Elsevier (RELX Group)</div>
+    <div class="pl-sub">Netherlands | Est. 1880</div>
+    <ul class="pl-ul">
+      <li>2,500+ Academic Journals</li>
+      <li><strong>ScienceDirect</strong> — Full-text DB</li>
+      <li><strong>Scopus</strong> — Citation DB</li>
+      <li>Mendeley Reference Manager</li>
+      <li>विश्व का सबसे बड़ा Academic Publisher</li>
+    </ul>
+  </div>
+  <div class="pl-card pc2">
+    <div class="pl-ico">📗</div>
+    <div class="pl-title">Springer Nature</div>
+    <div class="pl-sub">Germany/UK | Springer + Nature</div>
+    <ul class="pl-ul">
+      <li>Nature, Scientific American</li>
+      <li><strong>SpringerLink</strong> — E-book &amp; Journals</li>
+      <li>BMC (Open Access Journals)</li>
+      <li>3,000+ Journals</li>
+      <li>Science, Medicine, Technology</li>
+    </ul>
+  </div>
+  <div class="pl-card pc3">
+    <div class="pl-ico">📙</div>
+    <div class="pl-title">Wiley (John Wiley & Sons)</div>
+    <div class="pl-sub">USA | Est. 1807</div>
+    <ul class="pl-ul">
+      <li>1,600+ Journals</li>
+      <li><strong>Wiley Online Library</strong></li>
+      <li>Wiley-Blackwell Journals</li>
+      <li>Professional &amp; Consumer Books</li>
+      <li>STEM + Social Sciences</li>
+    </ul>
+  </div>
+  <div class="pl-card pc4">
+    <div class="pl-ico">🔍</div>
+    <div class="pl-title">Clarivate (Thomson Reuters)</div>
+    <div class="pl-sub">UK/USA | ISI → Thomson → Clarivate</div>
+    <ul class="pl-ul">
+      <li><strong>Web of Science (WoS)</strong> — Citation DB</li>
+      <li><strong>Journal Citation Reports (JCR)</strong></li>
+      <li><strong>Impact Factor</strong> — प्रदान करता है</li>
+      <li>EndNote Reference Manager</li>
+      <li>Derwent Innovation (Patents)</li>
+    </ul>
+  </div>
+  <div class="pl-card pc5">
+    <div class="pl-ico">📚</div>
+    <div class="pl-title">EBSCO &amp; ProQuest</div>
+    <div class="pl-sub">USA | Database Aggregators</div>
+    <ul class="pl-ul">
+      <li><strong>EBSCOhost</strong> — Multi-DB Platform</li>
+      <li>Academic Search Complete</li>
+      <li><strong>ProQuest</strong> — Dissertations, Newspapers</li>
+      <li>PQ Central — E-journals</li>
+      <li>Summon Discovery Service</li>
+    </ul>
+  </div>
+  <div class="pl-card pc6">
+    <div class="pl-ico">🌐</div>
+    <div class="pl-title">Open Access Players</div>
+    <div class="pl-sub">Free-to-Read Information</div>
+    <ul class="pl-ul">
+      <li><strong>arXiv.org</strong> — Physics, Math, CS Preprints</li>
+      <li><strong>PubMed Central (PMC)</strong> — Biomedical</li>
+      <li><strong>DOAJ</strong> — Directory of OA Journals</li>
+      <li><strong>Unpaywall, Sci-Hub</strong></li>
+      <li>Zenodo, Figshare (Data)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="alt-box"><strong>🖼️ Image ALT Text #1</strong> Major Information Industry Players — Elsevier Springer Wiley Clarivate EBSCO ProQuest logos and products Hindi UGC NET LIS</div>
+
+<!-- ══════ PRODUCTS ══════ -->
+<h2 class="sec" id="products"><span class="ico ico-amber">📦</span>Information Products — सूचना उत्पाद</h2>
+
+<p><strong style="color:#fff">Information Product</strong> वह Tangible (मूर्त) या Intangible वस्तु है जिसमें सूचना को एक निश्चित प्रारूप में Package करके Sell या Distribute किया जाता है।</p>
+
+<div class="prod-grid">
+  <div class="prod-card">
+    <div class="pc-head">
+      <div class="pc-ico">📰</div>
+      <div class="pc-title">Bibliographic Products</div>
+      <span class="pc-badge" style="background:rgba(59,130,246,.2);color:#93c5fd">Secondary</span>
+    </div>
+    <ul class="prod-ul">
+      <li><strong>Abstracting Journals</strong> — Chemical Abstracts, INSPEC</li>
+      <li><strong>Indexing Journals</strong> — Index Medicus, LISA</li>
+      <li><strong>Bibliographies</strong> — National/Subject</li>
+      <li><strong>Current Awareness Bulletins</strong></li>
+      <li><strong>Citations Indexes</strong> — SCI, SSCI, AHCI</li>
+    </ul>
+  </div>
+  <div class="prod-card">
+    <div class="pc-head">
+      <div class="pc-ico">🗃️</div>
+      <div class="pc-title">Database Products</div>
+      <span class="pc-badge" style="background:rgba(16,185,129,.2);color:#6ee7b7">Online / CD</span>
+    </div>
+    <ul class="prod-ul">
+      <li><strong>Bibliographic DB</strong> — Scopus, WoS</li>
+      <li><strong>Full-text DB</strong> — ScienceDirect, JSTOR</li>
+      <li><strong>Factual DB</strong> — Statistical, GIS</li>
+      <li><strong>Image/Multimedia DB</strong></li>
+      <li><strong>Patent DB</strong> — Derwent, USPTO</li>
+    </ul>
+  </div>
+  <div class="prod-card">
+    <div class="pc-head">
+      <div class="pc-ico">📖</div>
+      <div class="pc-title">Reference Products</div>
+      <span class="pc-badge" style="background:rgba(139,92,246,.2);color:#c4b5fd">Tertiary</span>
+    </div>
+    <ul class="prod-ul">
+      <li><strong>Encyclopedias</strong> — Britannica, Wikipedia</li>
+      <li><strong>Dictionaries</strong> — OED, Merriam-Webster</li>
+      <li><strong>Yearbooks</strong> — Statesman's, India Year Book</li>
+      <li><strong>Directories</strong> — Ulrich's, Bowker</li>
+      <li><strong>Almanacs, Atlases, Handbooks</strong></li>
+    </ul>
+  </div>
+  <div class="prod-card">
+    <div class="pc-head">
+      <div class="pc-ico">💻</div>
+      <div class="pc-title">Digital / Electronic Products</div>
+      <span class="pc-badge" style="background:rgba(245,158,11,.2);color:#fcd34d">E-Products</span>
+    </div>
+    <ul class="prod-ul">
+      <li><strong>E-journals</strong> — Online Academic Journals</li>
+      <li><strong>E-books</strong> — EBSCO eBook, Kindle</li>
+      <li><strong>CD-ROM / DVD Databases</strong></li>
+      <li><strong>Institutional Repositories</strong></li>
+      <li><strong>Data Files, Datasets</strong></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════ SERVICES ══════ -->
+<h2 class="sec" id="services"><span class="ico ico-cyan">🛎️</span>Information Services — सूचना सेवाएँ</h2>
+
+<p><strong style="color:#fff">Information Service</strong> वह Intangible गतिविधि है जिसमें किसी उपयोगकर्ता को उनकी सूचना-आवश्यकता (Information Need) के अनुसार सहायता प्रदान की जाती है।</p>
+
+<div class="info-box" style="border-top:4px solid var(--cyan)">
+  <div class="ib-head">
+    <div class="ib-circle ic-cyan">🛎️</div>
+    <div class="ib-meta">
+      <h3>Information Services के प्रमुख प्रकार</h3>
+      <div class="ibm-sub">User-centric सूचना सेवाएँ — Library से Digital Platform तक</div>
+    </div>
+    <span class="ib-badge bb-cyan">Value-Added</span>
+  </div>
+  <div class="ib-body">
+    <div class="three-col">
+      <div class="mbox">
+        <div class="ml">🔍 Reference Services</div>
+        <ul>
+          <li><strong>Ready Reference</strong> — तत्काल उत्तर</li>
+          <li><strong>Research Service</strong> — गहन खोज</li>
+          <li><strong>Referral Service</strong> — अन्य स्रोत</li>
+          <li><strong>Bibliographic Service</strong></li>
+          <li><strong>Literature Search</strong></li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">📡 Alerting Services</div>
+        <ul>
+          <li><strong>CAS</strong> — Current Awareness Service</li>
+          <li><strong>SDI</strong> — Selective Dissemination of Info</li>
+          <li><strong>TOC Service</strong> — Table of Contents</li>
+          <li><strong>New Arrivals Lists</strong></li>
+          <li><strong>RSS Feeds, Email Alerts</strong></li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">📋 Document Services</div>
+        <ul>
+          <li><strong>ILL</strong> — Inter Library Loan</li>
+          <li><strong>Document Delivery</strong></li>
+          <li><strong>Reprography</strong> — Photocopy</li>
+          <li><strong>Translation Service</strong></li>
+          <li><strong>Abstracting &amp; Indexing</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="three-col" style="margin-top:12px">
+      <div class="mbox">
+        <div class="ml">🌐 Online/Digital Services</div>
+        <ul>
+          <li><strong>Online Search</strong> — Dialog, STN</li>
+          <li><strong>Database Search</strong> — Scopus, WoS</li>
+          <li><strong>Web Discovery</strong> — Google Scholar</li>
+          <li><strong>Federated Search</strong></li>
+          <li><strong>Chatbot Reference</strong></li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">🏢 Corporate / Paid Services</div>
+        <ul>
+          <li><strong>Information Brokerage</strong></li>
+          <li><strong>Competitive Intelligence</strong></li>
+          <li><strong>Market Research Services</strong></li>
+          <li><strong>Patent Search Services</strong></li>
+          <li><strong>Legal Information Services</strong></li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">🎓 Library 2.0 Services</div>
+        <ul>
+          <li><strong>Blogs, Wikis</strong> — Collaborative</li>
+          <li><strong>Social Media</strong> — Facebook, Twitter</li>
+          <li><strong>Mobile Library Apps</strong></li>
+          <li><strong>Chat Reference (24×7)</strong></li>
+          <li><strong>Personalized My Library</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> <strong>CAS</strong> (H.P. Luhn, IBM, 1958) = General Users को नई सूचना। <strong>SDI</strong> (H.P. Luhn, 1958) = Individual User Profile के अनुसार Personalized सूचना। CAS = Current Awareness Service। SDI = Selective Dissemination of Information। दोनों Alerting Services हैं।</div>
+  </div>
+</div>
+
+<!-- ══════ MARKET ══════ -->
+<h2 class="sec" id="market"><span class="ico ico-amber">💰</span>Information Market — सूचना बाज़ार</h2>
+
+<div class="info-box" style="border-top:4px solid var(--d-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-amber">💰</div>
+    <div class="ib-meta">
+      <h3>Information Market की अवधारणा</h3>
+      <div class="ibm-sub">Information को Commodity मानकर उसका क्रय-विक्रय</div>
+    </div>
+    <span class="ib-badge bb-amber">Knowledge Economy</span>
+  </div>
+  <div class="ib-body">
+    <p>Information Market वह आर्थिक व्यवस्था है जिसमें <strong style="color:#fff">सूचना को एक commodity</strong> के रूप में Produce, Package, Price, और Distribute किया जाता है। Harlan Cleveland (1982) ने कहा — <em>"Information is expandable, compressible, substitutable, transportable, diffusive, and shareable."</em></p>
+
+    <h3 class="sub">Information Market के प्रमुख Business Models</h3>
+    <div class="four-col">
+      <div class="mbox" style="border-top:3px solid var(--a-col);text-align:center">
+        <div style="font-size:22px;margin-bottom:6px">💳</div>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#93c5fd;margin-bottom:5px">Subscription</div>
+        <div style="font-size:12.5px;color:#b8c8e0;line-height:1.6">वार्षिक या मासिक शुल्क पर Access। Elsevier, Springer Deals।</div>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--b-col);text-align:center">
+        <div style="font-size:22px;margin-bottom:6px">🔓</div>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#6ee7b7;margin-bottom:5px">Open Access</div>
+        <div style="font-size:12.5px;color:#b8c8e0;line-height:1.6">Free to Read। Author Pays (APC) या Diamond OA।</div>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--c-col);text-align:center">
+        <div style="font-size:22px;margin-bottom:6px">📄</div>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#c4b5fd;margin-bottom:5px">Pay-per-View</div>
+        <div style="font-size:12.5px;color:#b8c8e0;line-height:1.6">प्रत्येक Article के लिए अलग शुल्क। Single Article Purchase।</div>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--d-col);text-align:center">
+        <div style="font-size:22px;margin-bottom:6px">🎁</div>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#fcd34d;margin-bottom:5px">Freemium</div>
+        <div style="font-size:12.5px;color:#b8c8e0;line-height:1.6">Basic Free + Premium Paid। Google Scholar, ResearchGate।</div>
+      </div>
+    </div>
+
+    <h3 class="sub">Pricing Strategies in Information Industry</h3>
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">💲 Subscription Pricing Issues</div>
+        <ul>
+          <li><strong>Big Deal</strong> = Publisher Bundle — सैकड़ों journals एकसाथ</li>
+          <li><strong>Journal Crisis</strong> = Serials Crisis — Subscription rates ↑↑</li>
+          <li>1980s से Subscription Costs 300% बढ़े</li>
+          <li>Libraries = Worst Hit</li>
+          <li>APC (Article Processing Charge) = Gold OA</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">💡 Market Characteristics</div>
+        <ul>
+          <li><strong>Oligopoly</strong> = 5 Publishers, 50% Market</li>
+          <li><strong>Inelastic Demand</strong> = Libraries must buy</li>
+          <li><strong>Information Asymmetry</strong> = Publisher advantage</li>
+          <li>Network Effects — More users = More value</li>
+          <li>High Switching Costs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> <strong>Serials Crisis / Journal Crisis</strong> = 1980s से Academic Journal Subscriptions की कीमतें असाधारण रूप से बढ़ना — Libraries का Budget दबाव। <strong>Big Deal</strong> = Publisher Bundle। <strong>APC</strong> (Article Processing Charge) = Gold OA में लेखक द्वारा शुल्क। <strong>SPARC</strong> (Scholarly Publishing and Academic Resources Coalition) = Libraries का OA Advocacy Group।</div>
+  </div>
+</div>
+
+<!-- ══════ DIGITAL PUBLISHING ══════ -->
+<h2 class="sec" id="digital"><span class="ico ico-blue">💻</span>Digital Publishing — डिजिटल प्रकाशन</h2>
+
+<p>Digital Publishing वह प्रक्रिया है जिसमें Content को <strong style="color:#fff">Digital Format में Create, Edit, Design और Distribute</strong> किया जाता है — Print की जगह या उसके साथ।</p>
+
+<div class="two-col">
+  <div class="mbox">
+    <div class="ml">📌 Digital Publishing के प्रकार</div>
+    <ul>
+      <li><strong>E-journals</strong> — Online Academic Journals</li>
+      <li><strong>E-books</strong> — ePub, Mobi, PDF</li>
+      <li><strong>Blogs &amp; Wikis</strong> — Collaborative Publishing</li>
+      <li><strong>Preprint Servers</strong> — arXiv, bioRxiv, SSRN</li>
+      <li><strong>Institutional Repositories</strong> — DSpace, EPrints</li>
+      <li><strong>Data Repositories</strong> — Zenodo, Figshare, ICPSR</li>
+      <li><strong>Multimedia Publishing</strong> — Video, Podcast</li>
+    </ul>
+  </div>
+  <div class="mbox">
+    <div class="ml">✅ Digital Publishing के लाभ</div>
+    <ul>
+      <li>Global Reach — तात्कालिक वितरण</li>
+      <li>No Printing Cost — किफ़ायती</li>
+      <li>Hyperlinks, Multimedia Integration</li>
+      <li>Searchable, Machine-readable</li>
+      <li>Easy Updating &amp; Versioning</li>
+      <li>Open Access संभव</li>
+      <li>Persistent Identifiers (DOI, ORCID)</li>
+    </ul>
+  </div>
+</div>
+
+<h3 class="sub">Digital Publishing के प्रमुख Standards और Identifiers</h3>
+<div class="three-col">
+  <div class="mbox" style="border-top:3px solid var(--a-col)">
+    <div class="ml" style="color:#93c5fd">🆔 Identifiers</div>
+    <ul>
+      <li><strong>DOI</strong> — Digital Object Identifier (Crossref)</li>
+      <li><strong>ISBN</strong> — Books (10/13 digit)</li>
+      <li><strong>ISSN</strong> — Serials / Journals</li>
+      <li><strong>ORCID</strong> — Researcher ID</li>
+      <li><strong>Handle System</strong> — URN-based</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--b-col)">
+    <div class="ml" style="color:#6ee7b7">📋 Formats &amp; Standards</div>
+    <ul>
+      <li><strong>ePub</strong> — E-book standard (IDPF)</li>
+      <li><strong>XML / JATS</strong> — Journal Article Tag Suite</li>
+      <li><strong>HTML5</strong> — Web Publishing</li>
+      <li><strong>PDF/A</strong> — Archival PDF</li>
+      <li><strong>DAISY</strong> — Accessible E-books</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--c-col)">
+    <div class="ml" style="color:#c4b5fd">🔗 Metadata Standards</div>
+    <ul>
+      <li><strong>Dublin Core</strong> — 15 Elements</li>
+      <li><strong>MARC 21</strong> — Library Records</li>
+      <li><strong>CrossRef</strong> — DOI Registration</li>
+      <li><strong>OAI-PMH</strong> — Metadata Harvesting</li>
+      <li><strong>ONIX</strong> — Book Trade Metadata</li>
+    </ul>
+  </div>
+</div>
+
+<div class="alt-box"><strong>🖼️ Image ALT Text #2</strong> Digital Publishing value chain — Preprint Repository Journal Open Access workflow Hindi UGC NET LIS</div>
+
+<!-- ══════ INDIA ══════ -->
+<h2 class="sec" id="india"><span class="ico ico-green">🇮🇳</span>भारत में सूचना उद्योग</h2>
+
+<div class="three-col">
+  <div class="mbox" style="border-top:3px solid var(--a-col)">
+    <div class="ml" style="color:#93c5fd">📚 STI Publishers (India)</div>
+    <ul>
+      <li><strong>NISCAIR</strong> — 17+ STI Journals, CSIR</li>
+      <li><strong>DESIDOC</strong> — Defence STI, DRDO</li>
+      <li><strong>Indian Academy of Sciences</strong></li>
+      <li><strong>NIC</strong> — Government IT/Data</li>
+      <li><strong>INSDOC</strong> → NISCAIR (Merged)</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--b-col)">
+    <div class="ml" style="color:#6ee7b7">🌐 Digital Initiatives</div>
+    <ul>
+      <li><strong>INFLIBNET</strong> — e-Shodh Sindhu</li>
+      <li><strong>NDL India</strong> — 7 crore+ Resources</li>
+      <li><strong>Shodhganga</strong> — 7 lakh+ Theses</li>
+      <li><strong>ShodhSindhu</strong> — e-journal Consortium</li>
+      <li><strong>VIDWAN</strong> — Researcher DB</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--c-col)">
+    <div class="ml" style="color:#c4b5fd">💰 Indian IT/Info Industry</div>
+    <ul>
+      <li><strong>TCS, Infosys, Wipro</strong> — IT Services</li>
+      <li><strong>NASSCOM</strong> — IT Industry Body</li>
+      <li>India = $250B+ IT Industry</li>
+      <li><strong>Digital India 2015</strong> — Policy Push</li>
+      <li>BPO / KPO — Knowledge Services</li>
+    </ul>
+  </div>
+</div>
+
+<div class="callout c-blue">
+  <span class="tag-pill tp-blue">e-Shodh Sindhu (INFLIBNET)</span>
+  <p><strong>e-Shodh Sindhu</strong> = 2016 में INDEST-AICTE Consortium और UGC-INFONET Digital Library Consortium के विलय से बना। यह भारत का सबसे बड़ा E-journal Consortium है जो 400+ Universities को 15,000+ E-journals तक Access देता है। Funding: MHRD (Education Ministry)।</p>
+</div>
+
+<!-- ══════ COMPARE TABLE ══════ -->
+<h2 class="sec" id="compare"><span class="ico ico-amber">📊</span>Information Products vs Services — तुलना तालिका</h2>
+
+<div class="scroll-note">← Scroll करें →</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>पहलू</th>
+        <th style="color:#93c5fd">Information Products (उत्पाद)</th>
+        <th style="color:#6ee7b7">Information Services (सेवाएँ)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="r1"><td><strong>स्वभाव (Nature)</strong></td><td>Tangible / Intangible — Packaged</td><td>Intangible — Performed / Delivered</td></tr>
+      <tr class="r2"><td><strong>उदाहरण</strong></td><td>E-journal, Database, CD-ROM, Index</td><td>Reference Service, SDI, CAS, ILL</td></tr>
+      <tr class="r3"><td><strong>भंडारण (Storage)</strong></td><td>Store किया जा सकता है</td><td>Store नहीं होती — Perishable</td></tr>
+      <tr class="r4"><td><strong>Standardization</strong></td><td>Standardized / Packaged होते हैं</td><td>User के अनुसार Customized</td></tr>
+      <tr class="r5"><td><strong>Price</strong></td><td>Fixed Price / Subscription</td><td>Usage-based / Free at Point of Use</td></tr>
+      <tr class="r1"><td><strong>उत्पादक</strong></td><td>Publishers, DB Producers</td><td>Libraries, Information Professionals</td></tr>
+      <tr class="r2"><td><strong>उदाहरण संस्था</strong></td><td>Elsevier, Scopus, Web of Science</td><td>INFLIBNET, DELNET, National Library</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="sub">Major Information Industry Players — Master Table</h3>
+<div class="scroll-note">← Scroll करें →</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Company / Service</th>
+        <th>देश</th>
+        <th>प्रमुख Products/Services</th>
+        <th>UGC NET Focus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="r1"><td><strong>Elsevier (RELX)</strong></td><td>Netherlands</td><td>ScienceDirect, Scopus, Mendeley</td><td>Scopus = Citation DB</td></tr>
+      <tr class="r2"><td><strong>Clarivate (ex-Thomson)</strong></td><td>UK/USA</td><td>Web of Science, JCR, EndNote</td><td>Impact Factor, WoS</td></tr>
+      <tr class="r3"><td><strong>Springer Nature</strong></td><td>Germany/UK</td><td>SpringerLink, Nature, BMC</td><td>Open Access Journals</td></tr>
+      <tr class="r4"><td><strong>EBSCO</strong></td><td>USA</td><td>EBSCOhost, Academic Search Complete</td><td>Multi-DB Platform</td></tr>
+      <tr class="r5"><td><strong>ProQuest</strong></td><td>USA</td><td>ProQuest Dissertations, Summon</td><td>Theses DB, Newspapers</td></tr>
+      <tr class="r1"><td><strong>INFLIBNET</strong></td><td>India (Ahmedabad)</td><td>e-Shodh Sindhu, Shodhganga, VIDWAN</td><td>India's e-journal Consortium</td></tr>
+      <tr class="r2"><td><strong>NISCAIR</strong></td><td>India (Delhi)</td><td>17 CSIR Journals, NJC, Science Reporter</td><td>India STI Publisher</td></tr>
+      <tr class="r3"><td><strong>arXiv.org</strong></td><td>USA (Cornell)</td><td>Physics, Math, CS, EE Preprints</td><td>Open Access Preprint Server</td></tr>
+      <tr class="r4"><td><strong>JSTOR</strong></td><td>USA</td><td>Digitized Academic Journals Archive</td><td>Full-text Archival DB</td></tr>
+      <tr class="r5"><td><strong>PubMed / PMC</strong></td><td>USA (NLM)</td><td>Biomedical Literature, Free Access</td><td>Medical Information Service</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="alt-box"><strong>🖼️ Image ALT Text #3</strong> Information Industry major players comparison — Elsevier Clarivate INFLIBNET products services table Hindi</div>
+
+<!-- EXAM BOX -->
+<div class="exam-box" id="exam">
+  <div class="exam-head">📋 परीक्षा के लिए अतिमहत्वपूर्ण बिंदु (UGC NET Exam Notes)</div>
+  <ul class="exam-ul">
+    <li><strong>Information Industry</strong> = Publishing + Database + Online Services + Media + STI + Library Services। यह Post-Industrial Society का <strong>Quaternary Sector</strong> है। Fritz Machlup (1962) ने Knowledge Industry को पहली बार Quantify किया।</li>
+    <li><strong>Elsevier</strong> (RELX Group) — ScienceDirect (Full-text) + <strong>Scopus</strong> (Citation DB)। <strong>Clarivate</strong> (Thomson Reuters) — <strong>Web of Science (WoS)</strong> + <strong>Impact Factor</strong> + JCR + EndNote।</li>
+    <li><strong>Information Value Chain</strong> = Creator → Author → Publisher → Aggregator/DB → Library → End User। Disintermediation = Library Bypass। Re-intermediation = Digital Librarian की नई भूमिका।</li>
+    <li><strong>Serials Crisis</strong> = 1980s से Journal Subscriptions की कीमतें 300%+ बढ़ना। <strong>Big Deal</strong> = Publisher Bundle। <strong>SPARC</strong> = Libraries का OA Advocacy Group।</li>
+    <li><strong>DOI</strong> (Digital Object Identifier) = Crossref द्वारा। <strong>ORCID</strong> = Researcher Identifier। <strong>ISSN</strong> = Serials। <strong>ISBN</strong> = Books। <strong>ePub</strong> = E-book Standard।</li>
+    <li><strong>Open Access Models</strong>: Green OA = Self-archiving in Repository। Gold OA = APC (Author Pays)। Diamond OA = No fee for Author or Reader। Bronze OA = Temporarily Free।</li>
+    <li><strong>Budapest Open Access Initiative (BOAI, 2002)</strong> = पहली Official OA Definition। Berlin Declaration (2003)। Bethesda Statement (2003)।</li>
+    <li><strong>e-Shodh Sindhu</strong> = INFLIBNET Consortium। 2016 में INDEST-AICTE + UGC-INFONET का विलय। 15,000+ E-journals, 400+ Universities। <strong>Shodhganga</strong> = 7 lakh+ Theses (DSpace)।</li>
+    <li><strong>NISCAIR</strong> (New Delhi) = National Institute of Science Communication and Information Resources। 17 CSIR Journals, Science Reporter, NJC। DESIDOC = Defence STI (DRDO)।</li>
+    <li><strong>arXiv.org</strong> = Cornell University। Physics, Math, CS Preprints। <strong>JSTOR</strong> = Digitized Journals Archive। <strong>PubMed Central</strong> = NLM, Free Biomedical। <strong>DOAJ</strong> = Directory of Open Access Journals।</li>
+  </ul>
+</div>
+
+<!-- CONCLUSION -->
+<div class="conclusion">
+  <h2 class="sec" style="margin-top:0;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:12px;color:#fff"><span class="ico ico-blue">✓</span>निष्कर्ष (Conclusion)</h2>
+  <p>Information Industry आज की Knowledge Economy का सबसे महत्वपूर्ण Sector बन गया है। Elsevier, Springer, Clarivate जैसे Multinational Publishers ने Academic Information पर एक प्रकार का Oligopoly स्थापित कर लिया है, जिसका सामना करने के लिए Open Access Movement, SPARC और Budapest Declaration जैसे प्रयास हो रहे हैं।</p>
+  <p>Digital Publishing ने Information Products और Services की प्रकृति को मौलिक रूप से बदल दिया है। E-journals, Institutional Repositories, Preprint Servers और Open Access Platforms ने सूचना को अधिक Democratized बनाया है। भारत में INFLIBNET का e-Shodh Sindhu, NDL India और NISCAIR जैसी Initiatives इस क्षेत्र में उल्लेखनीय योगदान कर रही हैं।</p>
+  <p>Library &amp; Information Professionals की भूमिका इस बदलते परिदृश्य में और भी महत्वपूर्ण हो गई है — वे अब केवल Resources का प्रबंधन नहीं करते बल्कि Information Value Chain में <strong style="color:#fff">Knowledge Navigator, Metadata Specialist और Open Access Advocate</strong> के रूप में कार्य करते हैं।</p>
+</div>
+
+<!-- FAQs -->
+<h2 class="sec" id="faq"><span class="ico ico-blue">❓</span>FAQs — 10 महत्वपूर्ण प्रश्न</h2>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q1. Information Industry क्या है? इसके प्रमुख Sectors कौन से हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a">Information Industry उन सभी संस्थाओं और कंपनियों का समूह है जो सूचना के संग्रह, प्रसंस्करण, पैकेजिंग और वितरण में लगी हैं। 6 प्रमुख Sectors: <strong>(1) Publishing</strong> — Elsevier, Springer, Wiley, <strong>(2) Database Services</strong> — Scopus, Web of Science, <strong>(3) Online Services</strong> — Google, arXiv, <strong>(4) Media</strong> — Reuters, BBC, <strong>(5) Scientific/Technical</strong> — NISCAIR, DESIDOC, <strong>(6) Library &amp; Information Services</strong> — INFLIBNET, DELNET। यह Post-Industrial Society का <strong>Quaternary Sector</strong> है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q2. Elsevier, Clarivate और Springer के प्रमुख Products क्या हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Elsevier (RELX Group)</strong>: ScienceDirect (Full-text DB), <strong>Scopus</strong> (Largest Citation DB), Mendeley (Reference Manager)। <strong>Clarivate (Thomson Reuters से)</strong>: <strong>Web of Science (WoS)</strong> (Citation DB), Journal Citation Reports (JCR), <strong>Impact Factor</strong> (Clarivate ही Impact Factor देता है), EndNote (Reference Manager), Derwent Innovation (Patent DB)। <strong>Springer Nature</strong>: SpringerLink (E-journals + E-books), Nature, Scientific American, BMC (Open Access Journals)। Scopus vs WoS = दोनों Citation Databases हैं लेकिन Scopus अधिक Comprehensive है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q3. Serials Crisis / Journal Crisis क्या है? इसका Libraries पर क्या प्रभाव पड़ा?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Serials Crisis</strong> = 1980s से Academic Journal Subscriptions की कीमतें inflation से कहीं अधिक तेज़ी से बढ़ना। 1986-2004 के बीच Journal Prices 300%+ बढ़े जबकि Library Budgets उसी गति से नहीं बढ़े। कारण: Publisher Oligopoly (5 Companies = 50% Market), Inelastic Demand (Libraries को खरीदना ही पड़ता है), <strong>Big Deal Bundling</strong> (unwanted journals भी खरीदनी पड़ती हैं)। परिणाम: Libraries ने Journals Cancel करने शुरू किए। Solution: <strong>Open Access Movement</strong>, SPARC (Scholarly Publishing &amp; Academic Resources Coalition), Institutional Repositories।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q4. Information Value Chain क्या है? Disintermediation और Re-intermediation क्या है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Information Value Chain</strong> = Creator → Author → Publisher → Aggregator/Database → Library/Intermediary → End User। प्रत्येक चरण में Value Added होती है (Peer Review, Editing, Indexing, Access, Guidance)। <strong>Disintermediation</strong> = Internet के कारण User directly Publisher या arXiv से पहुँच जाता है — Library और Intermediary Skip हो जाते हैं। यह Libraries के लिए खतरा था। <strong>Re-intermediation</strong> = Libraries ने अपनी नई भूमिका ढूँढी — Digital Curation, Metadata, OA Advocacy, Research Data Management — इस प्रकार फिर से Value Chain में महत्वपूर्ण हो गईं।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q5. Open Access के Business Models क्या हैं? Green, Gold और Diamond OA में अंतर?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Green OA</strong> = Subscription Journal में Publish + Institutional/Subject Repository में Self-archive। arXiv, Shodhganga। <strong>Gold OA</strong> = Publisher directly Free Access देता है — Author APC (Article Processing Charge) देता है। PLOS ONE, BMC। <strong>Diamond OA</strong> = न Author pays, न Reader pays — Funding institution या Society करती है। Society Journals, University Presses। <strong>Bronze OA</strong> = Publisher temporarily free रखता है — legally free नहीं। <strong>Hybrid OA</strong> = Subscription Journal में individual articles को Gold OA बनाया जाए APC देकर। Budapest OAI (2002) ने Green और Gold दोनों को Define किया।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q6. DOI, ISSN, ISBN, ORCID में क्या अंतर है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>DOI (Digital Object Identifier)</strong> = किसी Digital Content (Article, Dataset) को Permanently identify करने का Unique Identifier। Crossref द्वारा Registered। <strong>ISSN (International Standard Serial Number)</strong> = Journals, Magazines, Newspapers को identify करने का 8-digit Identifier। ISSN International Centre (Paris) द्वारा। <strong>ISBN (International Standard Book Number)</strong> = Books को identify करने का 13-digit Identifier। <strong>ORCID (Open Researcher and Contributor ID)</strong> = Individual Researcher का Unique Identifier — सभी Publications को एक Researcher से जोड़ता है। <strong>Handle System</strong> = Digital Object के लिए Persistent URL (hdl.handle.net)।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q7. e-Shodh Sindhu क्या है? इसका पूर्व इतिहास क्या है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>e-Shodh Sindhu</strong> = INFLIBNET (Ahmedabad) द्वारा संचालित भारत का सबसे बड़ा E-journal Consortium। <strong>2016</strong> में दो Consortia के विलय से बना: <strong>(1) INDEST-AICTE Consortium</strong> (2004, IIT Delhi) — Engineering/Technology Institutions, <strong>(2) UGC-INFONET Digital Library Consortium</strong> (2003, INFLIBNET) — Universities। e-Shodh Sindhu में 15,000+ E-journals + 7,000+ E-books। 400+ Universities को Free/Subsidized Access। Funding: Education Ministry (MHRD)। Databases: Elsevier, Springer, Wiley, EBSCO, IEEE, ACM सभी शामिल।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q8. Information Products और Information Services में क्या मुख्य अंतर है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Information Products</strong> = Packaged, Tangible/Intangible वस्तुएँ जो Store और Sell की जा सकती हैं — E-journals, Databases, Bibliographic Indexes, CD-ROMs, E-books। Standardized, Fixed Price। <strong>Information Services</strong> = User की Need के अनुसार Customized, Perishable Activity — Reference Service, SDI, CAS, ILL, Document Delivery। Intangible, Cannot be Stored। Key Distinction: <strong>Product = Stored and Sold</strong>। <strong>Service = Performed and Consumed</strong>। Libraries मुख्यतः Services देती हैं (अधिकांशतः Free at Point of Use) जबकि Publishers Products Sell करते हैं।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q9. NISCAIR क्या है? इसके प्रमुख Publications कौन से हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>NISCAIR</strong> = National Institute of Science Communication and Information Resources। New Delhi। <strong>CSIR (Council of Scientific &amp; Industrial Research)</strong> की एक संस्था। 2002 में <strong>INSDOC</strong> (Indian National Scientific Documentation Centre, 1952) और <strong>NISCOM</strong> (National Institute of Science Communication) के विलय से बना। प्रमुख Publications: <strong>CSIR Journals</strong> (Indian Journal of Chemistry, Indian Journal of Biochemistry, etc.), <strong>Science Reporter</strong> (Popular Science Monthly), <strong>NISCAIR Online Periodicals Repository (NOPR)</strong>। यह भारत का प्रमुख STI Information Publisher है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q10. arXiv, JSTOR और PubMed Central में क्या अंतर है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>arXiv.org</strong> = Cornell University द्वारा। 1991 में Paul Ginsparg ने शुरू किया। Physics, Mathematics, Computer Science, Engineering के <strong>Preprints</strong> (Peer Review से पहले)। Free, Open Access। <strong>JSTOR</strong> (Journal STORage) = 1995, Ithaka। पुराने Academic Journals के Digitized Archives। Subscription-based (Partial Free)। Arts, Humanities, Social Sciences। <strong>PubMed Central (PMC)</strong> = US National Library of Medicine (NLM)। Biomedical और Life Sciences Articles। Free, Open Access। NIH Mandate के कारण Federally-funded Research यहाँ Deposit होती है। अंतर: arXiv = Preprints (Physics/CS)। JSTOR = Archives। PMC = Published Biomedical Articles।</div>
+</div>
+
+<!-- INTERNAL LINKS -->
+<div class="int-links">
+  <h3>🔗 संबंधित Topics — आगे पढ़ें</h3>
+  <div class="link-grid">
+    <a href="ugc-net-lis-unit1-1-dikw-dark.html" class="lnk">📊 Unit 1.1 — DIKW Hierarchy</a>
+    <a href="ugc-net-lis-unit1-2-information-life-cycle-dark.html" class="lnk">🔄 Unit 1.2 — Information Life Cycle</a>
+    <a href="ugc-net-lis-unit1-3-role-of-information-dark.html" class="lnk">🌐 Unit 1.3 — Role of Information</a>
+    <a href="ugc-net-lis-unit1-4-Information-Science-Knowledge-Society.html" class="lnk">🔬 Unit 1.4 — Information Science</a>
+    <a href="ugc-net-lis-unit1-5-communication-models.html" class="lnk">📡 Unit 1.5 — Communication Models</a>
+    <a href="#" class="lnk">⚖️ Unit 1.7 — IPR &amp; Copyright</a>
+  </div>
+</div>
+
+<!-- SCHEMA -->
+<h2 class="sec" id="schema"><span class="ico ico-blue">&lt;/&gt;</span>Blogger JSON-LD Schema Markup</h2>
+<p style="font-size:13px;color:var(--muted);margin-bottom:10px">इस Code को Blogger Post के HTML Section में paste करें:</p>
+<div class="schema-wrap">
+<pre id="schemaCode">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "सूचना उद्योग | Information Industry Products Services Players | UGC NET LIS Unit 1.6 Hindi",
+  "description": "Information Industry — Players (Elsevier, Clarivate, Springer), Products (Databases, E-journals), Services (CAS, SDI, ILL), Value Chain, Digital Publishing, e-Shodh Sindhu, NISCAIR — UGC NET Library Science Unit 1.6 सम्पूर्ण हिंदी Notes।",
+  "inLanguage": "hi",
+  "keywords": "Information Industry Hindi, Elsevier Scopus, Clarivate Web of Science, e-Shodh Sindhu INFLIBNET, NISCAIR India, Open Access Models, Serials Crisis, DOI ISSN ISBN, UGC NET LIS Unit 1.6",
+  "author": {"@type": "Person", "name": "UGC NET Library and Information Science Blog"},
+  "publisher": {"@type": "Organization", "name": "UGC NET Library and Information Science"}
+}
+&lt;/script&gt;
+&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Information Industry के प्रमुख Sectors कौन से हैं?",
+      "acceptedAnswer": {"@type": "Answer", "text": "6 Sectors: Publishing (Elsevier, Springer), Database Services (Scopus, WoS), Online Services (Google, arXiv), Media (Reuters, BBC), Scientific/Technical (NISCAIR, DESIDOC), Library &amp; Info Services (INFLIBNET, DELNET)।"}
+    },
+    {
+      "@type": "Question",
+      "name": "Elsevier और Clarivate के प्रमुख Products क्या हैं?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Elsevier: ScienceDirect (Full-text), Scopus (Citation DB), Mendeley। Clarivate: Web of Science (WoS), Journal Citation Reports (JCR), Impact Factor, EndNote।"}
+    },
+    {
+      "@type": "Question",
+      "name": "e-Shodh Sindhu क्या है?",
+      "acceptedAnswer": {"@type": "Answer", "text": "e-Shodh Sindhu = INFLIBNET द्वारा 2016 में INDEST-AICTE और UGC-INFONET के विलय से बना India का सबसे बड़ा E-journal Consortium। 15,000+ E-journals, 400+ Universities।"}
+    },
+    {
+      "@type": "Question",
+      "name": "Open Access के प्रकार क्या हैं?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Green OA = Self-archiving in Repository। Gold OA = Author pays APC, Publisher provides Free Access। Diamond OA = No fee for author or reader। Budapest OAI (2002) ने Green और Gold OA Define किए।"}
+    },
+    {
+      "@type": "Question",
+      "name": "Serials Crisis क्या है?",
+      "acceptedAnswer": {"@type": "Answer", "text": "1980s से Academic Journal Subscriptions की कीमतें 300%+ बढ़ना। Publisher Oligopoly, Big Deal Bundling कारण। Libraries ने Journals Cancel किए। Solution: Open Access, SPARC।"}
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+  <button class="copy-btn" onclick="copySchema()">📋 Schema Code Copy करें</button>
+</div>
+
+</div><!-- /wrap -->
+
+<div class="foot">
+  <strong>UGC NET Library and Information Science Blog</strong> &nbsp;|&nbsp; Unit I · Topic 1.6 — Information Industry, Products &amp; Services<br>
+  <span>Elsevier · Clarivate · Springer · INFLIBNET · e-Shodh Sindhu · NISCAIR · Open Access · Digital Publishing</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
