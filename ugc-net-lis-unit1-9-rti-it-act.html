@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTI Act 2005 और IT Act 2000 | सूचना का अधिकार | UGC NET Library Science Unit 1.9 हिंदी Notes</title>
+<meta name="description" content="RTI Act 2005 (सूचना का अधिकार), IT Act 2000 (सूचना प्रौद्योगिकी अधिनियम), Data Protection, Cyber Crimes, Digital Signature, PDPB 2019 — UGC NET LIS Unit 1.9 सम्पूर्ण हिंदी Notes। 10 FAQs, Tables और Flow Diagrams सहित।">
+<meta name="keywords" content="RTI Act 2005 Hindi, सूचना का अधिकार, IT Act 2000, Cyber Crime, Digital Signature, Data Protection PDPB, UGC NET Library Science Unit 1.9, Right to Information, Information Technology Act India, UGC NET LIS Hindi Notes 2024">
+<meta name="robots" content="index, follow">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Fraunces:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
+<style>
+/* ══ ROOT — dark blue theme (same as 1.6–1.8) ═══════════ */
+:root{
+  --bg:#080f1a; --surface:#0f1c2e; --surface2:#162338; --surface3:#1c2d47;
+  --border:rgba(255,255,255,.08); --border2:rgba(255,255,255,.14);
+  --text:#e8eef8; --muted:#7a90b0; --faint:#4a6080;
+  --accent:#f5a623; --accent2:#3b82f6; --green:#10b981; --red:#ef4444;
+  --purple:#8b5cf6; --pink:#ec4899; --cyan:#06b6d4;
+  --a-col:#3b82f6; --b-col:#10b981; --c-col:#8b5cf6; --d-col:#f59e0b;
+  --r:14px; --r-sm:9px;
+  --shadow:0 6px 28px rgba(0,0,0,.45);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans Devanagari',sans-serif;background:var(--bg);color:var(--text);line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased}
+#read-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--a-col),var(--b-col),var(--c-col),var(--d-col));width:0%;z-index:999;transition:width .1s}
+
+/* ══ NAV ═════════════════════════════════════════════════ */
+.top-nav{position:sticky;top:0;z-index:100;background:rgba(8,15,26,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:14px}
+.back-btn{display:inline-flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--text);text-decoration:none;transition:all .2s;font-family:inherit}
+.back-btn:hover{background:var(--surface2);border-color:var(--border2)}
+.nav-bc{font-size:12px;color:var(--muted);flex:1}
+.nav-bc span{color:var(--text);font-weight:600}
+.nav-dot{width:9px;height:9px;border-radius:50%;background:var(--a-col);display:inline-block;margin-right:5px}
+
+/* ══ HERO ════════════════════════════════════════════════ */
+.hero{position:relative;padding:64px 20px 56px;text-align:center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.07) 1px,transparent 1px);background-size:44px 44px;animation:gridMove 22s linear infinite;pointer-events:none}
+.hero-glow{position:absolute;inset:0;background:radial-gradient(ellipse 90% 55% at 50% -10%,rgba(59,130,246,.22) 0%,transparent 65%);pointer-events:none}
+@keyframes gridMove{0%{background-position:0 0,0 0}100%{background-position:44px 44px,44px 44px}}
+.hero-inner{position:relative;z-index:2;max-width:860px;margin:0 auto}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.35);color:#93c5fd;font-size:11px;font-weight:700;padding:5px 16px;border-radius:30px;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:20px;animation:fadeUp .45s ease both}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(26px,5.5vw,50px);font-weight:900;line-height:1.1;color:#fff;margin-bottom:14px;animation:fadeUp .6s ease .1s both}
+.hero h1 .hi{display:block;font-size:.52em;font-family:'Noto Sans Devanagari',sans-serif;font-weight:400;color:var(--muted);margin-top:9px;letter-spacing:.3px}
+.hero-desc{font-size:14.5px;color:var(--muted);max-width:650px;margin:0 auto 28px;animation:fadeUp .72s ease .18s both}
+.hero-strip{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:28px;animation:fadeUp .82s ease .24s both}
+.hs{padding:8px 18px;border-radius:22px;font-size:13px;font-weight:700;border:1.5px solid;display:flex;align-items:center;gap:7px;transition:transform .2s;cursor:default}
+.hs:hover{transform:scale(1.05)}
+.hs-a{background:rgba(59,130,246,.18);border-color:rgba(59,130,246,.4);color:#93c5fd}
+.hs-b{background:rgba(16,185,129,.18);border-color:rgba(16,185,129,.4);color:#6ee7b7}
+.hs-c{background:rgba(139,92,246,.18);border-color:rgba(139,92,246,.4);color:#c4b5fd}
+.hs-d{background:rgba(245,158,11,.18);border-color:rgba(245,158,11,.4);color:#fcd34d}
+.hs-e{background:rgba(6,182,212,.18);border-color:rgba(6,182,212,.4);color:#67e8f9}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;animation:fadeUp .9s ease .3s both}
+.hm{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 14px;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.hm strong{color:var(--text)}
+
+/* ══ WRAP ════════════════════════════════════════════════ */
+.wrap{max-width:940px;margin:0 auto;padding:0 18px 70px}
+
+/* ══ TOC ═════════════════════════════════════════════════ */
+.toc-box{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--a-col);border-radius:var(--r);padding:22px 26px;margin:34px 0}
+.toc-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.toc-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+@media(max-width:540px){.toc-list{grid-template-columns:1fr}}
+.toc-list a{font-size:13.5px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:7px;padding:5px 0;transition:color .2s}
+.toc-list a:hover{color:var(--text)}
+.tnum{min-width:24px;height:20px;background:rgba(59,130,246,.2);color:#93c5fd;border-radius:4px;font-size:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center}
+
+/* ══ HEADINGS ════════════════════════════════════════════ */
+h2.sec{font-family:'Fraunces',serif;font-size:clamp(18px,3.5vw,26px);font-weight:900;color:#fff;margin:48px 0 18px;display:flex;align-items:center;gap:13px;padding-bottom:13px;border-bottom:1px solid var(--border)}
+h2.sec .ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ico-blue{background:rgba(59,130,246,.2)}  .ico-green{background:rgba(16,185,129,.2)}
+.ico-purple{background:rgba(139,92,246,.2)} .ico-amber{background:rgba(245,158,11,.2)}
+.ico-cyan{background:rgba(6,182,212,.2)}   .ico-red{background:rgba(239,68,68,.2)}
+h3.sub{font-size:clamp(14px,2.8vw,18px);font-weight:700;color:var(--accent2);margin:22px 0 11px;display:flex;align-items:center;gap:8px}
+h3.sub::before{content:'';width:4px;height:18px;background:var(--accent2);border-radius:3px;flex-shrink:0}
+p{margin-bottom:14px;font-size:15px;line-height:1.92;color:#cad5e8}
+
+/* ══ SNIPPET ══════════════════════════════════════════════ */
+.snippet{background:linear-gradient(135deg,rgba(59,130,246,.1),rgba(16,185,129,.06));border:1px solid rgba(59,130,246,.22);border-left:4px solid var(--a-col);border-radius:0 var(--r) var(--r) 0;padding:20px 24px;margin:26px 0}
+.snip-lbl{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.1px;color:var(--accent2);margin-bottom:9px}
+.snippet p{font-size:15px;color:var(--text);margin:0}
+
+/* ══ CALLOUTS ════════════════════════════════════════════ */
+.callout{padding:15px 20px;border-radius:0 var(--r) var(--r) 0;margin:18px 0}
+.c-blue{background:rgba(59,130,246,.1);border-left:4px solid var(--a-col)}
+.c-green{background:rgba(16,185,129,.1);border-left:4px solid var(--b-col)}
+.c-purple{background:rgba(139,92,246,.1);border-left:4px solid var(--c-col)}
+.c-amber{background:rgba(245,158,11,.1);border-left:4px solid var(--d-col)}
+.c-cyan{background:rgba(6,182,212,.1);border-left:4px solid var(--cyan)}
+.c-red{background:rgba(239,68,68,.1);border-left:4px solid var(--red)}
+.callout p{font-size:14.5px;margin-bottom:8px;color:var(--text);line-height:1.85}
+.callout p:last-child{margin-bottom:0}
+.tag-pill{display:inline-block;color:#fff;font-size:10.5px;font-weight:700;padding:2px 10px;border-radius:4px;margin-right:6px;vertical-align:middle}
+.tp-blue{background:var(--a-col)} .tp-green{background:var(--b-col)}
+.tp-purple{background:var(--c-col)} .tp-amber{background:#d97706}
+.tp-cyan{background:var(--cyan)}   .tp-red{background:var(--red)}
+
+/* ══ NET TIP ══════════════════════════════════════════════ */
+.net-tip{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-left:4px solid var(--green);border-radius:0 var(--r-sm) var(--r-sm) 0;padding:10px 15px;margin-top:14px;font-size:13.5px;color:#a7f3d0}
+.net-tip strong{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--green);margin-bottom:3px}
+
+/* ══ INFO BOX ════════════════════════════════════════════ */
+.info-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:28px;overflow:hidden}
+.ib-head{display:flex;align-items:center;gap:16px;padding:18px 24px;background:var(--surface2);border-bottom:1px solid var(--border)}
+.ib-circle{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.ic-blue{background:linear-gradient(135deg,#1d4ed8,#3b82f6)}
+.ic-green{background:linear-gradient(135deg,#047857,#10b981)}
+.ic-purple{background:linear-gradient(135deg,#5b21b6,#8b5cf6)}
+.ic-amber{background:linear-gradient(135deg,#b45309,#f59e0b)}
+.ic-cyan{background:linear-gradient(135deg,#0891b2,#06b6d4)}
+.ic-red{background:linear-gradient(135deg,#991b1b,#ef4444)}
+.ib-meta{flex:1}
+.ib-meta h3{font-size:19px;font-weight:700;color:#fff;margin:0}
+.ib-meta .ibm-sub{font-size:13px;color:var(--muted);margin-top:2px}
+.ib-badge{font-size:11px;font-weight:700;padding:4px 12px;border-radius:16px;white-space:nowrap}
+.bb-blue{background:rgba(59,130,246,.2);color:#93c5fd}
+.bb-green{background:rgba(16,185,129,.2);color:#6ee7b7}
+.bb-purple{background:rgba(139,92,246,.2);color:#c4b5fd}
+.bb-amber{background:rgba(245,158,11,.2);color:#fcd34d}
+.bb-red{background:rgba(239,68,68,.2);color:#fca5a5}
+.bb-cyan{background:rgba(6,182,212,.2);color:#67e8f9}
+.ib-body{padding:20px 24px}
+.ib-body p{font-size:14.5px;margin-bottom:12px;color:#cad5e8}
+
+/* ══ GRID LAYOUTS ════════════════════════════════════════ */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+@media(max-width:520px){.two-col{grid-template-columns:1fr}}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0}
+@media(max-width:640px){.three-col{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.three-col{grid-template-columns:1fr}}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}
+@media(max-width:700px){.four-col{grid-template-columns:1fr 1fr}}
+
+/* ══ MBOX ════════════════════════════════════════════════ */
+.mbox{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 15px}
+.mbox .ml{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:8px}
+.mbox ul{list-style:none;padding:0;margin:0}
+.mbox ul li{padding:3px 0 3px 16px;position:relative;line-height:1.7;font-size:13.5px;color:#b8c8e0}
+.mbox ul li::before{content:'▸';position:absolute;left:2px;color:var(--accent);font-size:12px;top:4px}
+.mbox ul li strong{color:var(--text)}
+
+/* ══ COLOURED TOP-STRIP CARDS (Blue/Yellow/Purple/Green) ═ */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+@media(max-width:640px){.card-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.card-grid{grid-template-columns:1fr}}
+.c-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:20px 18px;transition:transform .25s,box-shadow .25s}
+.c-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.cc-ico{font-size:30px;margin-bottom:10px}
+.cc-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
+.cc-sub{font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.cc-ul{list-style:none;padding:0}
+.cc-ul li{font-size:12.5px;color:#b8c8e0;padding:3px 0 3px 14px;position:relative;line-height:1.62}
+.cc-ul li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:10px;top:5px}
+.cc-ul li strong{color:#fff}
+/* Colour strips */
+.strip-blue{border-top:4px solid var(--a-col)}
+.strip-yellow{border-top:4px solid var(--d-col)}
+.strip-purple{border-top:4px solid var(--c-col)}
+.strip-green{border-top:4px solid var(--b-col)}
+.strip-cyan{border-top:4px solid var(--cyan)}
+.strip-red{border-top:4px solid var(--red)}
+
+/* ══ PROCESS FLOW ════════════════════════════════════════ */
+.flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0;margin:22px 0}
+.fbox{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:13px 16px;text-align:center;min-width:110px}
+.fbox .fb-ico{font-size:22px;margin-bottom:5px}
+.fbox .fb-en{font-size:12px;font-weight:700;color:#fff}
+.fbox .fb-hi{font-size:10.5px;color:var(--muted);margin-top:2px}
+.farrow{color:var(--faint);font-size:20px;padding:0 4px;align-self:center}
+@media(max-width:600px){.flow{gap:6px}.fbox{min-width:85px;padding:10px 10px}}
+
+/* ══ STAT CARDS ══════════════════════════════════════════ */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+@media(max-width:640px){.stat-row{grid-template-columns:1fr 1fr}}
+.stat-card{border-radius:var(--r);padding:16px 14px;text-align:center}
+.stat-num{font-family:'Fraunces',serif;font-size:30px;font-weight:900;margin-bottom:4px;line-height:1}
+.stat-lbl{font-size:12px;font-weight:700;color:#fff;margin-bottom:3px}
+.stat-sub{font-size:11px;color:var(--muted);line-height:1.5}
+.sc-blue{background:rgba(59,130,246,.12);border:1.5px solid rgba(59,130,246,.3)} .sc-blue .stat-num{color:#93c5fd}
+.sc-green{background:rgba(16,185,129,.12);border:1.5px solid rgba(16,185,129,.3)} .sc-green .stat-num{color:#6ee7b7}
+.sc-purple{background:rgba(139,92,246,.12);border:1.5px solid rgba(139,92,246,.3)} .sc-purple .stat-num{color:#c4b5fd}
+.sc-amber{background:rgba(245,158,11,.12);border:1.5px solid rgba(245,158,11,.3)} .sc-amber .stat-num{color:#fcd34d}
+
+/* ══ SECTION LIST ════════════════════════════════════════ */
+.slist{list-style:none;padding:0;margin:12px 0 18px}
+.slist li{padding:9px 14px 9px 40px;position:relative;font-size:14.5px;border-bottom:1px solid var(--border);line-height:1.78;color:#b8c8e0}
+.slist li:last-child{border-bottom:none}
+.slist li::before{content:'▸';position:absolute;left:14px;color:var(--accent);font-weight:700;font-size:16px;top:10px}
+.slist li strong{color:var(--text)}
+
+/* ══ TABLES ══════════════════════════════════════════════ */
+.scroll-note{font-size:11px;color:var(--muted);text-align:right;margin-bottom:5px;display:none}
+@media(max-width:600px){.scroll-note{display:block}}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r);box-shadow:var(--shadow);margin:20px 0}
+.tbl-wrap table{width:100%;min-width:520px;border-collapse:collapse;font-size:13.5px}
+.tbl-wrap thead tr{background:var(--surface3)}
+.tbl-wrap thead th{padding:13px 15px;text-align:left;font-weight:600;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.7px;border-bottom:1px solid var(--border)}
+.tbl-wrap tbody tr{border-bottom:1px solid var(--border);transition:background .15s}
+.tbl-wrap tbody tr:hover{background:var(--surface2)}
+.tbl-wrap tbody td{padding:11px 15px;vertical-align:top;line-height:1.72;color:#b8c8e0}
+.tbl-wrap tbody td strong{color:var(--text)}
+.tbl-wrap tbody tr:last-child{border-bottom:none}
+.r1 td:first-child{border-left:3px solid var(--a-col)}
+.r2 td:first-child{border-left:3px solid var(--d-col)}
+.r3 td:first-child{border-left:3px solid var(--c-col)}
+.r4 td:first-child{border-left:3px solid var(--b-col)}
+.r5 td:first-child{border-left:3px solid var(--cyan)}
+.r6 td:first-child{border-left:3px solid var(--red)}
+.r7 td:first-child{border-left:3px solid var(--pink)}
+
+/* ══ EXAM BOX ════════════════════════════════════════════ */
+.exam-box{background:rgba(16,185,129,.07);border:1px solid rgba(16,185,129,.22);border-top:4px solid var(--green);border-radius:var(--r);padding:24px 28px;margin:36px 0}
+.exam-head{font-size:17px;font-weight:700;color:#6ee7b7;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.exam-ul{list-style:none;padding:0;margin:0}
+.exam-ul li{padding:9px 14px 9px 36px;position:relative;font-size:14px;border-bottom:1px solid rgba(16,185,129,.12);line-height:1.82;color:#b8c8e0}
+.exam-ul li:last-child{border-bottom:none}
+.exam-ul li::before{content:'✓';position:absolute;left:10px;color:var(--green);font-weight:700}
+.exam-ul li strong{color:#e8eef8}
+
+/* ══ FAQ ═════════════════════════════════════════════════ */
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:10px;overflow:hidden;transition:border-color .25s}
+.faq-item.open{border-color:rgba(59,130,246,.3)}
+.faq-q{background:var(--surface2);border-left:4px solid var(--a-col);padding:14px 20px;font-weight:700;font-size:15px;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;user-select:none;transition:background .2s}
+.faq-q:hover{background:var(--surface3)}
+.faq-q .ico{color:#93c5fd;font-size:22px;flex-shrink:0;transition:transform .3s;line-height:1}
+.faq-item.open .ico{transform:rotate(45deg)}
+.faq-a{padding:16px 20px;font-size:14.5px;line-height:1.9;border-top:1px solid var(--border);display:none;color:#b8c8e0}
+.faq-item.open .faq-a{display:block}
+
+/* ══ INTERNAL LINKS ══════════════════════════════════════ */
+.int-links{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:22px 26px;margin:30px 0}
+.int-links h3{font-size:14px;color:var(--text);font-weight:700;margin-bottom:14px}
+.link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.lnk{background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:11px 14px;font-size:13px;color:var(--accent2);font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px;transition:all .2s}
+.lnk:hover{background:var(--surface3);border-color:var(--border2);transform:translateX(3px)}
+
+/* ══ ALT BOX ═════════════════════════════════════════════ */
+.alt-box{background:rgba(245,166,35,.07);border:1px dashed rgba(245,166,35,.3);border-radius:8px;padding:10px 14px;margin:12px 0;font-size:12px;color:#fcd34d}
+.alt-box strong{display:block;margin-bottom:3px;color:var(--accent);font-size:10.5px;text-transform:uppercase;letter-spacing:.5px}
+
+/* ══ SCHEMA ══════════════════════════════════════════════ */
+.schema-wrap{background:#040b14;border:1px solid rgba(59,130,246,.2);border-radius:var(--r);padding:22px;margin:22px 0;overflow-x:auto}
+.schema-wrap pre{color:#7dd3fc;font-family:'Courier New',monospace;font-size:12px;line-height:1.78;white-space:pre}
+.copy-btn{display:inline-flex;align-items:center;gap:7px;background:var(--a-col);color:#fff;border:none;padding:10px 22px;border-radius:8px;font-size:13px;cursor:pointer;margin-top:12px;font-family:inherit;font-weight:700;transition:background .2s}
+.copy-btn:hover{background:#1d4ed8}
+
+/* ══ CONCLUSION ══════════════════════════════════════════ */
+.conclusion{background:linear-gradient(135deg,var(--surface2),rgba(59,130,246,.09),rgba(16,185,129,.06));border:1px solid rgba(59,130,246,.16);border-radius:var(--r);padding:30px 32px;margin:36px 0}
+.conclusion p{font-size:15px;color:#c8d8f0;margin-bottom:12px}
+.conclusion p:last-child{margin-bottom:0}
+
+/* ══ FOOTER ══════════════════════════════════════════════ */
+.foot{text-align:center;padding:30px 18px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);margin-top:40px}
+.foot strong{color:var(--text)}
+
+@media(max-width:600px){
+  .hero{padding:46px 16px 40px} .wrap{padding:0 13px 50px}
+  .conclusion{padding:22px 20px} .exam-box{padding:18px 16px}
+  .ib-head{flex-wrap:wrap}
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+
+<div id="read-bar"></div>
+
+<nav class="top-nav">
+  <a href="ugc-net-library-science-complete-syllabus.html" class="back-btn">← Syllabus Index</a>
+  <div class="nav-bc"><span class="nav-dot"></span>Unit I &rsaquo; <span>Topic 1.9 — RTI Act 2005 &amp; IT Act 2000</span></div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-pill">🔵 Unit I · Topic 1.9 · UGC NET Code 59</div>
+    <h1>RTI Act 2005 &amp; IT Act 2000
+      <span class="hi">सूचना का अधिकार · सूचना प्रौद्योगिकी अधिनियम · Cyber Crime · Data Protection · Digital Signature</span>
+    </h1>
+    <p class="hero-desc">UGC NET Library &amp; Information Science — सम्पूर्ण हिंदी नोट्स | Right to Information · IT Act Sections · Cyber Crimes · PDPB · e-Governance</p>
+    <div class="hero-strip">
+      <span class="hs hs-a">📜 RTI Act 2005</span>
+      <span class="hs hs-b">💻 IT Act 2000</span>
+      <span class="hs hs-c">🔐 Cyber Crime</span>
+      <span class="hs hs-d">🛡️ Data Protection</span>
+      <span class="hs hs-e">✍️ Digital Signature</span>
+    </div>
+    <div class="hero-meta">
+      <span class="hm">📖 <strong>3800+ शब्द</strong></span>
+      <span class="hm">❓ <strong>10 FAQs</strong></span>
+      <span class="hm">📊 <strong>5 Tables</strong></span>
+      <span class="hm">⚖️ <strong>Key Sections</strong></span>
+      <span class="hm">⭐ <strong>Very Important</strong></span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<div class="alt-box" style="margin-top:30px">
+  <strong>🔍 SEO Slug</strong>
+  rti-act-2005-it-act-2000-right-to-information-cyber-crime-digital-signature-data-protection-pdpb-ugc-net-library-science-unit-1-9-hindi
+</div>
+
+<!-- TOC -->
+<div class="toc-box">
+  <div class="toc-title">📑 विषय-सूची (Table of Contents)</div>
+  <ul class="toc-list">
+    <li><a href="#intro"><span class="tnum">01</span>परिचय</a></li>
+    <li><a href="#snippet"><span class="tnum">02</span>Featured Snippet</a></li>
+    <li><a href="#rti-overview"><span class="tnum">03</span>RTI Act 2005 — परिचय</a></li>
+    <li><a href="#rti-key"><span class="tnum">04</span>RTI — मुख्य प्रावधान</a></li>
+    <li><a href="#rti-sections"><span class="tnum">05</span>RTI — प्रमुख Sections</a></li>
+    <li><a href="#rti-exemptions"><span class="tnum">06</span>RTI — Exemptions</a></li>
+    <li><a href="#it-overview"><span class="tnum">07</span>IT Act 2000 — परिचय</a></li>
+    <li><a href="#it-sections"><span class="tnum">08</span>IT Act — प्रमुख Sections</a></li>
+    <li><a href="#cyber"><span class="tnum">09</span>Cyber Crimes के प्रकार</a></li>
+    <li><a href="#digital-sig"><span class="tnum">10</span>Digital Signature &amp; PKI</a></li>
+    <li><a href="#data-protection"><span class="tnum">11</span>Data Protection — PDPB/DPDPA</a></li>
+    <li><a href="#library"><span class="tnum">12</span>Library &amp; RTI/IT Act</a></li>
+    <li><a href="#exam"><span class="tnum">13</span>Exam Notes</a></li>
+    <li><a href="#faq"><span class="tnum">14</span>FAQs (10 प्रश्न)</a></li>
+  </ul>
+</div>
+
+<!-- ═══ INTRO ═══ -->
+<h2 class="sec" id="intro"><span class="ico ico-blue">📜</span>परिचय (Introduction)</h2>
+
+<p>UGC NET Library &amp; Information Science (Code 59) के Unit I का नौवाँ महत्वपूर्ण Topic है — <strong style="color:#fff">RTI Act 2005 और IT Act 2000: सूचना का अधिकार एवं सूचना प्रौद्योगिकी अधिनियम</strong>। परीक्षा में इस Topic से नियमित 2–4 प्रश्न आते हैं।</p>
+
+<p>ये दोनों Landmark Acts आधुनिक India में सूचना की दो भिन्न किन्तु पूरक भूमिकाएँ निभाते हैं:</p>
+
+<div class="two-col">
+  <div class="mbox" style="border-top:4px solid var(--a-col)">
+    <div class="ml" style="color:#93c5fd">📜 RTI Act 2005</div>
+    <ul>
+      <li>Citizens को <strong>Government Information</strong> माँगने का Legal Right</li>
+      <li>Transparency और Accountability सुनिश्चित</li>
+      <li>Democratic Governance का हथियार</li>
+      <li>लागू: <strong>12 अक्टूबर 2005</strong></li>
+      <li>Administered by: CIC + SIC</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:4px solid var(--b-col)">
+    <div class="ml" style="color:#6ee7b7">💻 IT Act 2000</div>
+    <ul>
+      <li>Electronic Transactions को <strong>Legal Validity</strong> देना</li>
+      <li>Cyber Crimes को Define और Penalize करना</li>
+      <li>Digital Signature और e-Governance</li>
+      <li>लागू: <strong>17 अक्टूबर 2000</strong></li>
+      <li>Amended: <strong>IT (Amendment) Act 2008</strong></li>
+    </ul>
+  </div>
+</div>
+
+<div class="callout c-blue">
+  <span class="tag-pill tp-blue">UGC NET में महत्व</span>
+  <p>RTI के Sections (4, 6, 7, 8, 19, 20), Exemptions, CIC/PIO की भूमिका, IT Act के Sections (43, 65, 66, 66A, 67, 69, 72, 79), Digital Signature, Cyber Crimes के प्रकार और DPDPA 2023 — ये सभी UGC NET LIS के लिए Critical हैं।</p>
+</div>
+
+<!-- SNIPPET -->
+<h2 class="sec" id="snippet"><span class="ico ico-blue">⭐</span>Featured Snippet</h2>
+<div class="snippet">
+  <div class="snip-lbl">🎯 Google Featured Snippet</div>
+  <p><strong style="color:#fff">RTI Act 2005 क्या है?</strong> Right to Information Act 2005 भारत का वह कानून है जो नागरिकों को Government की जानकारी माँगने का Fundamental Right देता है। लागू: 12 अक्टूबर 2005। <strong>PIO</strong> (Public Information Officer) = RTI Application प्राप्त करता है। <strong>30 दिन</strong> में सूचना देनी होती है। <strong>CIC</strong> (Central Information Commission) = राष्ट्रीय अपीलीय निकाय। <strong>IT Act 2000</strong> = Electronic Transactions को Legal Validity, Cyber Crime पर Penalty। Amended: IT Amendment Act 2008। DPDPA 2023 = नया Data Protection Law।</p>
+</div>
+
+<!-- ═══ RTI OVERVIEW ═══ -->
+<h2 class="sec" id="rti-overview"><span class="ico ico-amber">📜</span>RTI Act 2005 — सम्पूर्ण परिचय</h2>
+
+<div class="info-box" style="border-top:4px solid var(--d-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-amber">📜</div>
+    <div class="ib-meta">
+      <h3>Right to Information Act, 2005</h3>
+      <div class="ibm-sub">Passed: 15 June 2005 | Enforced: 12 October 2005 | Replaced: Freedom of Information Act 2002</div>
+    </div>
+    <span class="ib-badge bb-amber">Landmark Law</span>
+  </div>
+  <div class="ib-body">
+    <p>RTI Act 2005 भारत का क्रांतिकारी कानून है जो <strong style="color:#fff">नागरिकों को सरकारी सूचना तक पहुँचने का Fundamental Right</strong> देता है। यह Freedom of Information Act 2002 को Replace करके लागू हुआ। इसका उद्देश्य है — Transparent और Accountable Governance।</p>
+
+    <div class="stat-row">
+      <div class="stat-card sc-blue">
+        <div class="stat-num">30</div>
+        <div class="stat-lbl">दिन</div>
+        <div class="stat-sub">सूचना देने की सामान्य समय-सीमा</div>
+      </div>
+      <div class="stat-card sc-amber">
+        <div class="stat-num">48</div>
+        <div class="stat-lbl">घंटे</div>
+        <div class="stat-sub">जीवन-मृत्यु सम्बन्धी सूचना की सीमा</div>
+      </div>
+      <div class="stat-card sc-purple">
+        <div class="stat-num">₹10</div>
+        <div class="stat-lbl">Application Fee</div>
+        <div class="stat-sub">₹2 प्रति page अतिरिक्त (BPL = Free)</div>
+      </div>
+      <div class="stat-card sc-green">
+        <div class="stat-num">₹250</div>
+        <div class="stat-lbl">Daily Penalty</div>
+        <div class="stat-sub">Delay पर — Max ₹25,000 (PIO पर)</div>
+      </div>
+    </div>
+
+    <h3 class="sub">RTI Act 2005 — मुख्य विशेषताएँ</h3>
+    <div class="three-col">
+      <div class="mbox" style="border-top:3px solid var(--a-col)">
+        <div class="ml" style="color:#93c5fd">🎯 Scope</div>
+        <ul>
+          <li>All <strong>Public Authorities</strong> को Cover करता है</li>
+          <li>Central + State Govts, PSUs, NGOs (Govt funded)</li>
+          <li>Constitution के Article 19(1)(a) पर आधारित</li>
+          <li>Freedom of Expression का Extension</li>
+          <li>J&amp;K के लिए अलग State Act था (2019 में RTI 2005 लागू)</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--d-col)">
+        <div class="ml" style="color:#fcd34d">👤 Who Can Apply</div>
+        <ul>
+          <li>कोई भी <strong>Indian Citizen</strong> — Caste, Religion, Education चाहे जो</li>
+          <li>BPL (Below Poverty Line) = Application Free</li>
+          <li>Reasons देना <strong>Mandatory नहीं</strong></li>
+          <li>Application Hindi, English या Regional Language में</li>
+          <li>Online: rtionline.gov.in</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--b-col)">
+        <div class="ml" style="color:#6ee7b7">📋 What Can Be Asked</div>
+        <ul>
+          <li>Documents, Records, Files</li>
+          <li>Notes, e-mails, Circulars</li>
+          <li>Opinions, Advices, Reports</li>
+          <li>Samples of Material</li>
+          <li><strong>Inspection</strong> of work/documents भी</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RTI KEY PROVISIONS -->
+<h2 class="sec" id="rti-key"><span class="ico ico-amber">⚙️</span>RTI — मुख्य Authorities और Process</h2>
+
+<h3 class="sub">RTI Application Process — Step by Step</h3>
+<div class="flow">
+  <div class="fbox" style="border-top:3px solid var(--a-col)">
+    <div class="fb-ico">✍️</div>
+    <div class="fb-en">Citizen</div>
+    <div class="fb-hi">Application लिखता है</div>
+  </div>
+  <div class="farrow">→</div>
+  <div class="fbox" style="border-top:3px solid var(--d-col)">
+    <div class="fb-ico">📬</div>
+    <div class="fb-en">CPIO / SPIO</div>
+    <div class="fb-hi">30 दिन में Reply</div>
+  </div>
+  <div class="farrow">→</div>
+  <div class="fbox" style="border-top:3px solid var(--c-col)">
+    <div class="fb-ico">⚖️</div>
+    <div class="fb-en">First Appeal</div>
+    <div class="fb-hi">Appellate Officer (30 दिन)</div>
+  </div>
+  <div class="farrow">→</div>
+  <div class="fbox" style="border-top:3px solid var(--b-col)">
+    <div class="fb-ico">🏛️</div>
+    <div class="fb-en">CIC / SIC</div>
+    <div class="fb-hi">Second Appeal</div>
+  </div>
+  <div class="farrow">→</div>
+  <div class="fbox" style="border-top:3px solid var(--cyan)">
+    <div class="fb-ico">⚖️</div>
+    <div class="fb-en">High Court</div>
+    <div class="fb-hi">Writ Petition</div>
+  </div>
+</div>
+
+<div class="three-col">
+  <div class="mbox" style="border-top:4px solid var(--d-col)">
+    <div class="ml" style="color:#fcd34d">👤 CPIO / SPIO</div>
+    <ul>
+      <li><strong>Central / State Public Information Officer</strong></li>
+      <li>हर Public Authority में Designated</li>
+      <li>RTI Application प्राप्त करता है</li>
+      <li><strong>30 दिन</strong> में सूचना देना अनिवार्य</li>
+      <li>Third Party info = <strong>40 दिन</strong></li>
+      <li>Life &amp; Liberty = <strong>48 घंटे</strong></li>
+      <li>Delay penalty = ₹250/day (Max ₹25,000)</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:4px solid var(--a-col)">
+    <div class="ml" style="color:#93c5fd">🏛️ CIC — Central Info Commission</div>
+    <ul>
+      <li><strong>Central Information Commission</strong></li>
+      <li>Chief Information Commissioner + Commissioners</li>
+      <li>New Delhi में Headquarters</li>
+      <li>Second Appeal और Complaints सुनता है</li>
+      <li>Penalty impose कर सकता है</li>
+      <li>Compensation का आदेश दे सकता है</li>
+      <li>State = <strong>SIC</strong> (State Information Commission)</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:4px solid var(--c-col)">
+    <div class="ml" style="color:#c4b5fd">📋 APIO — Assistant PIO</div>
+    <ul>
+      <li><strong>Assistant Public Information Officer</strong></li>
+      <li>Sub-divisional Level पर</li>
+      <li>Application Forward करता है</li>
+      <li>खुद Information नहीं दे सकता</li>
+      <li>Penalty का Provision नहीं</li>
+      <li>District Headquarter से नीचे के Offices</li>
+      <li>Post offices में APIO designated</li>
+    </ul>
+  </div>
+</div>
+
+<div class="net-tip"><strong>UGC NET Tip</strong> RTI Timeline: सामान्य सूचना = <strong>30 दिन</strong>। Third Party = <strong>40 दिन</strong>। Life &amp; Liberty = <strong>48 घंटे</strong>। Penalty = <strong>₹250/day</strong>, Maximum = <strong>₹25,000</strong>। Application Fee = <strong>₹10</strong>। BPL = <strong>Free</strong>। Reasons देना Mandatory नहीं। First Appeal = Appellate Officer। Second Appeal = <strong>CIC / SIC</strong>।</div>
+
+<!-- RTI SECTIONS -->
+<h2 class="sec" id="rti-sections"><span class="ico ico-amber">📑</span>RTI Act — प्रमुख Sections</h2>
+
+<!-- coloured top-strip cards -->
+<div class="card-grid">
+
+  <div class="c-card strip-blue">
+    <div class="cc-ico">📢</div>
+    <div class="cc-title">Section 4 — Suo Motu Disclosure</div>
+    <div class="cc-sub">स्वप्रेरणा से प्रकाशन</div>
+    <ul class="cc-ul">
+      <li>Public Authorities को <strong>अपनेआप सूचना Publish</strong> करनी होगी</li>
+      <li>17 Categories की Mandatory Disclosure</li>
+      <li>Website पर Proactive Disclosure</li>
+      <li>Budget, Policies, Rules, Schemes की जानकारी</li>
+      <li>इससे RTI Application की आवश्यकता कम हो जाती है</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-yellow">
+    <div class="cc-ico">✍️</div>
+    <div class="cc-title">Section 6 — RTI Application</div>
+    <div class="cc-sub">आवेदन की प्रक्रिया</div>
+    <ul class="cc-ul">
+      <li>Written Application to <strong>CPIO / SPIO</strong></li>
+      <li>Hindi, English या Official Language में</li>
+      <li>Reasons देना <strong>Mandatory नहीं</strong></li>
+      <li>Fee: ₹10 (BPL = Free)</li>
+      <li>Online: rtionline.gov.in</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-purple">
+    <div class="cc-ico">⏰</div>
+    <div class="cc-title">Section 7 — Disposal of Request</div>
+    <div class="cc-sub">आवेदन का निपटान</div>
+    <ul class="cc-ul">
+      <li>सामान्य: <strong>30 दिन</strong> में सूचना</li>
+      <li>Life &amp; Liberty: <strong>48 घंटे</strong> में</li>
+      <li>Third Party: <strong>40 दिन</strong></li>
+      <li>यदि transfer हो: Original + 5 days</li>
+      <li>Partial Disclosure भी allowed</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-green">
+    <div class="cc-ico">🚫</div>
+    <div class="cc-title">Section 8 — Exemptions</div>
+    <div class="cc-sub">सूचना देने से छूट</div>
+    <ul class="cc-ul">
+      <li>National Security, Sovereignty</li>
+      <li>Cabinet Papers (till decision)</li>
+      <li>Personal Privacy (third party)</li>
+      <li>Trade Secrets, Commercial Confidence</li>
+      <li><strong>20 साल पुरानी फ़ाइलें</strong> छूट से बाहर</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-blue">
+    <div class="cc-ico">⚖️</div>
+    <div class="cc-title">Section 19 — Appeal</div>
+    <div class="cc-sub">अपील प्रक्रिया</div>
+    <ul class="cc-ul">
+      <li>First Appeal: <strong>Appellate Officer</strong> को 30 दिन में</li>
+      <li>Second Appeal: <strong>CIC / SIC</strong> को 90 दिन में</li>
+      <li>Burden of Proof = Public Authority पर</li>
+      <li>CIC = Suo Motu Powers</li>
+      <li>Third Party Appeals भी</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-yellow">
+    <div class="cc-ico">💰</div>
+    <div class="cc-title">Section 20 — Penalty</div>
+    <div class="cc-sub">दंड के प्रावधान</div>
+    <ul class="cc-ul">
+      <li>Delay / Denial पर <strong>₹250/day</strong> Penalty</li>
+      <li>Maximum: <strong>₹25,000</strong></li>
+      <li>Disciplinary Action की Recommendation</li>
+      <li>Malafide Info = Additional Penalty</li>
+      <li>Compensation of <strong>₹1,00,000</strong> तक</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="net-tip"><strong>UGC NET Tip</strong> RTI Key Sections: <strong>Sec 4</strong> = Suo Motu Disclosure (17 Categories), <strong>Sec 6</strong> = Application (Reasons not mandatory), <strong>Sec 7</strong> = 30/48hr/40 day timelines, <strong>Sec 8</strong> = Exemptions (11 Categories), <strong>Sec 11</strong> = Third Party Info, <strong>Sec 19</strong> = Appeal Process, <strong>Sec 20</strong> = Penalty ₹250/day max ₹25,000। <strong>Sec 22</strong> = RTI Act overrides Official Secrets Act 1923।</div>
+
+<!-- RTI EXEMPTIONS -->
+<h2 class="sec" id="rti-exemptions"><span class="ico ico-red">🚫</span>RTI Exemptions — Section 8 &amp; 9</h2>
+
+<div class="info-box" style="border-top:4px solid var(--red)">
+  <div class="ib-head">
+    <div class="ib-circle ic-red">🚫</div>
+    <div class="ib-meta">
+      <h3>RTI Exemptions — Section 8(1)</h3>
+      <div class="ibm-sub">इन मामलों में सूचना देने से PIO मना कर सकता है</div>
+    </div>
+    <span class="ib-badge bb-red">11 Exemptions</span>
+  </div>
+  <div class="ib-body">
+    <div class="three-col">
+      <div class="mbox" style="border-top:3px solid var(--red)">
+        <div class="ml" style="color:#fca5a5">🔒 National Security</div>
+        <ul>
+          <li><strong>Sovereignty, Integrity</strong> of India</li>
+          <li>National Security, Defence</li>
+          <li>Relations with Foreign States</li>
+          <li>Strategic, Scientific, Economic Interests</li>
+          <li>Cabinet Papers (till decision)</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--d-col)">
+        <div class="ml" style="color:#fcd34d">👤 Privacy</div>
+        <ul>
+          <li><strong>Personal Information</strong> (no public interest)</li>
+          <li>Medical Records</li>
+          <li>Unwarranted Invasion of Privacy</li>
+          <li>Fiduciary Relationship में दी गई info</li>
+          <li>Police Diaries (Investigation)</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--c-col)">
+        <div class="ml" style="color:#c4b5fd">💼 Commercial</div>
+        <ul>
+          <li>Trade Secrets, Intellectual Property</li>
+          <li>Commercial Confidence</li>
+          <li>Third Party info (if confidential)</li>
+          <li>Information held in Trust</li>
+          <li>Court Contempt info</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout c-amber" style="margin-top:14px">
+      <span class="tag-pill tp-amber">Important Override</span>
+      <p><strong>Section 8(2)</strong> — Public Interest Override: यदि Exempted Information के प्रकटीकरण से Public Interest में होने वाला लाभ उससे होने वाले नुकसान से अधिक हो, तो वह Information दी जा सकती है। <strong>Section 8(3)</strong> — 20 Year Rule: किसी भी Exempted Information को उसके उत्पन्न होने के 20 वर्ष बाद Disclose किया जा सकता है (Security/Sovereign matters को छोड़कर)। <strong>Section 24</strong> — Intelligence/Security Organizations (IB, RAW, NIA आदि) RTI से Exempt हैं, लेकिन Corruption/Human Rights cases में नहीं।</p>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> RTI Exemptions = <strong>Section 8(1)</strong> में 11 categories। Public Interest Override = <strong>Sec 8(2)</strong>। <strong>20 Year Rule = Sec 8(3)</strong> — 20 साल बाद Exempt Info भी Disclose होगी। Official Secrets Act 1923 से RTI Act <strong>Override</strong> करता है — <strong>Section 22</strong>। Intelligence Agencies Exempt — <strong>Section 24</strong> (Second Schedule में listed)।</div>
+  </div>
+</div>
+
+<!-- IT ACT 2000 OVERVIEW -->
+<h2 class="sec" id="it-overview"><span class="ico ico-green">💻</span>IT Act 2000 — सूचना प्रौद्योगिकी अधिनियम</h2>
+
+<div class="info-box" style="border-top:4px solid var(--b-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-green">💻</div>
+    <div class="ib-meta">
+      <h3>Information Technology Act, 2000</h3>
+      <div class="ibm-sub">Passed: 9 June 2000 | Enforced: 17 October 2000 | Amended: IT Amendment Act 2008</div>
+    </div>
+    <span class="ib-badge bb-green">India's Cyber Law</span>
+  </div>
+  <div class="ib-body">
+    <p>IT Act 2000 भारत का पहला Cyber Law है जो <strong style="color:#fff">Electronic Transactions को Legal Validity, Digital Signature को मान्यता, Cyber Crimes को Define</strong> करता है। यह UNCITRAL Model Law on Electronic Commerce पर आधारित है।</p>
+
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">📋 IT Act 2000 के मुख्य उद्देश्य</div>
+        <ul>
+          <li><strong>E-Commerce</strong> को Legal Framework देना</li>
+          <li><strong>Digital Signature</strong> को Legal Validity</li>
+          <li>Electronic Records को <strong>Legal Documents</strong> मानना</li>
+          <li>Cyber Crimes को <strong>Define और Penalize</strong> करना</li>
+          <li><strong>e-Governance</strong> को Enable करना</li>
+          <li>Certifying Authorities (CA) की Regulation</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">📝 IT Amendment Act 2008 — मुख्य Changes</div>
+        <ul>
+          <li>Section 66A जोड़ा (Bad Taste Online Content) — SC ने 2015 में Struck Down</li>
+          <li><strong>Section 66C</strong> — Identity Theft</li>
+          <li><strong>Section 66D</strong> — Cheating by Personation</li>
+          <li><strong>Section 67B</strong> — Child Pornography</li>
+          <li><strong>Section 69</strong> — Interception Powers expand</li>
+          <li>Intermediary Liability (Sec 79) expand</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout c-green">
+      <span class="tag-pill tp-green">UNCITRAL आधार</span>
+      <p>IT Act 2000, UNCITRAL (United Nations Commission on International Trade Law) के <strong>Model Law on Electronic Commerce (1996)</strong> और <strong>Model Law on Electronic Signatures (2001)</strong> पर आधारित है। India इस Model को adopt करने वाले पहले देशों में से था।</p>
+    </div>
+  </div>
+</div>
+
+<!-- IT ACT SECTIONS -->
+<h2 class="sec" id="it-sections"><span class="ico ico-green">📑</span>IT Act 2000 — प्रमुख Sections</h2>
+
+<div class="card-grid">
+
+  <div class="c-card strip-blue">
+    <div class="cc-ico">💻</div>
+    <div class="cc-title">Section 43 — Unauthorised Access</div>
+    <div class="cc-sub">अनाधिकृत पहुँच — Civil Liability</div>
+    <ul class="cc-ul">
+      <li>Computer, Network, System में <strong>Unauthorised Access</strong></li>
+      <li>Data चोरी, Damage, Disruption</li>
+      <li>Civil Liability — <strong>Compensation</strong> (no upper limit)</li>
+      <li>Criminal नहीं — Civil Remedy</li>
+      <li>Cyber Appellate Tribunal में Appeal</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-yellow">
+    <div class="cc-ico">🔓</div>
+    <div class="cc-title">Section 65 — Tampering with Source Code</div>
+    <div class="cc-sub">Source Code से छेड़छाड़</div>
+    <ul class="cc-ul">
+      <li>Computer Source Code को <strong>Knowingly Conceal, Alter, Destroy</strong></li>
+      <li>Punishment: <strong>3 Years Imprisonment</strong> और/या ₹2 Lakh fine</li>
+      <li>Source Code = Computer Program का Code</li>
+      <li>Software Piracy से भिन्न</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-purple">
+    <div class="cc-ico">🔐</div>
+    <div class="cc-title">Section 66 — Hacking</div>
+    <div class="cc-sub">कम्प्यूटर से सम्बन्धित अपराध</div>
+    <ul class="cc-ul">
+      <li><strong>Hacking</strong> — Unauthorised Access + Damage</li>
+      <li>Dishonest Intent से Computer Resource Access</li>
+      <li>Punishment: <strong>3 Years</strong> और/या ₹5 Lakh fine</li>
+      <li>2008 Amendment से Section 66 expanded</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-green">
+    <div class="cc-ico">🆔</div>
+    <div class="cc-title">Section 66C — Identity Theft</div>
+    <div class="cc-sub">पहचान की चोरी (2008 Amendment)</div>
+    <ul class="cc-ul">
+      <li>Password, Digital Signature, Unique ID Theft</li>
+      <li>Fraudulently or Dishonestly use करना</li>
+      <li>Punishment: <strong>3 Years</strong> और ₹1 Lakh fine</li>
+      <li>Phishing भी इसी के अंतर्गत</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-blue">
+    <div class="cc-ico">🎭</div>
+    <div class="cc-title">Section 66D — Cheating by Personation</div>
+    <div class="cc-sub">प्रतिरूपण द्वारा धोखाधड़ी (2008)</div>
+    <ul class="cc-ul">
+      <li>Communication Device / Computer से <strong>Impersonation</strong></li>
+      <li>दूसरे की Identity से Fraud करना</li>
+      <li>Punishment: <strong>3 Years</strong> और ₹1 Lakh fine</li>
+      <li>Fake Social Media Accounts</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-yellow">
+    <div class="cc-ico">🔞</div>
+    <div class="cc-title">Section 67 — Obscene Material</div>
+    <div class="cc-sub">अश्लील सामग्री</div>
+    <ul class="cc-ul">
+      <li>Electronic Form में Obscene Material <strong>Publish / Transmit</strong></li>
+      <li>First Offence: <strong>3 Years</strong> + ₹5 Lakh</li>
+      <li>Subsequent: <strong>5 Years</strong> + ₹10 Lakh</li>
+      <li>Sec 67A = Sexually Explicit Material</li>
+      <li>Sec 67B = Child Pornography (7 Years)</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-purple">
+    <div class="cc-ico">📡</div>
+    <div class="cc-title">Section 69 — Interception</div>
+    <div class="cc-sub">Government की Surveillance Power</div>
+    <ul class="cc-ul">
+      <li>Government को Computer Resources <strong>Intercept/Monitor</strong> करने का अधिकार</li>
+      <li>National Security, Public Order, Sovereignty के लिए</li>
+      <li>Compliance न करने पर <strong>7 Years</strong> Imprisonment</li>
+      <li>Sec 69A = Website Blocking Power</li>
+      <li>Sec 69B = Cybersecurity Monitoring</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-green">
+    <div class="cc-ico">🔏</div>
+    <div class="cc-title">Section 72 — Breach of Confidentiality</div>
+    <div class="cc-sub">गोपनीयता का उल्लंघन</div>
+    <ul class="cc-ul">
+      <li>Powers under IT Act में प्राप्त information को <strong>Disclose</strong> करना</li>
+      <li>Without Consent के व्यक्तिगत जानकारी प्रकाशित</li>
+      <li>Punishment: <strong>2 Years</strong> और/या ₹1 Lakh fine</li>
+      <li>Sec 72A = Intermediary द्वारा Breach</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-cyan" style="border-top:4px solid var(--cyan)">
+    <div class="cc-ico">🏢</div>
+    <div class="cc-title">Section 79 — Intermediary Liability</div>
+    <div class="cc-sub">Intermediaries की Safe Harbour</div>
+    <ul class="cc-ul">
+      <li>ISPs, Social Media, Web Hosts = <strong>Intermediaries</strong></li>
+      <li>Due Diligence करने पर Liability नहीं</li>
+      <li>Notice मिलने पर <strong>Takedown</strong> करना होगा</li>
+      <li>IT Rules 2021 = Significant Platforms के लिए Stricter</li>
+      <li>Grievance Officer Mandatory</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="scroll-note">← Scroll करें →</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr><th>Section</th><th>विषय</th><th>Punishment</th><th>Type</th></tr>
+    </thead>
+    <tbody>
+      <tr class="r1"><td><strong>Sec 43</strong></td><td>Unauthorised Computer Access</td><td>Compensation (Civil)</td><td>Civil</td></tr>
+      <tr class="r2"><td><strong>Sec 65</strong></td><td>Source Code Tampering</td><td>3 Yrs + ₹2 Lakh</td><td>Criminal</td></tr>
+      <tr class="r3"><td><strong>Sec 66</strong></td><td>Hacking / Computer Related Offences</td><td>3 Yrs + ₹5 Lakh</td><td>Criminal</td></tr>
+      <tr class="r4"><td><strong>Sec 66C</strong></td><td>Identity Theft</td><td>3 Yrs + ₹1 Lakh</td><td>Criminal (2008)</td></tr>
+      <tr class="r5"><td><strong>Sec 66D</strong></td><td>Cheating by Personation</td><td>3 Yrs + ₹1 Lakh</td><td>Criminal (2008)</td></tr>
+      <tr class="r6"><td><strong>Sec 67</strong></td><td>Obscene Material Online</td><td>3 Yrs + ₹5 Lakh (first)</td><td>Criminal</td></tr>
+      <tr class="r7"><td><strong>Sec 67B</strong></td><td>Child Pornography</td><td>5–7 Yrs + Fine</td><td>Criminal (2008)</td></tr>
+      <tr class="r1"><td><strong>Sec 69</strong></td><td>Interception / Monitoring</td><td>7 Yrs (non-compliance)</td><td>Govt Power</td></tr>
+      <tr class="r2"><td><strong>Sec 72</strong></td><td>Breach of Confidentiality</td><td>2 Yrs + ₹1 Lakh</td><td>Criminal</td></tr>
+      <tr class="r3"><td><strong>Sec 79</strong></td><td>Intermediary Liability (Safe Harbour)</td><td>Due Diligence required</td><td>Civil/Criminal</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- CYBER CRIMES -->
+<h2 class="sec" id="cyber"><span class="ico ico-red">🔐</span>Cyber Crimes के प्रकार</h2>
+
+<p>Cyber Crime वह अपराध है जो <strong style="color:#fff">Computer, Internet या Digital Network</strong> के माध्यम से किया जाता है। IT Act 2000/2008 इन्हें Criminalize करता है।</p>
+
+<div class="card-grid">
+
+  <div class="c-card strip-blue">
+    <div class="cc-ico">🎣</div>
+    <div class="cc-title">Phishing</div>
+    <div class="cc-sub">फ़िशिंग — Fake Identity</div>
+    <ul class="cc-ul">
+      <li>Fake Email / Website से <strong>Login Credentials चोरी</strong></li>
+      <li>Bank, Government जैसी दिखने वाली Sites</li>
+      <li>Sec 66C + 66D के अंतर्गत</li>
+      <li>Spear Phishing = Targeted Attack</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-yellow">
+    <div class="cc-ico">🔒</div>
+    <div class="cc-title">Ransomware</div>
+    <div class="cc-sub">फिरौती माँगने वाला Malware</div>
+    <ul class="cc-ul">
+      <li>Computer Data <strong>Encrypt</strong> करके Ransom माँगना</li>
+      <li>WannaCry (2017), NotPetya प्रसिद्ध उदाहरण</li>
+      <li>Hospitals, Governments पर Attack</li>
+      <li>Sec 66 के अंतर्गत</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-purple">
+    <div class="cc-ico">🕵️</div>
+    <div class="cc-title">Cyber Stalking &amp; Harassment</div>
+    <div class="cc-sub">Online उत्पीड़न</div>
+    <ul class="cc-ul">
+      <li>Online Follow/Stalk करना</li>
+      <li><strong>Cyber Bullying</strong> — Schools/Colleges में</li>
+      <li>Sec 66C, 67, IPC 354D</li>
+      <li>Women against अधिक Cases</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-green">
+    <div class="cc-ico">💳</div>
+    <div class="cc-title">Cyber Financial Fraud</div>
+    <div class="cc-sub">ऑनलाइन वित्तीय धोखाधड़ी</div>
+    <ul class="cc-ul">
+      <li>Credit Card Fraud, UPI Fraud</li>
+      <li><strong>Vishing</strong> (Voice Phishing) — Phone Calls</li>
+      <li><strong>OTP Fraud</strong> — SIM Swap</li>
+      <li>Sec 66C, 66D, 43</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-blue">
+    <div class="cc-ico">🌊</div>
+    <div class="cc-title">DDoS Attack</div>
+    <div class="cc-sub">Distributed Denial of Service</div>
+    <ul class="cc-ul">
+      <li>Website को <strong>Overload</strong> करके Down करना</li>
+      <li>Botnet से Massive Traffic</li>
+      <li>National Security threat</li>
+      <li>Sec 43 + 66 के अंतर्गत</li>
+    </ul>
+  </div>
+
+  <div class="c-card strip-yellow">
+    <div class="cc-ico">🦠</div>
+    <div class="cc-title">Malware / Virus</div>
+    <div class="cc-sub">दुर्भावनापूर्ण सॉफ़्टवेयर</div>
+    <ul class="cc-ul">
+      <li>Virus, Worm, Trojan, Spyware</li>
+      <li>Data Destroy या Steal करना</li>
+      <li><strong>Keylogger</strong> — Keystrokes record</li>
+      <li>Sec 43, 65, 66 के अंतर्गत</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="callout c-red">
+  <span class="tag-pill tp-red">CERT-In</span>
+  <p><strong>CERT-In</strong> (Computer Emergency Response Team — India) = India की National Cybersecurity Agency। MeitY (Ministry of Electronics &amp; Information Technology) के अंतर्गत। Cyber Incidents का Response, Coordination और Prevention। <strong>2004</strong> में Established। IT Act की Sec 70B के तहत Statutory Status (2008 Amendment)। Critical Information Infrastructure की Protection भी।</p>
+</div>
+
+<!-- DIGITAL SIGNATURE -->
+<h2 class="sec" id="digital-sig"><span class="ico ico-cyan">✍️</span>Digital Signature &amp; PKI</h2>
+
+<div class="info-box" style="border-top:4px solid var(--cyan)">
+  <div class="ib-head">
+    <div class="ib-circle ic-cyan">✍️</div>
+    <div class="ib-meta">
+      <h3>Digital Signature — डिजिटल हस्ताक्षर</h3>
+      <div class="ibm-sub">IT Act 2000 Sections 2, 3, 5 | Legal Validity | PKI Technology</div>
+    </div>
+    <span class="ib-badge bb-cyan">IT Act 2000</span>
+  </div>
+  <div class="ib-body">
+    <p><strong style="color:#fff">Digital Signature</strong> एक Cryptographic Technique है जो किसी Electronic Document की <strong style="color:#fff">Authenticity, Integrity और Non-repudiation</strong> सुनिश्चित करती है। IT Act 2000 में इसे Handwritten Signature के समकक्ष Legal Validity दी गई है।</p>
+
+    <h3 class="sub">Digital Signature के 3 मूल गुण</h3>
+    <div class="three-col">
+      <div class="mbox" style="border-top:3px solid var(--a-col);text-align:center">
+        <div style="font-size:26px;margin-bottom:7px">✅</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:5px">Authentication</div>
+        <div style="font-size:12px;color:#b8c8e0">Sender की Identity प्रमाणित होती है। Who signed?</div>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--b-col);text-align:center">
+        <div style="font-size:26px;margin-bottom:7px">🔒</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:5px">Integrity</div>
+        <div style="font-size:12px;color:#b8c8e0">Document में कोई Tampering नहीं। Document not altered?</div>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--c-col);text-align:center">
+        <div style="font-size:26px;margin-bottom:7px">⛔</div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:5px">Non-Repudiation</div>
+        <div style="font-size:12px;color:#b8c8e0">Signer बाद में Signature से मुकर नहीं सकता।</div>
+      </div>
+    </div>
+
+    <h3 class="sub">PKI — Public Key Infrastructure</h3>
+    <div class="two-col">
+      <div class="mbox">
+        <div class="ml">🔑 PKI की कार्यप्रणाली</div>
+        <ul>
+          <li><strong>Asymmetric Encryption</strong> — 2 Keys: Public + Private</li>
+          <li><strong>Private Key</strong> — Signer के पास (Secret) — Sign करता है</li>
+          <li><strong>Public Key</strong> — सभी के पास — Verify करता है</li>
+          <li><strong>Hash Function</strong> — Document का Digest बनाना</li>
+          <li>Signature = Encrypted Hash (Private Key से)</li>
+          <li>Verification = Decrypted Hash (Public Key से)</li>
+        </ul>
+      </div>
+      <div class="mbox">
+        <div class="ml">🏢 Certifying Authorities (India)</div>
+        <ul>
+          <li><strong>Controller of Certifying Authorities (CCA)</strong> — Root CA (IT Act Sec 17)</li>
+          <li><strong>eMudhra</strong> — Private CA</li>
+          <li><strong>Sify Technologies</strong> — CA</li>
+          <li><strong>NIC CA</strong> — Government Employees</li>
+          <li><strong>NSDL</strong> — Financial Sector</li>
+          <li><strong>Digital Signature Certificate (DSC)</strong> — 1/2/3 years validity</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="net-tip"><strong>UGC NET Tip</strong> Digital Signature के 3 Properties: <strong>A-I-N</strong> = Authentication + Integrity + Non-Repudiation। <strong>PKI</strong> = Asymmetric Encryption। Private Key = Sign। Public Key = Verify। <strong>CCA</strong> (Controller of Certifying Authorities) = Root CA, IT Act Sec 17। <strong>Electronic Signature</strong> (2008 Amendment) = Broader than Digital Signature — includes biometrics, OTP आदि।</div>
+  </div>
+</div>
+
+<!-- DATA PROTECTION -->
+<h2 class="sec" id="data-protection"><span class="ico ico-purple">🛡️</span>Data Protection — PDPB &amp; DPDPA 2023</h2>
+
+<div class="info-box" style="border-top:4px solid var(--c-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-purple">🛡️</div>
+    <div class="ib-meta">
+      <h3>Digital Personal Data Protection Act (DPDPA), 2023</h3>
+      <div class="ibm-sub">Personal Data Protection Bill (PDPB) 2019 → DPDPA 2023 | Passed: 11 August 2023</div>
+    </div>
+    <span class="ib-badge bb-purple">New Law 2023</span>
+  </div>
+  <div class="ib-body">
+    <p>भारत में Data Privacy के लिए <strong style="color:#fff">Justice B.N. Srikrishna Committee (2017)</strong> ने Draft बनाया। PDPB 2019 के बाद <strong style="color:#fff">Digital Personal Data Protection Act (DPDPA) 2023</strong> पारित हुआ — 11 August 2023 को Gazette में Published।</p>
+
+    <div class="two-col">
+      <div class="mbox" style="border-top:4px solid var(--c-col)">
+        <div class="ml" style="color:#c4b5fd">📋 DPDPA 2023 — मुख्य प्रावधान</div>
+        <ul>
+          <li><strong>Data Principal</strong> = Individual (whose data)</li>
+          <li><strong>Data Fiduciary</strong> = जो Data Process करे</li>
+          <li><strong>Data Processor</strong> = Fiduciary की behalf पर</li>
+          <li><strong>Consent</strong> = Explicit, Informed, Specific</li>
+          <li>Right to <strong>Erasure</strong> ("Right to be Forgotten")</li>
+          <li>Right to <strong>Correction</strong> of Data</li>
+          <li><strong>Data Protection Board</strong> of India — Regulator</li>
+          <li>Penalty: Max <strong>₹250 Crore</strong></li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:4px solid var(--a-col)">
+        <div class="ml" style="color:#93c5fd">🌍 Global Data Protection Laws</div>
+        <ul>
+          <li><strong>GDPR</strong> (EU, 2018) = Gold Standard of Data Protection</li>
+          <li><strong>CCPA</strong> (California, USA, 2020)</li>
+          <li><strong>PDPA</strong> (Singapore, 2012)</li>
+          <li>India DPDPA 2023 = GDPR-inspired</li>
+          <li><strong>Data Localization</strong> = Sensitive Data India में</li>
+          <li><strong>Privacy by Design</strong> = Principle in DPDPA</li>
+          <li>Children's Data = Special Protection</li>
+          <li>Cross-border Transfer: Whitelist</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout c-purple">
+      <span class="tag-pill tp-purple">K.S. Puttaswamy Case (2017)</span>
+      <p><strong>Justice K.S. Puttaswamy vs Union of India (2017)</strong> — Supreme Court की 9-Judge Bench ने सर्वसम्मति से घोषित किया कि <strong>Privacy एक Fundamental Right है</strong> — Article 21 (Right to Life and Personal Liberty) के अंतर्गत। यह Landmark Case PDPB/DPDPA की नींव बना। इसी Judgement के बाद India में Comprehensive Data Protection Law की आवश्यकता महसूस की गई।</p>
+    </div>
+    <div class="net-tip"><strong>UGC NET Tip</strong> <strong>DPDPA 2023</strong> = 11 August 2023। Data Principal = Individual। Data Fiduciary = जो Process करे। <strong>Right to Erasure</strong> + Right to Correction। <strong>Data Protection Board</strong> = Regulator। Penalty = ₹250 Crore। <strong>K.S. Puttaswamy Case (2017)</strong> = Privacy Fundamental Right। <strong>GDPR (EU, 2018)</strong> = Global Gold Standard। <strong>Srikrishna Committee (2017)</strong> = PDPB का Draft।</div>
+  </div>
+</div>
+
+<!-- LIBRARY & RTI/IT -->
+<h2 class="sec" id="library"><span class="ico ico-blue">📚</span>Library &amp; RTI / IT Act — सम्बन्ध</h2>
+
+<div class="three-col">
+  <div class="mbox" style="border-top:4px solid var(--a-col)">
+    <div class="ml" style="color:#93c5fd">📜 Library &amp; RTI Act</div>
+    <ul>
+      <li>Public Libraries = Public Authorities — RTI लागू</li>
+      <li>Library Budget, Collection, Policies RTI से माँगे जा सकते हैं</li>
+      <li>Academic Libraries (Govt) = RTI Covered</li>
+      <li>INFLIBNET, NDL, National Library = RTI Covered</li>
+      <li>Library Tender और Procurement = RTI Transparency</li>
+      <li>Sec 4 (Proactive Disclosure) = Online Catalogue</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:4px solid var(--b-col)">
+    <div class="ml" style="color:#6ee7b7">💻 Library &amp; IT Act</div>
+    <ul>
+      <li>Online Library Catalogue = Electronic Record</li>
+      <li>E-journal Subscriptions = Online Transactions</li>
+      <li>Digital Library = IT Act applies</li>
+      <li>Library Website Hacking = Sec 66</li>
+      <li>User Data Protection = IT Act + DPDPA</li>
+      <li>Digital Signature for E-resources Licensing</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:4px solid var(--c-col)">
+    <div class="ml" style="color:#c4b5fd">🛡️ Library &amp; Data Protection</div>
+    <ul>
+      <li>Member Data = Personal Data (DPDPA 2023)</li>
+      <li>Borrowing Records = Sensitive Privacy Data</li>
+      <li>Library Confidentiality = International Standard</li>
+      <li>IFLA Code of Ethics — User Privacy</li>
+      <li>Catalogue Data = Not personal unless linked</li>
+      <li>CCTV in Library = Data Protection issues</li>
+    </ul>
+  </div>
+</div>
+
+<div class="alt-box"><strong>🖼️ Image ALT Text #1</strong> RTI Act 2005 application process flow — PIO CIC SIC First Appeal Second Appeal Hindi UGC NET LIS</div>
+<div class="alt-box"><strong>🖼️ Image ALT Text #2</strong> IT Act 2000 Key Sections — 43 65 66 66C 67 69 72 79 Cyber Crime table Hindi UGC NET LIS</div>
+
+<!-- RTI vs IT ACT COMPARISON -->
+<h2 class="sec" id="compare"><span class="ico ico-amber">📊</span>RTI Act vs IT Act — तुलना तालिका</h2>
+
+<div class="scroll-note">← Scroll करें →</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr><th>पहलू</th><th style="color:#93c5fd">RTI Act 2005</th><th style="color:#6ee7b7">IT Act 2000/2008</th></tr>
+    </thead>
+    <tbody>
+      <tr class="r1"><td><strong>पूरा नाम</strong></td><td>Right to Information Act, 2005</td><td>Information Technology Act, 2000</td></tr>
+      <tr class="r2"><td><strong>लागू तिथि</strong></td><td>12 October 2005</td><td>17 October 2000</td></tr>
+      <tr class="r3"><td><strong>उद्देश्य</strong></td><td>Government Transparency + Accountability</td><td>E-Commerce + Cyber Crime + Digital Signature</td></tr>
+      <tr class="r4"><td><strong>आधारित</strong></td><td>Article 19(1)(a) — Freedom of Expression</td><td>UNCITRAL Model Law on E-Commerce 1996</td></tr>
+      <tr class="r5"><td><strong>Regulator</strong></td><td>CIC (Central) + SIC (State)</td><td>Cyber Appellate Tribunal + CERT-In</td></tr>
+      <tr class="r6"><td><strong>Amendment</strong></td><td>RTI Amendment Act 2019 (CIC tenure)</td><td>IT Amendment Act 2008</td></tr>
+      <tr class="r7"><td><strong>Penalty</strong></td><td>₹250/day → Max ₹25,000 (PIO पर)</td><td>Civil + Criminal (Sec-wise varies)</td></tr>
+      <tr class="r1"><td><strong>Exemption</strong></td><td>Section 8 — 11 Categories</td><td>Section 79 — Intermediary Safe Harbour</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- EXAM BOX -->
+<div class="exam-box" id="exam">
+  <div class="exam-head">📋 परीक्षा के लिए अतिमहत्वपूर्ण बिंदु (UGC NET Exam Notes)</div>
+  <ul class="exam-ul">
+    <li><strong>RTI Act 2005:</strong> Passed 15 June 2005, Enforced <strong>12 October 2005</strong>। Freedom of Information Act 2002 को Replace किया। Article 19(1)(a) पर आधारित। Application Fee = ₹10 (BPL Free)। Reasons देना Mandatory नहीं।</li>
+    <li><strong>RTI Timelines:</strong> सामान्य = <strong>30 दिन</strong>। Life &amp; Liberty = <strong>48 घंटे</strong>। Third Party = <strong>40 दिन</strong>। Penalty = ₹250/day, Max ₹25,000। Compensation = ₹1 Lakh तक।</li>
+    <li><strong>RTI Key Sections:</strong> Sec 4 = Suo Motu Disclosure। Sec 6 = Application। Sec 7 = Timelines। Sec 8 = <strong>11 Exemptions</strong>। Sec 8(2) = Public Interest Override। Sec 8(3) = <strong>20 Year Rule</strong>। Sec 19 = Appeal। Sec 20 = Penalty। Sec 22 = RTI overrides Official Secrets Act।</li>
+    <li><strong>RTI Authorities:</strong> CPIO (Central PIO), SPIO (State PIO)। First Appeal = Appellate Officer। Second Appeal = <strong>CIC / SIC</strong>। CIC = Chief Information Commissioner + Commissioners (New Delhi)।</li>
+    <li><strong>IT Act 2000:</strong> Enforced <strong>17 October 2000</strong>। UNCITRAL Model Law पर based। Amended by <strong>IT Amendment Act 2008</strong>। Sec 43 = Civil (Unauthorised Access)। Sec 65 = Source Code Tampering (3yrs)। Sec 66 = Hacking (3yrs)।</li>
+    <li><strong>IT Act 2008 New Sections:</strong> <strong>Sec 66C</strong> = Identity Theft। <strong>Sec 66D</strong> = Cheating by Personation। <strong>Sec 67B</strong> = Child Pornography। <strong>Sec 69</strong> = Interception। <strong>Sec 79</strong> = Intermediary Safe Harbour। Sec 66A = Struck Down by SC (2015)।</li>
+    <li><strong>Digital Signature:</strong> 3 Properties = Authentication + Integrity + Non-Repudiation। PKI = Asymmetric Encryption (Private Key Sign, Public Key Verify)। CCA (Controller of Certifying Authorities) = Root CA, IT Act Sec 17।</li>
+    <li><strong>DPDPA 2023:</strong> Digital Personal Data Protection Act, Passed <strong>11 August 2023</strong>। Data Principal = Individual। Data Fiduciary। Data Protection Board। Max Penalty = <strong>₹250 Crore</strong>। <strong>K.S. Puttaswamy Case (2017)</strong> = Privacy Fundamental Right। Srikrishna Committee (2017) ने Draft बनाया।</li>
+    <li><strong>CERT-In:</strong> Computer Emergency Response Team India। MeitY के अंतर्गत। 2004 में Established। IT Act Sec 70B। India की National Cybersecurity Agency। Cyber Incident Response।</li>
+    <li><strong>IT Act Special Points:</strong> GDPR (EU, 2018) = Global Data Protection Gold Standard। Sec 69A = Website Blocking। Sec 66A = 2015 में SC ने Struck Down (Shreya Singhal Case)। Section 43A = Sensitive Personal Data।</li>
+  </ul>
+</div>
+
+<!-- CONCLUSION -->
+<div class="conclusion">
+  <h2 class="sec" style="margin-top:0;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:12px;color:#fff"><span class="ico ico-blue">✓</span>निष्कर्ष (Conclusion)</h2>
+  <p>RTI Act 2005 और IT Act 2000 — दोनों Information के क्षेत्र में India के सबसे महत्वपूर्ण कानून हैं। RTI ने Ordinary Citizen को Government से सूचना माँगने का कानूनी हथियार दिया है, जबकि IT Act ने Digital Economy और Cyber Space को एक Legal Framework दिया है।</p>
+  <p>DPDPA 2023 का पारित होना India के Data Protection Framework में एक नए युग की शुरुआत है — K.S. Puttaswamy Case (2017) में Privacy को Fundamental Right घोषित करने के बाद यह Law नितांत आवश्यक हो गया था।</p>
+  <p>Library &amp; Information Science Professionals को इन कानूनों की व्यावहारिक समझ होनी चाहिए — क्योंकि ये सूचना की Transparency, Access, Privacy और Security — सभी से सीधे जुड़े हैं। एक आधुनिक Librarian RTI Activist, Digital Rights Advocate और Data Steward की भूमिका निभाता है।</p>
+</div>
+
+<!-- FAQs -->
+<h2 class="sec" id="faq"><span class="ico ico-blue">❓</span>FAQs — 10 महत्वपूर्ण प्रश्न</h2>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q1. RTI Act 2005 के प्रमुख Time Limits क्या हैं? Penalty के क्या प्रावधान हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a">RTI Act 2005 के Time Limits: <strong>सामान्य सूचना = 30 दिन</strong>। जीवन-मृत्यु (Life &amp; Liberty) = <strong>48 घंटे</strong>। Third Party Information = <strong>40 दिन</strong>। यदि Application Transfer हुई हो = Original 30 days + 5 days। Penalty: CPIO/SPIO की Delay/Denial पर <strong>₹250 प्रतिदिन</strong>। Maximum Penalty = <strong>₹25,000</strong>। Compensation = Applicant को <strong>₹1,00,000</strong> तक। Disciplinary Action की Recommendation भी CIC कर सकता है। 2019 Amendment: CIC के Chief Information Commissioner का Tenure = 5 साल (पहले 5 या 65 वर्ष)।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q2. RTI Section 8 में कौन-कौन सी Exemptions हैं? 20-Year Rule क्या है?</span><span class="ico">+</span></div>
+  <div class="faq-a">RTI Act Section 8(1) में 11 Exemption Categories: National Security/Sovereignty, Cabinet Papers (till decision), Parliamentary Privilege, Trade Secrets/Commercial Confidence, Police Investigation (ongoing), Court Contempt Info, Fiduciary Relationship Info, Foreign Government Info, Personal Privacy, Third Party Confidential Info, Economic/Scientific Interests। <strong>Section 8(2)</strong> = Public Interest Override — यदि Disclosure से Public Benefit > Harm, तो info दी जा सकती है। <strong>Section 8(3) — 20 Year Rule</strong> = कोई भी Exempt Info उसके उत्पन्न होने के 20 वर्ष बाद Disclose हो सकती है (Sovereignty/Security cases को छोड़कर)।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q3. CIC और SIC में क्या अंतर है? इनकी शक्तियाँ क्या हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>CIC (Central Information Commission)</strong> = Central Government Ministries/Depts/PSUs के लिए Second Appellate Body। New Delhi। Chief Information Commissioner + Information Commissioners। <strong>SIC (State Information Commission)</strong> = State Government Depts के लिए। State Capital में। Chief State Information Commissioner + State Information Commissioners। <strong>Powers</strong>: Second Appeal और Complaints सुनना, PIO पर Penalty (₹250/day, max ₹25,000), Information Disclosure का Order, Compensation का Award, Disciplinary Action Recommend। Civil Court की Powers भी — Documents तलब कर सकते हैं। RTI Amendment Act 2019 से: CIC/SIC के Chief Commissioner का Tenure और Pay Govt द्वारा निर्धारित।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q4. IT Act 2000 का Section 66A क्यों हटाया गया?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Section 66A</strong> (IT Amendment Act 2008 में जोड़ा गया) = Online Offensive, Menacing, Grossly Offensive Content Post करने पर <strong>3 Years Imprisonment</strong> का प्रावधान था। इसका Police द्वारा Misuse हो रहा था — Political Opposition, Activists, Journalists को Arrest किया जा रहा था। <strong>Shreya Singhal vs Union of India (2015)</strong> Case में Supreme Court ने Section 66A को <strong>Unconstitutional</strong> घोषित किया — Article 19(1)(a) (Freedom of Speech) का Violation। यह Section बहुत Vague था — "Grossly Offensive" define नहीं था। अब यह Section completely struck down है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q5. Digital Signature कैसे काम करता है? PKI क्या है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Digital Signature</strong> = Cryptographic Technique। 3 Properties: Authentication, Integrity, Non-Repudiation। <strong>Process</strong>: (1) Document का <strong>Hash</strong> बनाया जाता है। (2) Hash को Sender की <strong>Private Key</strong> से Encrypt किया जाता है — यही Digital Signature है। (3) Receiver Document की अपनी Hash बनाता है + Sender की <strong>Public Key</strong> से Signature Decrypt करता है। (4) दोनों Hash Match = Authentic। <strong>PKI (Public Key Infrastructure)</strong> = Framework जो Public-Private Key Pairs issue और manage करती है। <strong>Certifying Authority (CA)</strong> = Digital Certificates Issue करती है। India में Root CA = <strong>CCA</strong> (Controller of Certifying Authorities), IT Act Sec 17।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q6. DPDPA 2023 और GDPR में क्या अंतर है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>DPDPA (Digital Personal Data Protection Act) 2023</strong> = India। Passed <strong>11 August 2023</strong>। Data Principal = Individual। Data Fiduciary = Processor। Data Protection Board = Regulator। Max Penalty = ₹250 Crore। Consent-based। <strong>GDPR (General Data Protection Regulation)</strong> = EU। Enforced <strong>25 May 2018</strong>। Global Gold Standard। Max Penalty = €20 Million or 4% Annual Turnover। <strong>Similarities</strong>: Consent, Right to Erasure, Data Portability, Privacy by Design। <strong>Differences</strong>: GDPR में Right to Data Portability explicit; DPDPA में less stringent। GDPR = Extra-territorial; DPDPA = India-focused but cross-border Transfer Rules। DPDPA = GDPR-inspired but India-contextualized।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q7. CERT-In क्या है? इसकी स्थापना कब हुई?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>CERT-In</strong> = Computer Emergency Response Team — India। <strong>2004</strong> में Established। <strong>MeitY</strong> (Ministry of Electronics and Information Technology) के अंतर्गत। <strong>IT Act Sec 70B</strong> (2008 Amendment) से Statutory Status। Functions: Cyber Security Incidents का Collection, Analysis, Dissemination। Coordination with National/International CERTs। Vulnerability Notes जारी करना। <strong>Critical Information Infrastructure (CII)</strong> की Protection। <strong>NCIIPC</strong> (National Critical Information Infrastructure Protection Centre) = PMO के अंतर्गत — Power, Banking, Telecom, Transport, Government IT की Security। India में Significant Cybersecurity Incidents का CERT-In को 6 घंटे में Report करना Mandatory (2022 Directive)।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q8. K.S. Puttaswamy Case (2017) का Data Protection से क्या सम्बन्ध है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Justice K.S. Puttaswamy (Retd.) vs Union of India, 2017</strong> = Supreme Court की 9-Judge Constitutional Bench। Matter: Aadhaar Card का विरोध — Privacy Violation का तर्क। Judgement: सर्वसम्मति से — <strong>Privacy एक Fundamental Right है</strong> — Article 21 (Right to Life and Personal Liberty) के अंतर्गत। Previous Cases (ADM Jabalpur, 1976; M.P. Sharma, 1954) को Overruled किया। Impact: (1) India में Comprehensive Data Protection Law की आवश्यकता स्थापित हुई। (2) Srikrishna Committee (2017) बनाई गई। (3) PDPB 2019 Draft → DPDPA 2023 पारित हुआ। यह India के Constitutional History में सबसे महत्वपूर्ण Judgements में से एक है।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q9. Phishing और Identity Theft में IT Act के कौन से Sections लागू होते हैं?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>Phishing</strong> = Fake Emails/Websites से Login Credentials/Bank Details चोरी। <strong>Applicable Sections</strong>: <strong>Sec 66C</strong> = Identity Theft (Password/Digital Signature/Unique ID steal करना — 3 Years + ₹1 Lakh)। <strong>Sec 66D</strong> = Cheating by Personation using Communication Device (3 Years + ₹1 Lakh)। <strong>Sec 43</strong> = Unauthorised Access (Civil Compensation)। IPC Sections भी: Sec 420 (Cheating), Sec 468 (Forgery for Cheating)। <strong>Identity Theft</strong> = किसी की Digital Identity (Aadhaar, PAN, Password) का Fraudulent Use। <strong>Sec 66C</strong> specifically deals with this। Spear Phishing = Targeted Individuals (Executives, Government Officials)। Vishing = Voice Phishing via Phone।</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-q" onclick="toggleFaq(this)"><span>Q10. Section 4 (Suo Motu Disclosure) का Library के लिए क्या अर्थ है?</span><span class="ico">+</span></div>
+  <div class="faq-a"><strong>RTI Act Section 4</strong> = Suo Motu (स्वप्रेरणा से) Disclosure — Public Authorities को <strong>अपनेआप 17 Categories की जानकारी Proactively Publish</strong> करनी होगी — बिना किसी Application के। Library के लिए: Government/Public Academic Libraries = Public Authorities। इनको Publish करना होगा: (1) Library का Organisation Structure, (2) Powers and Duties of Library Staff, (3) Procedures followed, (4) Annual Report/Budget, (5) Library Rules and Policies, (6) Library's Decision-making Process, (7) Details of Tender/Procurement। यदि Section 4 का Proper Compliance हो — तो RTI Applications की संख्या कम होगी। Online Library Catalogue और Annual Reports को Website पर डालना = Section 4 का हिस्सा।</div>
+</div>
+
+<!-- INTERNAL LINKS -->
+<div class="int-links">
+  <h3>🔗 संबंधित Topics — आगे पढ़ें</h3>
+  <div class="link-grid">
+    <a href="ugc-net-lis-unit1-6-information-industry.html" class="lnk">🏭 Unit 1.6 — Information Industry</a>
+    <a href="ugc-net-lis-unit1-7-ipr-copyright.html" class="lnk">⚖️ Unit 1.7 — IPR &amp; Copyright</a>
+    <a href="ugc-net-lis-unit1-8-plagiarism.html" class="lnk">🚫 Unit 1.8 — Plagiarism</a>
+    <a href="#" class="lnk">🏛️ Unit 1.10 — NKC &amp; NML</a>
+    <a href="ugc-net-lis-unit1-4-Information-Science-Knowledge-Society.html" class="lnk">🔬 Unit 1.4 — Information Science</a>
+    <a href="ugc-net-library-science-complete-syllabus.html" class="lnk">📋 Complete Syllabus Index</a>
+  </div>
+</div>
+
+<!-- SCHEMA -->
+<h2 class="sec" id="schema"><span class="ico ico-blue">&lt;/&gt;</span>Blogger JSON-LD Schema Markup</h2>
+<p style="font-size:13px;color:var(--muted);margin-bottom:10px">Blogger Post के HTML Section में paste करें:</p>
+<div class="schema-wrap">
+<pre id="schemaCode">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "RTI Act 2005 और IT Act 2000 | Right to Information | Cyber Crime | Digital Signature | DPDPA 2023 | UGC NET LIS Unit 1.9 Hindi",
+  "description": "RTI Act 2005 Sections 4,6,7,8,19,20, CIC SIC PIO Process, IT Act 2000 Sections 43,65,66,66C,67,69,72,79, Cyber Crimes, Digital Signature PKI, DPDPA 2023, K.S.Puttaswamy Case — UGC NET Library Science Unit 1.9 Hindi Notes.",
+  "inLanguage": "hi",
+  "keywords": "RTI Act 2005 Hindi, Right to Information, IT Act 2000 Sections, Cyber Crime, Digital Signature PKI, DPDPA 2023, GDPR, CIC SIC PIO, CERT-In, K.S.Puttaswamy Privacy Fundamental Right, UGC NET LIS Unit 1.9",
+  "author": {"@type": "Person", "name": "UGC NET Library and Information Science Blog"},
+  "publisher": {"@type": "Organization", "name": "UGC NET Library and Information Science"}
+}
+&lt;/script&gt;
+&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "RTI Act 2005 के Time Limits क्या हैं?",
+      "acceptedAnswer": {"@type": "Answer", "text": "सामान्य = 30 दिन। Life &amp; Liberty = 48 घंटे। Third Party = 40 दिन। Penalty = ₹250/day, Max ₹25,000। Application Fee ₹10 (BPL Free)।"}
+    },
+    {
+      "@type": "Question",
+      "name": "IT Act 2000 के Section 66A को क्यों हटाया?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Shreya Singhal vs Union of India (2015) में SC ने Sec 66A को Unconstitutional घोषित किया — Article 19(1)(a) Freedom of Speech का Violation। Too Vague और Misuse।"}
+    },
+    {
+      "@type": "Question",
+      "name": "DPDPA 2023 कब पारित हुआ?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Digital Personal Data Protection Act 2023 = 11 August 2023। Data Protection Board = Regulator। Max Penalty = ₹250 Crore। K.S. Puttaswamy Case (2017) से प्रेरित।"}
+    },
+    {
+      "@type": "Question",
+      "name": "Digital Signature के 3 Properties क्या हैं?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Authentication + Integrity + Non-Repudiation। PKI = Asymmetric Encryption। Private Key = Sign। Public Key = Verify। CCA (IT Act Sec 17) = Root Certifying Authority।"}
+    },
+    {
+      "@type": "Question",
+      "name": "RTI Section 8(3) — 20 Year Rule क्या है?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Section 8(3) = कोई भी Exempt Information उसके उत्पन्न होने के 20 वर्ष बाद Disclose हो सकती है — Sovereignty/Security matters को छोड़कर।"}
+    }
+  ]
+}
+&lt;/script&gt;</pre>
+  <button class="copy-btn" onclick="copySchema()">📋 Schema Code Copy करें</button>
+</div>
+
+</div><!-- /wrap -->
+
+<div class="foot">
+  <strong>UGC NET Library and Information Science Blog</strong> &nbsp;|&nbsp; Unit I · Topic 1.9 — RTI Act 2005 &amp; IT Act 2000
+  <br><span>RTI Sections 4,6,7,8,19,20 · CIC/SIC · IT Act Sections 43,65,66,66C,67,69,72,79 · DPDPA 2023 · K.S.Puttaswamy · CERT-In · Digital Signature · PKI</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
