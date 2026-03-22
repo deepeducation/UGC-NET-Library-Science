@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>सूचना साक्षरता | Information Literacy | Big6 ACRL SCONUL ALA | UGC NET Library Science Unit 2.10 हिंदी Notes</title>
+<meta name="description" content="Information Literacy — Areas, Standards, Types, Models: Big6, ACRL Framework, SCONUL Seven Pillars, ALA Definition, UNESCO MIL, IFLA Guidelines, Trends — UGC NET LIS Unit 2.10 सम्पूर्ण हिंदी Notes।">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Fraunces:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#080f1a;--surface:#0f1c2e;--surface2:#162338;--surface3:#1c2d47;
+  --border:rgba(255,255,255,.08);--border2:rgba(255,255,255,.14);
+  --text:#e8eef8;--muted:#7a90b0;--faint:#4a6080;
+  --accent:#f5a623;--accent2:#3b82f6;
+  --green:#10b981;--red:#ef4444;--purple:#8b5cf6;--pink:#ec4899;--cyan:#06b6d4;
+  --a-col:#3b82f6;--b-col:#10b981;--c-col:#8b5cf6;--d-col:#f59e0b;
+  --r:14px;--r-sm:9px;--shadow:0 6px 28px rgba(0,0,0,.45)
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans Devanagari',sans-serif;background:var(--bg);color:var(--text);line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased}
+#read-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--a-col),var(--b-col),var(--c-col),var(--d-col));width:0%;z-index:999;transition:width .1s}
+.top-nav{position:sticky;top:0;z-index:100;background:rgba(8,15,26,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:14px}
+.back-btn{display:inline-flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--text);text-decoration:none;font-family:inherit;transition:background .2s}.back-btn:hover{background:var(--surface2)}
+.nav-bc{font-size:12px;color:var(--muted);flex:1}.nav-bc span{color:var(--text);font-weight:600}
+.nav-dot{width:9px;height:9px;border-radius:50%;background:var(--a-col);display:inline-block;margin-right:5px}
+/* HERO */
+.hero{position:relative;padding:64px 20px 56px;text-align:center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.07) 1px,transparent 1px);background-size:44px 44px;animation:gridMove 22s linear infinite;pointer-events:none}
+.hero-glow{position:absolute;inset:0;background:radial-gradient(ellipse 90% 55% at 50% -10%,rgba(59,130,246,.22) 0%,transparent 65%);pointer-events:none}
+@keyframes gridMove{0%{background-position:0 0,0 0}100%{background-position:44px 44px,44px 44px}}
+.hero-inner{position:relative;z-index:2;max-width:860px;margin:0 auto}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.35);color:#93c5fd;font-size:11px;font-weight:700;padding:5px 16px;border-radius:30px;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:20px;animation:fadeUp .45s ease both}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(24px,5vw,50px);font-weight:900;line-height:1.1;color:#fff;margin-bottom:14px;animation:fadeUp .6s ease .1s both}
+.hero h1 .hi{display:block;font-size:.52em;font-family:'Noto Sans Devanagari',sans-serif;font-weight:400;color:var(--muted);margin-top:9px}
+.hero-desc{font-size:14.5px;color:var(--muted);max-width:660px;margin:0 auto 28px;animation:fadeUp .72s ease .18s both}
+.hero-strip{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:28px;animation:fadeUp .82s ease .24s both}
+.hs{padding:8px 18px;border-radius:22px;font-size:13px;font-weight:700;border:1.5px solid;display:flex;align-items:center;gap:7px;transition:transform .2s;cursor:default}.hs:hover{transform:scale(1.05)}
+.hs-a{background:rgba(59,130,246,.18);border-color:rgba(59,130,246,.4);color:#93c5fd}
+.hs-b{background:rgba(16,185,129,.18);border-color:rgba(16,185,129,.4);color:#6ee7b7}
+.hs-c{background:rgba(139,92,246,.18);border-color:rgba(139,92,246,.4);color:#c4b5fd}
+.hs-d{background:rgba(245,158,11,.18);border-color:rgba(245,158,11,.4);color:#fcd34d}
+.hs-e{background:rgba(6,182,212,.18);border-color:rgba(6,182,212,.4);color:#67e8f9}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;animation:fadeUp .9s ease .3s both}
+.hm{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 14px;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}.hm strong{color:var(--text)}
+/* LAYOUT */
+.wrap{max-width:940px;margin:0 auto;padding:0 18px 70px}
+.toc-box{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--a-col);border-radius:var(--r);padding:22px 26px;margin:34px 0}
+.toc-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:14px}
+.toc-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+@media(max-width:540px){.toc-list{grid-template-columns:1fr}}
+.toc-list a{font-size:13.5px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:7px;padding:5px 0;transition:color .2s}.toc-list a:hover{color:var(--text)}
+.tnum{min-width:24px;height:20px;background:rgba(59,130,246,.2);color:#93c5fd;border-radius:4px;font-size:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center}
+/* HEADINGS */
+h2.sec{font-family:'Fraunces',serif;font-size:clamp(18px,3.5vw,26px);font-weight:900;color:#fff;margin:48px 0 18px;display:flex;align-items:center;gap:13px;padding-bottom:13px;border-bottom:1px solid var(--border)}
+h2.sec .ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ico-blue{background:rgba(59,130,246,.2)}.ico-green{background:rgba(16,185,129,.2)}.ico-purple{background:rgba(139,92,246,.2)}.ico-amber{background:rgba(245,158,11,.2)}.ico-cyan{background:rgba(6,182,212,.2)}.ico-pink{background:rgba(236,72,153,.2)}
+h3.sub{font-size:clamp(14px,2.8vw,18px);font-weight:700;color:var(--accent2);margin:22px 0 11px;display:flex;align-items:center;gap:8px}
+h3.sub::before{content:'';width:4px;height:18px;background:var(--accent2);border-radius:3px;flex-shrink:0}
+p{margin-bottom:14px;font-size:15px;line-height:1.92;color:#cad5e8}
+/* SNIPPET */
+.snippet{background:linear-gradient(135deg,rgba(59,130,246,.1),rgba(16,185,129,.06));border:1px solid rgba(59,130,246,.22);border-left:4px solid var(--a-col);border-radius:0 var(--r) var(--r) 0;padding:20px 24px;margin:26px 0}
+.snip-lbl{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.1px;color:var(--accent2);margin-bottom:9px}
+.snippet p{font-size:15px;color:var(--text);margin:0}
+/* CALLOUTS */
+.callout{padding:15px 20px;border-radius:0 var(--r) var(--r) 0;margin:18px 0}
+.c-blue{background:rgba(59,130,246,.1);border-left:4px solid var(--a-col)}
+.c-green{background:rgba(16,185,129,.1);border-left:4px solid var(--b-col)}
+.c-purple{background:rgba(139,92,246,.1);border-left:4px solid var(--c-col)}
+.c-amber{background:rgba(245,158,11,.1);border-left:4px solid var(--d-col)}
+.c-cyan{background:rgba(6,182,212,.1);border-left:4px solid var(--cyan)}
+.c-pink{background:rgba(236,72,153,.1);border-left:4px solid var(--pink)}
+.callout p{font-size:14.5px;margin-bottom:8px;color:var(--text);line-height:1.85}.callout p:last-child{margin-bottom:0}
+/* PILLS */
+.tag-pill{display:inline-block;color:#fff;font-size:10.5px;font-weight:700;padding:2px 10px;border-radius:4px;margin-right:6px;vertical-align:middle}
+.tp-blue{background:var(--a-col)}.tp-green{background:var(--b-col)}.tp-purple{background:var(--c-col)}.tp-amber{background:#d97706}.tp-cyan{background:var(--cyan)}.tp-pink{background:var(--pink)}
+/* NET TIP */
+.net-tip{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-left:4px solid var(--green);border-radius:0 var(--r-sm) var(--r-sm) 0;padding:10px 15px;margin-top:14px;font-size:13.5px;color:#a7f3d0}
+.net-tip strong{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--green);margin-bottom:3px}
+/* INFO BOXES */
+.info-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:28px;overflow:hidden}
+.ib-head{display:flex;align-items:center;gap:16px;padding:18px 24px;background:var(--surface2);border-bottom:1px solid var(--border);flex-wrap:wrap}
+.ib-circle{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.ic-blue{background:linear-gradient(135deg,#1d4ed8,#3b82f6)}.ic-green{background:linear-gradient(135deg,#047857,#10b981)}.ic-purple{background:linear-gradient(135deg,#5b21b6,#8b5cf6)}.ic-amber{background:linear-gradient(135deg,#b45309,#f59e0b)}.ic-cyan{background:linear-gradient(135deg,#0891b2,#06b6d4)}.ic-pink{background:linear-gradient(135deg,#9d174d,#ec4899)}
+.ib-meta{flex:1}.ib-meta h3{font-size:18px;font-weight:700;color:#fff;margin:0}.ib-meta .ibm-sub{font-size:13px;color:var(--muted);margin-top:2px}
+.ib-badge{font-size:11px;font-weight:700;padding:4px 12px;border-radius:16px;white-space:nowrap}
+.bb-blue{background:rgba(59,130,246,.2);color:#93c5fd}.bb-green{background:rgba(16,185,129,.2);color:#6ee7b7}.bb-purple{background:rgba(139,92,246,.2);color:#c4b5fd}.bb-amber{background:rgba(245,158,11,.2);color:#fcd34d}.bb-cyan{background:rgba(6,182,212,.2);color:#67e8f9}.bb-pink{background:rgba(236,72,153,.2);color:#f9a8d4}
+.ib-body{padding:20px 24px}.ib-body p{font-size:14.5px;margin-bottom:12px;color:#cad5e8}
+/* GRIDS */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+@media(max-width:520px){.two-col{grid-template-columns:1fr}}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:14px 0}
+@media(max-width:640px){.three-col{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.three-col{grid-template-columns:1fr}}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}
+@media(max-width:700px){.four-col{grid-template-columns:1fr 1fr}}
+/* MBOX */
+.mbox{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 15px}
+.mbox .ml{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:8px}
+.mbox ul{list-style:none;padding:0;margin:0}
+.mbox ul li{padding:3px 0 3px 16px;position:relative;line-height:1.7;font-size:13.5px;color:#b8c8e0}
+.mbox ul li::before{content:'▸';position:absolute;left:2px;color:var(--accent);font-size:12px;top:4px}
+.mbox ul li strong{color:var(--text)}
+/* CARDS */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+@media(max-width:640px){.card-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.card-grid{grid-template-columns:1fr}}
+.c-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:20px 18px;transition:transform .25s,box-shadow .25s}
+.c-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.cc-ico{font-size:30px;margin-bottom:10px}.cc-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
+.cc-sub{font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.cc-ul{list-style:none;padding:0}
+.cc-ul li{font-size:12.5px;color:#b8c8e0;padding:3px 0 3px 14px;position:relative;line-height:1.62}
+.cc-ul li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:10px;top:5px}
+.cc-ul li strong{color:#fff}
+.strip-blue{border-top:4px solid var(--a-col)}.strip-yellow{border-top:4px solid var(--d-col)}.strip-purple{border-top:4px solid var(--c-col)}.strip-green{border-top:4px solid var(--b-col)}.strip-cyan{border-top:4px solid var(--cyan)}.strip-red{border-top:4px solid var(--red)}.strip-pink{border-top:4px solid var(--pink)}
+/* STAT CARDS */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+@media(max-width:640px){.stat-row{grid-template-columns:1fr 1fr}}
+.stat-card{border-radius:var(--r);padding:16px 14px;text-align:center}
+.stat-num{font-family:'Fraunces',serif;font-size:24px;font-weight:900;margin-bottom:4px;line-height:1}
+.stat-lbl{font-size:12px;font-weight:700;color:#fff;margin-bottom:3px}
+.stat-sub{font-size:11px;color:var(--muted);line-height:1.5}
+.sc-blue{background:rgba(59,130,246,.12);border:1.5px solid rgba(59,130,246,.3)}.sc-blue .stat-num{color:#93c5fd}
+.sc-green{background:rgba(16,185,129,.12);border:1.5px solid rgba(16,185,129,.3)}.sc-green .stat-num{color:#6ee7b7}
+.sc-purple{background:rgba(139,92,246,.12);border:1.5px solid rgba(139,92,246,.3)}.sc-purple .stat-num{color:#c4b5fd}
+.sc-amber{background:rgba(245,158,11,.12);border:1.5px solid rgba(245,158,11,.3)}.sc-amber .stat-num{color:#fcd34d}
+/* SLIST */
+.slist{list-style:none;padding:0;margin:12px 0 18px}
+.slist li{padding:9px 14px 9px 40px;position:relative;font-size:14.5px;border-bottom:1px solid var(--border);line-height:1.78;color:#b8c8e0}
+.slist li:last-child{border-bottom:none}
+.slist li::before{content:'▸';position:absolute;left:14px;color:var(--accent);font-weight:700;font-size:16px;top:10px}
+.slist li strong{color:var(--text)}
+/* TABLE */
+.scroll-note{font-size:11px;color:var(--muted);text-align:right;margin-bottom:5px;display:none}
+@media(max-width:600px){.scroll-note{display:block}}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r);box-shadow:var(--shadow);margin:20px 0}
+.tbl-wrap table{width:100%;min-width:520px;border-collapse:collapse;font-size:13.5px}
+.tbl-wrap thead tr{background:var(--surface3)}
+.tbl-wrap thead th{padding:13px 15px;text-align:left;font-weight:600;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.7px;border-bottom:1px solid var(--border)}
+.tbl-wrap tbody tr{border-bottom:1px solid var(--border);transition:background .15s}
+.tbl-wrap tbody tr:hover{background:var(--surface2)}
+.tbl-wrap tbody td{padding:11px 15px;vertical-align:top;line-height:1.72;color:#b8c8e0}
+.tbl-wrap tbody td strong{color:var(--text)}
+.tbl-wrap tbody tr:last-child{border-bottom:none}
+.r1 td:first-child{border-left:3px solid var(--a-col)}.r2 td:first-child{border-left:3px solid var(--d-col)}.r3 td:first-child{border-left:3px solid var(--c-col)}.r4 td:first-child{border-left:3px solid var(--b-col)}.r5 td:first-child{border-left:3px solid var(--cyan)}.r6 td:first-child{border-left:3px solid var(--red)}.r7 td:first-child{border-left:3px solid var(--pink)}.r8 td:first-child{border-left:3px solid var(--muted)}
+/* STEP BOXES */
+.step-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+@media(max-width:520px){.step-grid{grid-template-columns:1fr}}
+.step-box{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-sm);padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.step-num{min-width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:15px;font-weight:900;flex-shrink:0}
+.sn-blue{background:rgba(59,130,246,.25);color:#93c5fd}.sn-green{background:rgba(16,185,129,.25);color:#6ee7b7}.sn-purple{background:rgba(139,92,246,.25);color:#c4b5fd}.sn-amber{background:rgba(245,158,11,.25);color:#fcd34d}.sn-cyan{background:rgba(6,182,212,.25);color:#67e8f9}.sn-pink{background:rgba(236,72,153,.25);color:#f9a8d4}.sn-red{background:rgba(239,68,68,.25);color:#fca5a5}
+.step-text h4{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:4px}
+.step-text p{font-size:12.5px;color:#b8c8e0;margin:0;line-height:1.65}
+/* PILLAR FLOW */
+.pillar-row{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.pillar{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;flex:1;min-width:100px;text-align:center}
+.pillar-num{font-family:'Fraunces',serif;font-size:20px;font-weight:900;line-height:1;margin-bottom:4px}
+.pillar-lbl{font-size:11.5px;font-weight:700;color:#fff;margin-bottom:3px}
+.pillar-sub{font-size:10.5px;color:var(--muted);line-height:1.5}
+/* EXAM BOX */
+.exam-box{background:rgba(16,185,129,.07);border:1px solid rgba(16,185,129,.22);border-top:4px solid var(--green);border-radius:var(--r);padding:24px 28px;margin:36px 0}
+.exam-head{font-size:17px;font-weight:700;color:#6ee7b7;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.exam-ul{list-style:none;padding:0;margin:0}
+.exam-ul li{padding:9px 14px 9px 36px;position:relative;font-size:14px;border-bottom:1px solid rgba(16,185,129,.12);line-height:1.82;color:#b8c8e0}
+.exam-ul li:last-child{border-bottom:none}
+.exam-ul li::before{content:'✓';position:absolute;left:10px;color:var(--green);font-weight:700}
+.exam-ul li strong{color:#e8eef8}
+/* FAQ */
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:10px;overflow:hidden;transition:border-color .25s}
+.faq-item.open{border-color:rgba(59,130,246,.3)}
+.faq-q{background:var(--surface2);border-left:4px solid var(--a-col);padding:14px 20px;font-weight:700;font-size:15px;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;user-select:none;transition:background .2s}
+.faq-q:hover{background:var(--surface3)}
+.faq-q .ico{color:#93c5fd;font-size:22px;flex-shrink:0;transition:transform .3s;line-height:1}
+.faq-item.open .ico{transform:rotate(45deg)}
+.faq-a{padding:16px 20px;font-size:14.5px;line-height:1.9;border-top:1px solid var(--border);display:none;color:#b8c8e0}
+.faq-item.open .faq-a{display:block}
+/* INTERNAL LINKS */
+.int-links{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:22px 26px;margin:30px 0}
+.int-links h3{font-size:14px;color:var(--text);font-weight:700;margin-bottom:14px}
+.link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.lnk{background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:11px 14px;font-size:13px;color:var(--accent2);font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px;transition:all .2s}
+.lnk:hover{background:var(--surface3);transform:translateX(3px)}
+/* ALT BOX */
+.alt-box{background:rgba(245,166,35,.07);border:1px dashed rgba(245,166,35,.3);border-radius:8px;padding:10px 14px;margin:12px 0;font-size:12px;color:#fcd34d}
+.alt-box strong{display:block;margin-bottom:3px;color:var(--accent);font-size:10.5px;text-transform:uppercase;letter-spacing:.5px}
+/* SCHEMA */
+.schema-wrap{background:#040b14;border:1px solid rgba(59,130,246,.2);border-radius:var(--r);padding:22px;margin:22px 0;overflow-x:auto}
+.schema-wrap pre{color:#7dd3fc;font-family:'Courier New',monospace;font-size:12px;line-height:1.78;white-space:pre-wrap}
+.copy-btn{display:inline-flex;align-items:center;gap:7px;background:var(--a-col);color:#fff;border:none;padding:10px 22px;border-radius:8px;font-size:13px;cursor:pointer;margin-top:12px;font-family:inherit;font-weight:700;transition:background .2s}
+.copy-btn:hover{background:#1d4ed8}
+/* CONCLUSION */
+.conclusion{background:linear-gradient(135deg,var(--surface2),rgba(59,130,246,.09),rgba(16,185,129,.06));border:1px solid rgba(59,130,246,.16);border-radius:var(--r);padding:30px 32px;margin:36px 0}
+.conclusion p{font-size:15px;color:#c8d8f0;margin-bottom:12px}
+.conclusion p:last-child{margin-bottom:0}
+/* FOOTER */
+.foot{text-align:center;padding:30px 18px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);margin-top:40px}
+.foot strong{color:var(--text)}
+/* TIMELINE */
+.timeline{position:relative;padding-left:28px;margin:24px 0}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--a-col),var(--b-col),var(--c-col),var(--d-col))}
+.tl-item{position:relative;margin-bottom:20px}
+.tl-dot{position:absolute;left:-24px;top:6px;width:12px;height:12px;border-radius:50%;border:2px solid;background:var(--bg)}
+.tl-blue{border-color:var(--a-col);box-shadow:0 0 8px rgba(59,130,246,.5)}.tl-yellow{border-color:var(--d-col);box-shadow:0 0 8px rgba(245,158,11,.5)}.tl-purple{border-color:var(--c-col);box-shadow:0 0 8px rgba(139,92,246,.5)}.tl-green{border-color:var(--b-col);box-shadow:0 0 8px rgba(16,185,129,.5)}.tl-cyan{border-color:var(--cyan);box-shadow:0 0 8px rgba(6,182,212,.5)}.tl-pink{border-color:var(--pink);box-shadow:0 0 8px rgba(236,72,153,.5)}
+.tl-year{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:5px}
+.ty-blue{color:#93c5fd}.ty-yellow{color:#fcd34d}.ty-purple{color:#c4b5fd}.ty-green{color:#6ee7b7}.ty-cyan{color:#67e8f9}.ty-pink{color:#f9a8d4}
+.tl-content{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-sm);padding:12px 16px}
+.tl-content h4{font-size:14.5px;font-weight:700;color:#fff;margin-bottom:4px}
+.tl-content p{font-size:13px;color:#b8c8e0;margin:0;line-height:1.7}
+@media(max-width:600px){.hero{padding:46px 16px 40px}.wrap{padding:0 13px 50px}.conclusion{padding:22px 20px}.exam-box{padding:18px 16px}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div id="read-bar"></div>
+<nav class="top-nav">
+  <a href="ugc-net-library-science-complete-syllabus.html" class="back-btn">← Syllabus Index</a>
+  <div class="nav-bc"><span class="nav-dot"></span>Unit II &rsaquo; <span>Topic 2.10 — Information Literacy</span></div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-pill">🔵 Unit II · Topic 2.10 · UGC NET Code 59</div>
+    <h1>सूचना साक्षरता
+      <span class="hi">Information Literacy — Areas · Standards · Types · Models · Trends</span>
+    </h1>
+    <p class="hero-desc">UGC NET Library &amp; Information Science — सम्पूर्ण हिंदी नोट्स | ALA 1989 · Big6 Model · ACRL Framework 2016 · SCONUL Seven Pillars · UNESCO/IFLA · Media &amp; Information Literacy · Trends</p>
+    <div class="hero-strip">
+      <span class="hs hs-a">📖 ALA परिभाषा 1989</span>
+      <span class="hs hs-b">🎯 Big6 Model</span>
+      <span class="hs hs-c">🏛️ ACRL Framework</span>
+      <span class="hs hs-d">🏙️ SCONUL 7 Pillars</span>
+      <span class="hs hs-e">🌐 UNESCO MIL</span>
+    </div>
+    <div class="hero-meta">
+      <span class="hm">📖 <strong>4500+ शब्द</strong></span>
+      <span class="hm">❓ <strong>10 FAQs</strong></span>
+      <span class="hm">📊 <strong>6 Tables</strong></span>
+      <span class="hm">🧭 <strong>5 Models</strong></span>
+      <span class="hm">⭐ <strong>Most Important</strong></span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ WRAP ═══════════════════ -->
+<div class="wrap">
+<div class="alt-box" style="margin-top:30px"><strong>🔍 SEO Slug</strong>information-literacy-areas-standards-types-models-big6-acrl-sconul-ala-1989-unesco-mil-ugc-net-library-science-unit-2-10-hindi</div>
+
+<!-- TOC -->
+<div class="toc-box">
+  <div class="toc-title">📑 विषय-सूची</div>
+  <ul class="toc-list">
+    <li><a href="#intro"><span class="tnum">01</span>परिचय</a></li>
+    <li><a href="#snippet"><span class="tnum">02</span>Featured Snippet</a></li>
+    <li><a href="#definition"><span class="tnum">03</span>परिभाषाएँ — ALA, UNESCO</a></li>
+    <li><a href="#timeline"><span class="tnum">04</span>Timeline</a></li>
+    <li><a href="#areas"><span class="tnum">05</span>IL के क्षेत्र (Areas)</a></li>
+    <li><a href="#types"><span class="tnum">06</span>IL के प्रकार (Types)</a></li>
+    <li><a href="#standards"><span class="tnum">07</span>IL Standards — ACRL 2000</a></li>
+    <li><a href="#big6"><span class="tnum">08</span>Big6 Model</a></li>
+    <li><a href="#acrl"><span class="tnum">09</span>ACRL Framework 2016</a></li>
+    <li><a href="#sconul"><span class="tnum">10</span>SCONUL Seven Pillars</a></li>
+    <li><a href="#other"><span class="tnum">11</span>अन्य Models</a></li>
+    <li><a href="#mil"><span class="tnum">12</span>UNESCO — MIL</a></li>
+    <li><a href="#compare"><span class="tnum">13</span>Comparison Tables</a></li>
+    <li><a href="#trends"><span class="tnum">14</span>Trends in IL</a></li>
+    <li><a href="#exam"><span class="tnum">15</span>Exam Notes</a></li>
+    <li><a href="#faq"><span class="tnum">16</span>FAQs (10 प्रश्न)</a></li>
+  </ul>
+</div>
+
+<!-- ═══ INTRO ═══ -->
+<h2 class="sec" id="intro"><span class="ico ico-blue">📖</span>परिचय</h2>
+<p>UGC NET LIS (Code 59) के Unit II का अंतिम और सबसे महत्वपूर्ण Topic 2.10 है — <strong style="color:#fff">Information Literacy (सूचना साक्षरता)</strong>। परीक्षा में इससे <strong style="color:#fff">4–6 प्रश्न</strong> आते हैं। यह Topic सर्वाधिक Scoring है।</p>
+<p><strong style="color:#fff">Information Literacy (IL)</strong> वह क्षमता है जिससे व्यक्ति यह जान सके कि उसे <em>कब</em> Information चाहिए, उसे <em>कहाँ</em> ढूँढे, उसका <em>मूल्यांकन</em> करे और <em>प्रभावी रूप से उपयोग</em> करे। 21वीं सदी की सबसे आवश्यक Life Skill।</p>
+
+<div class="stat-row">
+  <div class="stat-card sc-amber"><div class="stat-num">1989</div><div class="stat-lbl">ALA परिभाषा</div><div class="stat-sub">Presidential Committee Report</div></div>
+  <div class="stat-card sc-blue"><div class="stat-num">6</div><div class="stat-lbl">Big6 Steps</div><div class="stat-sub">Eisenberg &amp; Berkowitz 1990</div></div>
+  <div class="stat-card sc-green"><div class="stat-num">7</div><div class="stat-lbl">SCONUL Pillars</div><div class="stat-sub">SCONUL 1999, Revised 2011</div></div>
+  <div class="stat-card sc-purple"><div class="stat-num">6</div><div class="stat-lbl">ACRL Frames</div><div class="stat-sub">ACRL Framework 2016</div></div>
+</div>
+
+<!-- ═══ FEATURED SNIPPET ═══ -->
+<h2 class="sec" id="snippet"><span class="ico ico-blue">⭐</span>Featured Snippet</h2>
+<div class="snippet">
+  <div class="snip-lbl">🎯 Google Featured Snippet</div>
+  <p><strong style="color:#fff">Information Literacy (IL):</strong> ALA (1989) = "Information Literate Person — recognizes need, locates, evaluates, uses effectively।" Big6 Model = <strong>Eisenberg &amp; Berkowitz (1990)</strong> — 6 Steps। ACRL Standards (2000) = 5 Standards। <strong>ACRL Framework (2016)</strong> = 6 Frames (Threshold Concepts)। <strong>SCONUL Seven Pillars</strong> = SCONUL 1999, Revised 2011। UNESCO = <strong>Media and Information Literacy (MIL)</strong> — 2013। Prague Declaration = 2003। Alexandria Proclamation = <strong>2005</strong>।</p>
+</div>
+
+<!-- ═══ DEFINITIONS ═══ -->
+<h2 class="sec" id="definition"><span class="ico ico-amber">📝</span>परिभाषाएँ — ALA, UNESCO, IFLA</h2>
+
+<div class="info-box" style="border-top:4px solid var(--d-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-amber">📝</div>
+    <div class="ib-meta"><h3>Information Literacy — प्रमुख परिभाषाएँ</h3><div class="ibm-sub">ALA 1989 · Zurkowski 1974 · UNESCO 2003 · Prague Declaration 2003 · Alexandria Proclamation 2005</div></div>
+    <span class="ib-badge bb-amber">Definitions</span>
+  </div>
+  <div class="ib-body">
+    <div class="callout c-amber">
+      <p><span class="tag-pill tp-amber">ALA 1989</span> <strong>American Library Association Presidential Committee on Information Literacy (1989):</strong><br>
+      "To be information literate, a person must be able to <strong>recognize when information is needed</strong> and have the ability to <strong>locate, evaluate, and use effectively</strong> the needed information."<br>
+      — सबसे Classic और सर्वाधिक Cited परिभाषा।</p>
+    </div>
+    <div class="callout c-blue">
+      <p><span class="tag-pill tp-blue">Zurkowski 1974</span> <strong>Paul Zurkowski</strong> ने सर्वप्रथम "Information Literacy" शब्द प्रयोग किया — <strong>1974</strong> में Information Industry Association को Report में। उन्होंने कहा: लोग जो Information Resources का उपयोग करके अपनी Problems Solve कर सकें — वे "Information Literate" हैं।</p>
+    </div>
+    <div class="callout c-green">
+      <p><span class="tag-pill tp-green">Prague Declaration 2003</span> "Information Literacy encompasses knowledge of one's information concerns and needs… capability to identify, locate, evaluate, organise, create, use and communicate information." — <strong>UNESCO, NCLIS &amp; NFIL</strong> द्वारा। "Information Literacy = Prerequisite for participation in Information Society।"</p>
+    </div>
+    <div class="callout c-purple">
+      <p><span class="tag-pill tp-purple">Alexandria Proclamation 2005</span> IFLA और UNESCO द्वारा — "Information Literacy lies at the core of lifelong learning… empowers people in all walks of life to seek, evaluate, use and create information effectively।" — <strong>2005, Alexandria, Egypt</strong>।</p>
+    </div>
+    <div class="net-tip">
+      <strong>🎯 UGC NET Key Dates</strong>
+      <strong>Zurkowski (1974)</strong> = First coined "IL" · <strong>ALA (1989)</strong> = Most cited definition · <strong>Prague Declaration (2003)</strong> = IL as Prerequisite · <strong>Alexandria Proclamation (2005)</strong> = IL + Lifelong Learning · <strong>UNESCO MIL (2013)</strong> = Media + Information Literacy
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TIMELINE ═══ -->
+<h2 class="sec" id="timeline"><span class="ico ico-cyan">📅</span>Information Literacy — Timeline</h2>
+<div class="timeline">
+  <div class="tl-item">
+    <div class="tl-dot tl-yellow"></div>
+    <div class="tl-year ty-yellow">📅 1974</div>
+    <div class="tl-content">
+      <h4>Paul Zurkowski — "Information Literacy" शब्द का उद्भव</h4>
+      <p>Information Industry Association को Report। पहली बार "Information Literate" term प्रयुक्त। Information Resources से Problem-Solving क्षमता।</p>
+    </div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot tl-blue"></div>
+    <div class="tl-year ty-blue">📅 1989</div>
+    <div class="tl-content">
+      <h4>ALA Presidential Committee Report — Classic Definition</h4>
+      <p>ALA = American Library Association। "Information Literate Person" की Landmark Definition। Recognize → Locate → Evaluate → Use। सर्वाधिक Cited।</p>
+    </div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot tl-green"></div>
+    <div class="tl-year ty-green">📅 1990</div>
+    <div class="tl-content">
+      <h4>Big6 Model — Eisenberg &amp; Berkowitz</h4>
+      <p>Michael Eisenberg &amp; Robert Berkowitz। K–12 Students के लिए। 6 Steps। सबसे widely used IL Model। Schools में आज भी उपयोग।</p>
+    </div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot tl-purple"></div>
+    <div class="tl-year ty-purple">📅 1999</div>
+    <div class="tl-content">
+      <h4>SCONUL Seven Pillars Model</h4>
+      <p>Society of College, National and University Libraries (UK)। 7 Pillars — Recognise to Present। 2011 में Revised — Circular Model।</p>
+    </div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot tl-cyan"></div>
+    <div class="tl-year ty-cyan">📅 2000</div>
+    <div class="tl-content">
+      <h4>ACRL Information Literacy Competency Standards</h4>
+      <p>Association of College and Research Libraries। 5 Standards, 22 Performance Indicators। Higher Education के लिए। 2016 में Framework ने Replace किया।</p>
+    </div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot tl-pink"></div>
+    <div class="tl-year ty-pink">📅 2003</div>
+    <div class="tl-content">
+      <h4>Prague Declaration — "IL = Prerequisite for Information Society"</h4>
+      <p>UNESCO + NCLIS + NFIL। Prague, Czech Republic। IL को Information Society में Participation के लिए अनिवार्य घोषित किया।</p>
+    </div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot tl-yellow"></div>
+    <div class="tl-year ty-yellow">📅 2005</div>
+    <div class="tl-content">
+      <h4>Alexandria Proclamation — IL + Lifelong Learning</h4>
+      <p>IFLA + UNESCO। Alexandria, Egypt। "IL lies at the core of lifelong learning।" High-Level Colloquium on Information Literacy and Lifelong Learning।</p>
+    </div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot tl-blue"></div>
+    <div class="tl-year ty-blue">📅 2016</div>
+    <div class="tl-content">
+      <h4>ACRL Framework for Information Literacy — New!</h4>
+      <p>Standards (2000) को Replace किया। 6 Frames (Threshold Concepts)। "Authority is Constructed", "Information Creation as a Process" etc। More conceptual approach।</p>
+    </div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-dot tl-green"></div>
+    <div class="tl-year ty-green">📅 2013+</div>
+    <div class="tl-content">
+      <h4>UNESCO — Media and Information Literacy (MIL)</h4>
+      <p>MIL = Media Literacy + Information Literacy। UNESCO MIL Curriculum for Teachers (2011, 2013)। Digital Citizenship + Critical Thinking।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ AREAS ═══ -->
+<h2 class="sec" id="areas"><span class="ico ico-green">🗺️</span>Information Literacy के क्षेत्र (Areas)</h2>
+<p>IL एक बहु-आयामी क्षेत्र है जिसमें अनेक Overlapping Areas हैं। इन्हें समझना UGC NET के लिए अनिवार्य है।</p>
+
+<div class="card-grid">
+  <div class="c-card strip-blue">
+    <div class="cc-ico">📚</div>
+    <div class="cc-title">Library Literacy</div>
+    <div class="cc-sub">पुस्तकालय साक्षरता</div>
+    <ul class="cc-ul">
+      <li>Library का Physical Layout जानना</li>
+      <li>OPAC &amp; Catalogue का उपयोग</li>
+      <li>Classification Schemes — DDC/LC</li>
+      <li>Reference Services का उपयोग</li>
+      <li><strong>IL का Foundation Level</strong></li>
+    </ul>
+  </div>
+  <div class="c-card strip-green">
+    <div class="cc-ico">💻</div>
+    <div class="cc-title">Computer Literacy</div>
+    <div class="cc-sub">कंप्यूटर साक्षरता</div>
+    <ul class="cc-ul">
+      <li>Basic Computer Skills</li>
+      <li>MS Office, Internet Browsing</li>
+      <li>Email, File Management</li>
+      <li>Database Access</li>
+      <li><strong>Digital Information Access की Base</strong></li>
+    </ul>
+  </div>
+  <div class="c-card strip-purple">
+    <div class="cc-ico">🌐</div>
+    <div class="cc-title">Network Literacy</div>
+    <div class="cc-sub">नेटवर्क साक्षरता</div>
+    <ul class="cc-ul">
+      <li>Internet &amp; Intranet Navigation</li>
+      <li>Web Search Strategies</li>
+      <li>Boolean Operators</li>
+      <li>Subject Gateways, Portals</li>
+      <li><strong>Deep Web vs. Surface Web</strong></li>
+    </ul>
+  </div>
+  <div class="c-card strip-yellow">
+    <div class="cc-ico">📰</div>
+    <div class="cc-title">Media Literacy</div>
+    <div class="cc-sub">मीडिया साक्षरता</div>
+    <ul class="cc-ul">
+      <li>Print, Broadcast, Digital Media</li>
+      <li>Critical Analysis of Media</li>
+      <li>Bias, Propaganda पहचानना</li>
+      <li>Fake News Detection</li>
+      <li><strong>UNESCO MIL का Component</strong></li>
+    </ul>
+  </div>
+  <div class="c-card strip-cyan">
+    <div class="cc-ico">🔬</div>
+    <div class="cc-title">Research Literacy</div>
+    <div class="cc-sub">शोध साक्षरता</div>
+    <ul class="cc-ul">
+      <li>Research Process Understanding</li>
+      <li>Literature Review Skills</li>
+      <li>Citation &amp; Bibliography</li>
+      <li>Anti-plagiarism — Turnitin</li>
+      <li><strong>Academic Integrity</strong></li>
+    </ul>
+  </div>
+  <div class="c-card strip-pink">
+    <div class="cc-ico">🧠</div>
+    <div class="cc-title">Critical Thinking Literacy</div>
+    <div class="cc-sub">आलोचनात्मक सोच</div>
+    <ul class="cc-ul">
+      <li>Source Evaluation — CRAAP Test</li>
+      <li>Currency, Relevance, Authority</li>
+      <li>Accuracy, Purpose (CRAAP)</li>
+      <li>Logical Reasoning</li>
+      <li><strong>IL का Highest Level</strong></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ TYPES ═══ -->
+<h2 class="sec" id="types"><span class="ico ico-purple">🏷️</span>Information Literacy के प्रकार (Types)</h2>
+<div class="three-col">
+  <div class="mbox" style="border-top:3px solid var(--a-col)">
+    <div class="ml" style="color:#93c5fd">📊 Audience के आधार पर</div>
+    <ul>
+      <li><strong>School IL</strong> — K-12, Big6 Model</li>
+      <li><strong>Academic IL</strong> — Higher Ed., ACRL</li>
+      <li><strong>Public Library IL</strong> — General Public</li>
+      <li><strong>Workplace IL</strong> — Professional Use</li>
+      <li><strong>Community IL</strong> — Civic Participation</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--b-col)">
+    <div class="ml" style="color:#6ee7b7">🌐 Domain के आधार पर</div>
+    <ul>
+      <li><strong>Health IL</strong> — Medical Info</li>
+      <li><strong>Financial IL</strong> — Economic Info</li>
+      <li><strong>Legal IL</strong> — Legal Resources</li>
+      <li><strong>Scientific IL</strong> — Research Data</li>
+      <li><strong>Digital IL</strong> — Online Environments</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--c-col)">
+    <div class="ml" style="color:#c4b5fd">🎯 Skill Level के आधार पर</div>
+    <ul>
+      <li><strong>Basic IL</strong> — Locate &amp; Use</li>
+      <li><strong>Intermediate IL</strong> — Evaluate Sources</li>
+      <li><strong>Advanced IL</strong> — Create &amp; Communicate</li>
+      <li><strong>Transliteracy</strong> — Across Platforms</li>
+      <li><strong>Metaliteracy</strong> — Mackey &amp; Jacobson</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ ACRL STANDARDS 2000 ═══ -->
+<h2 class="sec" id="standards"><span class="ico ico-amber">📋</span>ACRL Information Literacy Competency Standards (2000)</h2>
+<div class="info-box" style="border-top:4px solid var(--d-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-amber">📋</div>
+    <div class="ib-meta"><h3>ACRL Standards 2000 — 5 Standards</h3><div class="ibm-sub">Association of College &amp; Research Libraries | Higher Education | 22 Performance Indicators | 2016 में Framework ने Replace किया</div></div>
+    <span class="ib-badge bb-amber">ACRL 2000</span>
+  </div>
+  <div class="ib-body">
+    <p>ACRL (2000) के अनुसार Information Literate Student <strong style="color:#fff">5 Standards</strong> को पूरा करता है:</p>
+    <div class="step-grid">
+      <div class="step-box">
+        <div class="step-num sn-blue">1</div>
+        <div class="step-text"><h4>Standard 1 — Determine Need</h4><p>Information की Nature और Extent निर्धारित करना। "Need Identification।"</p></div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-amber">2</div>
+        <div class="step-text"><h4>Standard 2 — Access Effectively</h4><p>Needed Information को Effectively &amp; Efficiently Access करना। Search Strategy, Sources।</p></div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-green">3</div>
+        <div class="step-text"><h4>Standard 3 — Evaluate Critically</h4><p>Information और Sources का Critical Evaluation। Credibility, Relevance।</p></div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-purple">4</div>
+        <div class="step-text"><h4>Standard 4 — Use Effectively</h4><p>Information को Individually या Group में Effective Use। New Knowledge Generate।</p></div>
+      </div>
+      <div class="step-box" style="grid-column:1/-1">
+        <div class="step-num sn-cyan">5</div>
+        <div class="step-text"><h4>Standard 5 — Use Ethically &amp; Legally</h4><p>Information का Ethical, Legal, Socially Responsible उपयोग। Copyright, Plagiarism Awareness।</p></div>
+      </div>
+    </div>
+    <div class="net-tip">
+      <strong>🎯 UGC NET Trick — ACRL 5 Standards</strong>
+      <strong>"D-A-E-U-E"</strong> = <strong>D</strong>etermine → <strong>A</strong>ccess → <strong>E</strong>valuate → <strong>U</strong>se → <strong>E</strong>thical Use। या: "Determine Access Evaluate Use Ethically।"
+    </div>
+  </div>
+</div>
+
+<!-- ═══ BIG6 MODEL ═══ -->
+<h2 class="sec" id="big6"><span class="ico ico-green">🎯</span>Big6 Model — Eisenberg &amp; Berkowitz (1990)</h2>
+<div class="info-box" style="border-top:4px solid var(--b-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-green">🎯</div>
+    <div class="ib-meta"><h3>Big6 Skills Model</h3><div class="ibm-sub">Michael B. Eisenberg &amp; Robert E. Berkowitz | 1990 | K–12 Schools | Worldwide Most Used IL Model</div></div>
+    <span class="ib-badge bb-green">Most Used Model</span>
+  </div>
+  <div class="ib-body">
+    <p>Big6 Model = दुनिया में सर्वाधिक प्रयुक्त Information Literacy Framework। विशेषकर <strong style="color:#fff">School Libraries (K–12)</strong> के लिए। इसमें <strong style="color:#fff">6 Steps</strong> हैं, और प्रत्येक में 2 Sub-skills हैं।</p>
+    <div class="step-grid">
+      <div class="step-box">
+        <div class="step-num sn-blue">1</div>
+        <div class="step-text">
+          <h4>Task Definition (कार्य परिभाषा)</h4>
+          <p>1.1 — Information Problem Define करना।<br>1.2 — Needed Information Identify करना।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-amber">2</div>
+        <div class="step-text">
+          <h4>Information Seeking Strategies</h4>
+          <p>2.1 — Possible Sources Determine।<br>2.2 — Best Sources को Priority देना।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-green">3</div>
+        <div class="step-text">
+          <h4>Location &amp; Access (स्थान और पहुँच)</h4>
+          <p>3.1 — Sources को Locate करना।<br>3.2 — Information को Within Source Find करना।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-purple">4</div>
+        <div class="step-text">
+          <h4>Use of Information (उपयोग)</h4>
+          <p>4.1 — Source को Engage करना (Read, View, Listen)।<br>4.2 — Relevant Information Extract करना।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-cyan">5</div>
+        <div class="step-text">
+          <h4>Synthesis (संश्लेषण)</h4>
+          <p>5.1 — Multiple Sources से Organise करना।<br>5.2 — Information Present करना।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-pink">6</div>
+        <div class="step-text">
+          <h4>Evaluation (मूल्यांकन)</h4>
+          <p>6.1 — Product की Effectiveness Evaluate।<br>6.2 — Process की Efficiency Evaluate।</p>
+        </div>
+      </div>
+    </div>
+    <div class="callout c-green" style="margin-top:14px">
+      <p><span class="tag-pill tp-green">Super3</span> Big6 का Simplified Version = <strong>Super3</strong> (छोटे बच्चों के लिए): <strong>Plan → Do → Review</strong>। यह Big6 का Pre-school Version है।</p>
+    </div>
+    <div class="net-tip">
+      <strong>🎯 Memory Trick — Big6 Steps</strong>
+      <strong>"T-I-L-U-S-E"</strong> = <strong>T</strong>ask Definition → <strong>I</strong>nformation Seeking Strategies → <strong>L</strong>ocation &amp; Access → <strong>U</strong>se of Information → <strong>S</strong>ynthesis → <strong>E</strong>valuation। याद करें: <strong>"Task Information Locate Use Synthesise Evaluate"</strong>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ACRL FRAMEWORK 2016 ═══ -->
+<h2 class="sec" id="acrl"><span class="ico ico-purple">🏛️</span>ACRL Framework for Information Literacy (2016)</h2>
+<div class="info-box" style="border-top:4px solid var(--c-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-purple">🏛️</div>
+    <div class="ib-meta"><h3>ACRL Framework 2016 — 6 Frames</h3><div class="ibm-sub">Threshold Concepts पर आधारित | ACRL Standards 2000 को Replace किया | Higher Education</div></div>
+    <span class="ib-badge bb-purple">ACRL 2016</span>
+  </div>
+  <div class="ib-body">
+    <p>ACRL Framework (2016) = <strong style="color:#fff">Threshold Concepts</strong> पर आधारित। ये ऐसे Core Ideas हैं जो एक बार समझ आने पर सोचने का तरीका बदल देते हैं। <strong style="color:#fff">6 Frames</strong> हैं:</p>
+    <div class="step-grid">
+      <div class="step-box">
+        <div class="step-num sn-blue">F1</div>
+        <div class="step-text">
+          <h4>Authority is Constructed and Contextual</h4>
+          <p>Authority = Fixed नहीं; Context के अनुसार। Expert Credibility को समझना। Peer-review, Credentials।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-green">F2</div>
+        <div class="step-text">
+          <h4>Information Creation as a Process</h4>
+          <p>Information = किसी Process का Result। Format, Audience के अनुसार। Scholarly vs. Popular।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-amber">F3</div>
+        <div class="step-text">
+          <h4>Information has Value</h4>
+          <p>Information = Commodity। Copyright, Open Access, Privacy। Economic &amp; Social Value।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-purple">F4</div>
+        <div class="step-text">
+          <h4>Research as Inquiry</h4>
+          <p>Research = Ongoing Process of Questions। Uncertainty, Complexity। Iterative Process।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-cyan">F5</div>
+        <div class="step-text">
+          <h4>Scholarship as Conversation</h4>
+          <p>Academic Knowledge = Ongoing Dialogue। Citation = Joining Conversation। Discourse Community।</p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num sn-pink">F6</div>
+        <div class="step-text">
+          <h4>Searching as Strategic Exploration</h4>
+          <p>Search = Non-linear, Strategic। Multiple Sources, Iterative।Serendipity in Research।</p>
+        </div>
+      </div>
+    </div>
+    <div class="callout c-purple" style="margin-top:14px">
+      <p><span class="tag-pill tp-purple">ACRL 2000 vs 2016</span> <strong>Standards (2000)</strong> = Prescriptive, Checklist-based, 5 Standards। <strong>Framework (2016)</strong> = Conceptual, Threshold Concepts, 6 Frames, More Flexible। Framework ने Standards को Formally Supersede किया।</p>
+    </div>
+    <div class="net-tip">
+      <strong>🎯 6 Frames Acronym</strong>
+      <strong>"A-I-V-R-S-S"</strong> = <strong>A</strong>uthority · <strong>I</strong>nformation Creation · <strong>V</strong>alue · <strong>R</strong>esearch as Inquiry · <strong>S</strong>cholarship as Conversation · <strong>S</strong>earching as Exploration
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SCONUL SEVEN PILLARS ═══ -->
+<h2 class="sec" id="sconul"><span class="ico ico-cyan">🏙️</span>SCONUL Seven Pillars Model (1999, Revised 2011)</h2>
+<div class="info-box" style="border-top:4px solid var(--cyan)">
+  <div class="ib-head">
+    <div class="ib-circle ic-cyan">🏙️</div>
+    <div class="ib-meta"><h3>SCONUL Seven Pillars of Information Literacy</h3><div class="ibm-sub">Society of College, National and University Libraries | UK | 1999 | Revised 2011 — Circular Model</div></div>
+    <span class="ib-badge bb-cyan">SCONUL UK 1999</span>
+  </div>
+  <div class="ib-body">
+    <p>SCONUL = <strong style="color:#fff">Society of College, National and University Libraries</strong> (UK)। 1999 में 7 Pillars Model प्रस्तुत किया। 2011 में Revised — Circular (Non-linear) Model बना।</p>
+
+    <div class="pillar-row">
+      <div class="pillar">
+        <div class="pillar-num" style="color:#93c5fd">P1</div>
+        <div class="pillar-lbl">Identify</div>
+        <div class="pillar-sub">Information Need पहचानना</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num" style="color:#6ee7b7">P2</div>
+        <div class="pillar-lbl">Scope</div>
+        <div class="pillar-sub">Gap Assess करना</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num" style="color:#c4b5fd">P3</div>
+        <div class="pillar-lbl">Plan</div>
+        <div class="pillar-sub">Search Strategy बनाना</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num" style="color:#fcd34d">P4</div>
+        <div class="pillar-lbl">Gather</div>
+        <div class="pillar-sub">Information Locate &amp; Access</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num" style="color:#67e8f9">P5</div>
+        <div class="pillar-lbl">Evaluate</div>
+        <div class="pillar-sub">Source की Quality जाँचना</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num" style="color:#f9a8d4">P6</div>
+        <div class="pillar-lbl">Manage</div>
+        <div class="pillar-sub">Organise &amp; Store करना</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num" style="color:#fca5a5">P7</div>
+        <div class="pillar-lbl">Present</div>
+        <div class="pillar-sub">Share &amp; Communicate</div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:16px">
+      <div class="mbox" style="border-top:3px solid var(--cyan)">
+        <div class="ml" style="color:#67e8f9">🔄 1999 vs 2011 (Revised)</div>
+        <ul>
+          <li><strong>1999</strong> = Linear, Sequential Model</li>
+          <li><strong>2011</strong> = Circular, Non-linear Model</li>
+          <li>2011 = Core में "Identify" है; 7 Pillars बाहर</li>
+          <li>Novice से Expert तक Continuum</li>
+          <li>Undergraduate &amp; Postgraduate दोनों</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--a-col)">
+        <div class="ml" style="color:#93c5fd">📊 SCONUL की विशेषताएँ</div>
+        <ul>
+          <li>UK Higher Education Context</li>
+          <li><strong>Digital Literacy</strong> को शामिल किया (2011)</li>
+          <li>Discipline-specific IL</li>
+          <li>Lenses: Undergraduate, Digital, OA</li>
+          <li>Research-oriented Framework</li>
+        </ul>
+      </div>
+    </div>
+    <div class="net-tip">
+      <strong>🎯 Memory Trick — 7 Pillars</strong>
+      <strong>"I-S-P-G-E-M-P"</strong> = <strong>I</strong>dentify → <strong>S</strong>cope → <strong>P</strong>lan → <strong>G</strong>ather → <strong>E</strong>valuate → <strong>M</strong>anage → <strong>P</strong>resent। याद करें: <strong>"Is Scope Plan Gather Evaluate Manage Present"</strong>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ OTHER MODELS ═══ -->
+<h2 class="sec" id="other"><span class="ico ico-blue">🔭</span>अन्य महत्वपूर्ण IL Models</h2>
+<div class="card-grid">
+  <div class="c-card strip-blue">
+    <div class="cc-ico">🔄</div>
+    <div class="cc-title">The Research Cycle</div>
+    <div class="cc-sub">Jamie McKenzie — 1990s</div>
+    <ul class="cc-ul">
+      <li>Questioning → Planning → Gathering</li>
+      <li>Sorting → Synthesising → Evaluating</li>
+      <li>Reporting → Questioning (फिर)</li>
+      <li><strong>Cyclical Process</strong> — Linear नहीं</li>
+      <li>Critical Thinking पर जोर</li>
+    </ul>
+  </div>
+  <div class="c-card strip-yellow">
+    <div class="cc-ico">🦁</div>
+    <div class="cc-title">The Stripling &amp; Pitts Model</div>
+    <div class="cc-sub">Barbara Stripling &amp; Judy Pitts — 1988</div>
+    <ul class="cc-ul">
+      <li>Research Process = 10 Steps</li>
+      <li>Choose Broad Topic → Reflect</li>
+      <li>School Libraries के लिए</li>
+      <li>Pre-Big6 Era का Model</li>
+      <li><strong>Thought Web</strong> Concept</li>
+    </ul>
+  </div>
+  <div class="c-card strip-purple">
+    <div class="cc-ico">🔮</div>
+    <div class="cc-title">Metaliteracy</div>
+    <div class="cc-sub">Mackey &amp; Jacobson — 2011</div>
+    <ul class="cc-ul">
+      <li>IL का Overarching Framework</li>
+      <li>Producer + Consumer दोनों</li>
+      <li>Social Media, Open Education</li>
+      <li>Collaborative, Participatory</li>
+      <li><strong>Reflective Learning</strong> पर जोर</li>
+    </ul>
+  </div>
+  <div class="c-card strip-green">
+    <div class="cc-ico">🎓</div>
+    <div class="cc-title">IL in India — ILIL</div>
+    <div class="cc-sub">Indian Context</div>
+    <ul class="cc-ul">
+      <li>INFLIBNET — IL Programs</li>
+      <li>e-Shodh Sindhu Training</li>
+      <li>NLIST — National Library &amp; IL</li>
+      <li>UGC STRIDE Program</li>
+      <li><strong>CALIBER/NACLIN</strong> — IL Conferences</li>
+    </ul>
+  </div>
+  <div class="c-card strip-cyan">
+    <div class="cc-ico">📐</div>
+    <div class="cc-title">The Plus Model</div>
+    <div class="cc-sub">James Herring — 1996</div>
+    <ul class="cc-ul">
+      <li><strong>P</strong>urpose — Identify Purpose</li>
+      <li><strong>L</strong>ocation — Find Sources</li>
+      <li><strong>U</strong>se — Use Information</li>
+      <li><strong>S</strong>elf-evaluation — Reflect</li>
+      <li>School Students के लिए</li>
+    </ul>
+  </div>
+  <div class="c-card strip-pink">
+    <div class="cc-ico">📱</div>
+    <div class="cc-title">Digital Literacy / DigComp</div>
+    <div class="cc-sub">EU Framework — 2013, 2022</div>
+    <ul class="cc-ul">
+      <li>EU DigComp 2.2 (2022)</li>
+      <li>5 Areas: Information, Communication</li>
+      <li>Content Creation, Safety, Problem</li>
+      <li>IL का Digital Extension</li>
+      <li><strong>21st Century Skills</strong></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ UNESCO MIL ═══ -->
+<h2 class="sec" id="mil"><span class="ico ico-amber">🌐</span>UNESCO — Media and Information Literacy (MIL)</h2>
+<div class="info-box" style="border-top:4px solid var(--d-col)">
+  <div class="ib-head">
+    <div class="ib-circle ic-amber">🌐</div>
+    <div class="ib-meta"><h3>Media and Information Literacy (MIL)</h3><div class="ibm-sub">UNESCO | MIL Curriculum 2011, 2013 | Media Literacy + Information Literacy = MIL</div></div>
+    <span class="ib-badge bb-amber">UNESCO MIL</span>
+  </div>
+  <div class="ib-body">
+    <p>UNESCO ने <strong style="color:#fff">Media Literacy</strong> और <strong style="color:#fff">Information Literacy</strong> को मिलाकर <strong style="color:#fff">MIL (Media and Information Literacy)</strong> Framework बनाया।</p>
+
+    <div class="three-col">
+      <div class="mbox" style="border-top:3px solid var(--d-col)">
+        <div class="ml" style="color:#fcd34d">📺 Media Literacy</div>
+        <ul>
+          <li>Print, Radio, TV, Internet</li>
+          <li>Critical Analysis of Media</li>
+          <li>Media Production Understanding</li>
+          <li>Fake News, Propaganda</li>
+          <li>Democratic Participation</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--a-col)">
+        <div class="ml" style="color:#93c5fd">📚 Information Literacy</div>
+        <ul>
+          <li>Recognize Information Need</li>
+          <li>Locate &amp; Access</li>
+          <li>Evaluate &amp; Apply</li>
+          <li>Ethical Use</li>
+          <li>Lifelong Learning</li>
+        </ul>
+      </div>
+      <div class="mbox" style="border-top:3px solid var(--b-col)">
+        <div class="ml" style="color:#6ee7b7">🎯 MIL = Both</div>
+        <ul>
+          <li>Digital Citizenship</li>
+          <li>Intercultural Dialogue</li>
+          <li>Freedom of Expression</li>
+          <li>Peace &amp; Sustainable Development</li>
+          <li>Teachers Curriculum (2011, 2013)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout c-amber" style="margin-top:14px">
+      <p><span class="tag-pill tp-amber">UNESCO MIL 5 Laws</span> UNESCO ने 2013 में MIL के <strong>5 Laws</strong> दिए: (1) Information &amp; Media are for All। (2) Equal Access — Gender, Diversity। (3) Create, Not Just Consume। (4) Access = Rights &amp; Responsibilities। (5) MIL = Lifelong Learning।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ COMPARISON TABLES ═══ -->
+<h2 class="sec" id="compare"><span class="ico ico-blue">📊</span>Comparison Tables — UGC NET के लिए</h2>
+
+<h3 class="sub">IL Models की तुलना — Author, Year, Steps, Target</h3>
+<div class="scroll-note">→ स्क्रॉल करें</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr><th>Model</th><th>Author(s)</th><th>Year</th><th>Steps/Elements</th><th>Target Group</th><th>Country</th></tr>
+    </thead>
+    <tbody>
+      <tr class="r1"><td><strong>Big6</strong></td><td>Eisenberg &amp; Berkowitz</td><td><strong>1990</strong></td><td>6 Steps</td><td>K–12 Schools</td><td>USA</td></tr>
+      <tr class="r2"><td><strong>ACRL Standards</strong></td><td>ACRL</td><td><strong>2000</strong></td><td>5 Standards</td><td>Higher Education</td><td>USA</td></tr>
+      <tr class="r3"><td><strong>SCONUL 7 Pillars</strong></td><td>SCONUL</td><td><strong>1999</strong> (Rev. 2011)</td><td>7 Pillars</td><td>Higher Ed. (UK)</td><td>UK</td></tr>
+      <tr class="r4"><td><strong>ACRL Framework</strong></td><td>ACRL</td><td><strong>2016</strong></td><td>6 Frames</td><td>Higher Education</td><td>USA</td></tr>
+      <tr class="r5"><td><strong>PLUS Model</strong></td><td>James Herring</td><td><strong>1996</strong></td><td>4 Steps (P-L-U-S)</td><td>School Students</td><td>UK/Australia</td></tr>
+      <tr class="r6"><td><strong>Metaliteracy</strong></td><td>Mackey &amp; Jacobson</td><td><strong>2011</strong></td><td>4 Goals</td><td>Higher Ed.</td><td>USA</td></tr>
+      <tr class="r7"><td><strong>UNESCO MIL</strong></td><td>UNESCO</td><td><strong>2013</strong></td><td>5 Laws</td><td>All / Teachers</td><td>International</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="sub">Big6 vs SCONUL vs ACRL 2016 — Quick Compare</h3>
+<div class="scroll-note">→ स्क्रॉल करें</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr><th>पहलू</th><th>Big6 (1990)</th><th>SCONUL (1999/2011)</th><th>ACRL Framework (2016)</th></tr>
+    </thead>
+    <tbody>
+      <tr class="r1"><td><strong>Steps/Elements</strong></td><td>6 Steps + Sub-skills</td><td>7 Pillars</td><td>6 Frames (Threshold)</td></tr>
+      <tr class="r2"><td><strong>Approach</strong></td><td>Process / Sequential</td><td>Skills / Circular</td><td>Conceptual / Dispositional</td></tr>
+      <tr class="r3"><td><strong>Target</strong></td><td>K–12 Students</td><td>HE Students (UK)</td><td>HE Students (USA)</td></tr>
+      <tr class="r4"><td><strong>Flexibility</strong></td><td>Moderate</td><td>High (Circular)</td><td>Very High</td></tr>
+      <tr class="r5"><td><strong>Unique Feature</strong></td><td>Super3 (Simplified)</td><td>Discipline Lenses</td><td>Threshold Concepts</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="sub">Key Dates &amp; Declarations — Quick Revision</h3>
+<div class="scroll-note">→ स्क्रॉल करें</div>
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr><th>Year</th><th>Event/Document</th><th>Organisation</th><th>Key Contribution</th></tr>
+    </thead>
+    <tbody>
+      <tr class="r1"><td><strong>1974</strong></td><td>First use of "Information Literacy"</td><td>Zurkowski</td><td>Coined the term</td></tr>
+      <tr class="r2"><td><strong>1989</strong></td><td>Presidential Committee Report</td><td>ALA</td><td>Classic Definition</td></tr>
+      <tr class="r3"><td><strong>1990</strong></td><td>Big6 Skills Model</td><td>Eisenberg &amp; Berkowitz</td><td>Most-used IL Model</td></tr>
+      <tr class="r4"><td><strong>1999</strong></td><td>Seven Pillars Model</td><td>SCONUL (UK)</td><td>UK HE IL Framework</td></tr>
+      <tr class="r5"><td><strong>2000</strong></td><td>IL Competency Standards</td><td>ACRL</td><td>5 Standards for HE</td></tr>
+      <tr class="r6"><td><strong>2003</strong></td><td>Prague Declaration</td><td>UNESCO/NCLIS/NFIL</td><td>IL = Prerequisite for IS</td></tr>
+      <tr class="r7"><td><strong>2005</strong></td><td>Alexandria Proclamation</td><td>IFLA/UNESCO</td><td>IL + Lifelong Learning</td></tr>
+      <tr class="r8"><td><strong>2016</strong></td><td>ACRL Framework</td><td>ACRL</td><td>6 Frames / Threshold</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ TRENDS ═══ -->
+<h2 class="sec" id="trends"><span class="ico ico-pink">🚀</span>Trends in Information Literacy</h2>
+<div class="three-col">
+  <div class="mbox" style="border-top:3px solid var(--pink)">
+    <div class="ml" style="color:#f9a8d4">💻 Digital &amp; AI Trends</div>
+    <ul>
+      <li><strong>AI Literacy</strong> — ChatGPT, AI Tools</li>
+      <li><strong>Algorithmic Literacy</strong> — Filter Bubbles</li>
+      <li>Data Literacy — FAIR Data</li>
+      <li>Cybersecurity Literacy</li>
+      <li>Deepfake Detection</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--a-col)">
+    <div class="ml" style="color:#93c5fd">🌐 Social &amp; Civic Trends</div>
+    <ul>
+      <li><strong>Fake News / Misinformation</strong></li>
+      <li>Infodemic (COVID-19 सीख)</li>
+      <li>News Literacy Programs</li>
+      <li>Civic Information Literacy</li>
+      <li>Transliteracy — Cross-platform</li>
+    </ul>
+  </div>
+  <div class="mbox" style="border-top:3px solid var(--b-col)">
+    <div class="ml" style="color:#6ee7b7">📚 Academic Trends</div>
+    <ul>
+      <li><strong>Open Access IL</strong> — DOAJ, ArXiv</li>
+      <li>Research Data Management</li>
+      <li>Embedded Librarianship</li>
+      <li>IL + Makerspaces</li>
+      <li>MOOCs for IL (Coursera, SWAYAM)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ EXAM BOX ═══ -->
+<div class="exam-box" id="exam">
+  <div class="exam-head">🎯 UGC NET Exam के लिए अनिवार्य Points</div>
+  <ul class="exam-ul">
+    <li><strong>Paul Zurkowski (1974)</strong> — "Information Literacy" शब्द का जनक। Information Industry Association Report।</li>
+    <li><strong>ALA (1989)</strong> — Most Cited Definition: "Recognise → Locate → Evaluate → Use Effectively।"</li>
+    <li><strong>Big6 Model = Eisenberg &amp; Berkowitz (1990)</strong> — 6 Steps: Task Definition → ISS → Location &amp; Access → Use → Synthesis → Evaluation। Memory: <strong>T-I-L-U-S-E</strong>।</li>
+    <li><strong>ACRL Standards (2000)</strong> — 5 Standards: Determine → Access → Evaluate → Use → Ethical। Memory: <strong>D-A-E-U-E</strong>।</li>
+    <li><strong>SCONUL Seven Pillars = 1999 (UK)</strong> — Revised 2011 (Circular)। I-S-P-G-E-M-P। Identify → Scope → Plan → Gather → Evaluate → Manage → Present।</li>
+    <li><strong>ACRL Framework (2016)</strong> — 6 Frames (Threshold Concepts): Authority · Information Creation · Value · Research as Inquiry · Scholarship as Conversation · Searching as Exploration।</li>
+    <li><strong>Prague Declaration (2003)</strong> — IL = Prerequisite for Information Society। UNESCO + NCLIS + NFIL।</li>
+    <li><strong>Alexandria Proclamation (2005)</strong> — IL lies at Core of Lifelong Learning। IFLA + UNESCO। Alexandria, Egypt।</li>
+    <li><strong>UNESCO MIL</strong> — Media + Information Literacy। MIL Curriculum 2011 (Teachers)। 5 Laws (2013)। Digital Citizenship।</li>
+    <li><strong>Metaliteracy = Mackey &amp; Jacobson (2011)</strong> — Producer + Consumer। Reflective, Collaborative। Social Media Context।</li>
+  </ul>
+</div>
+
+<!-- ═══ QUICK REVISION ═══ -->
+<h2 class="sec"><span class="ico ico-green">🔖</span>Quick Revision — 1 Minute Notes</h2>
+<div class="exam-box" style="background:rgba(59,130,246,.07);border-color:rgba(59,130,246,.22);border-top-color:var(--a-col)">
+  <div class="exam-head" style="color:#93c5fd">📌 परीक्षा से पहले याद करें</div>
+  <ul class="exam-ul">
+    <li><strong>Zurkowski (1974)</strong> = First coined · <strong>ALA (1989)</strong> = Classic Def · <strong>Prague (2003)</strong> = Prerequisite · <strong>Alexandria (2005)</strong> = Lifelong Learning</li>
+    <li><strong>Big6 (1990):</strong> T-I-L-U-S-E — 6 Steps — Eisenberg &amp; Berkowitz — K–12 Schools — USA</li>
+    <li><strong>ACRL Standards (2000):</strong> D-A-E-U-E — 5 Standards — Higher Education — USA — <em>Replaced by Framework 2016</em></li>
+    <li><strong>SCONUL (1999):</strong> I-S-P-G-E-M-P — 7 Pillars — UK — Revised 2011 (Circular)</li>
+    <li><strong>ACRL Framework (2016):</strong> A-I-V-R-S-S — 6 Frames — Threshold Concepts — Higher Education</li>
+    <li><strong>UNESCO MIL:</strong> Media Literacy + IL = MIL · 2011 Curriculum · 5 Laws 2013 · Digital Citizenship</li>
+    <li><strong>CRAAP Test:</strong> Currency · Relevance · Authority · Accuracy · Purpose — Source Evaluation Tool</li>
+  </ul>
+</div>
+
+<!-- ═══ CONCLUSION ═══ -->
+<div class="conclusion">
+  <h2 class="sec" style="margin-top:0;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:12px;color:#fff"><span class="ico ico-blue">✓</span>निष्कर्ष</h2>
+  <p>Information Literacy 21वीं सदी की सबसे आवश्यक Skill है। Zurkowski (1974) के शब्द से शुरू होकर ALA (1989), Big6 (1990), SCONUL (1999), ACRL (2000, 2016), UNESCO MIL (2013) तक — IL का विकास एक Rich Intellectual Journey है।</p>
+  <p>Fake News, AI-generated Content और Information Overload के इस युग में IL केवल Library Skill नहीं — यह <strong style="color:#fff">Democratic Citizenship की आधारशिला</strong> है। Librarians का कर्तव्य है कि वे Users को Critically Thinking, Ethically Informed Information Literate Citizens बनाएँ।</p>
+</div>
+
+<!-- ═══ FAQs ═══ -->
+<h2 class="sec" id="faq"><span class="ico ico-blue">❓</span>FAQs — 10 महत्वपूर्ण प्रश्न</h2>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q1. "Information Literacy" शब्द किसने और कब दिया?</span><span class="ico">+</span></div><div class="faq-a"><strong>Paul Zurkowski (1974)</strong> ने सर्वप्रथम "Information Literacy" शब्द दिया — Information Industry Association को Report में। उन्होंने कहा कि जो लोग Information Resources का उपयोग करके अपनी Problems Solve कर सकें, वे "Information Literate" हैं। <strong>ALA (1989)</strong> ने Classic Definition दी। Note: Zurkowski = Coiner · ALA = Best Definition।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q2. Big6 Model के 6 Steps क्या हैं? इसे किसने बनाया?</span><span class="ico">+</span></div><div class="faq-a"><strong>Michael Eisenberg &amp; Robert Berkowitz (1990)</strong> ने Big6 Model बनाया। 6 Steps: (1) <strong>Task Definition</strong> — Problem Define करना। (2) <strong>Information Seeking Strategies</strong> — Sources Plan। (3) <strong>Location &amp; Access</strong> — Find Sources। (4) <strong>Use of Information</strong> — Read &amp; Extract। (5) <strong>Synthesis</strong> — Organise &amp; Present। (6) <strong>Evaluation</strong> — Product &amp; Process Assess। Memory: <strong>T-I-L-U-S-E</strong>। K–12 Schools के लिए।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q3. ACRL Standards 2000 और ACRL Framework 2016 में क्या अंतर है?</span><span class="ico">+</span></div><div class="faq-a"><strong>ACRL Standards (2000)</strong>: 5 Standards, Prescriptive, Checklist-based, Performance Indicators। <strong>ACRL Framework (2016)</strong>: 6 Frames, Threshold Concepts आधारित, More Flexible, Conceptual। 2016 Framework ने 2000 Standards को Formally Replace किया। Framework के 6 Frames: Authority · Information Creation · Value · Research as Inquiry · Scholarship as Conversation · Searching as Exploration। Framework = Higher Order Thinking को Encourage करता है।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q4. SCONUL Seven Pillars क्या हैं? 1999 और 2011 में क्या बदला?</span><span class="ico">+</span></div><div class="faq-a">SCONUL = Society of College, National and University Libraries (UK)। <strong>7 Pillars</strong>: Identify → Scope → Plan → Gather → Evaluate → Manage → Present। Memory: <strong>I-S-P-G-E-M-P</strong>। <strong>1999 = Linear Sequential Model</strong> — Steps in Order। <strong>2011 (Revised) = Circular Model</strong> — Non-linear, Core में Identify, 7 Pillars बाहर। 2011 में Digital Literacy और Open Access Lenses जोड़े। Novice से Expert तक Continuum।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q5. Prague Declaration (2003) और Alexandria Proclamation (2005) में क्या अंतर है?</span><span class="ico">+</span></div><div class="faq-a"><strong>Prague Declaration (2003)</strong>: Organised by UNESCO + NCLIS + NFIL। Prague, Czech Republic। Key Statement: "Information Literacy = Prerequisite for participation in Information Society।" <strong>Alexandria Proclamation (2005)</strong>: Organised by IFLA + UNESCO। Alexandria, Egypt। High-Level Colloquium। Key Statement: "IL lies at Core of Lifelong Learning।" दोनों का उद्देश्य = IL को Global Policy Priority बनाना।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q6. UNESCO MIL (Media and Information Literacy) क्या है?</span><span class="ico">+</span></div><div class="faq-a">UNESCO ने <strong>Media Literacy + Information Literacy</strong> को मिलाकर <strong>MIL (Media and Information Literacy)</strong> Framework बनाया। MIL Curriculum for Teachers = 2011 (प्रथम), 2013 (Revised)। MIL के <strong>5 Laws (2013)</strong>: (1) IL &amp; Media = All के लिए। (2) Equal Access। (3) Create, Not Just Consume। (4) Access = Rights &amp; Responsibilities। (5) MIL = Lifelong Learning। Focus: Digital Citizenship, Fake News, Intercultural Dialogue, Democracy।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q7. Information Literacy और Media Literacy में क्या अंतर है?</span><span class="ico">+</span></div><div class="faq-a"><strong>Information Literacy</strong> = Information Needs Identify करना, Sources Locate करना, Evaluate करना और Ethically Use करना। Focus = Any Information (Academic, Professional, Personal)। <strong>Media Literacy</strong> = Mass Media (Print, TV, Radio, Internet) के Messages को Critically Analyse करना। Focus = Media Production, Bias, Propaganda। <strong>MIL</strong> = Both Together। UNESCO ने कहा कि आज दोनों को Separately नहीं सीखा जा सकता — Digital Age में दोनों Intertwined हैं।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q8. Metaliteracy क्या है? IL से कैसे अलग है?</span><span class="ico">+</span></div><div class="faq-a"><strong>Metaliteracy = Mackey &amp; Jacobson (2011)</strong>। यह IL का Overarching Framework है जो Traditional IL से आगे जाता है। Metaliteracy में व्यक्ति केवल Information Consumer नहीं — <strong>Producer</strong> भी है (Blogs, Wikis, Social Media)। 4 Goals: Behavioural, Cognitive, Affective, Metacognitive। Key Features: Collaborative, Participatory, Reflective। Social Media, Open Education, MOOCs — इनके लिए Metaliteracy विशेष रूप से Relevant है।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q9. CRAAP Test क्या है? Source Evaluation में कैसे काम आता है?</span><span class="ico">+</span></div><div class="faq-a"><strong>CRAAP Test</strong> = Source Evaluation का Tool। <strong>C</strong>urrency (कब Published?), <strong>R</strong>elevance (मेरे Topic से सम्बन्धित?), <strong>A</strong>uthority (Author/Publisher कौन?), <strong>A</strong>ccuracy (Accurate &amp; Verifiable?), <strong>P</strong>urpose (क्यों Written? Bias?)। ACRL Standards के Standard 3 (Critical Evaluation) को Practically Apply करने का Tool। Web Resources &amp; Print Sources दोनों के लिए।</div></div>
+
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Q10. Information Literacy और Information Literacy Instruction (ILI) में क्या अंतर है?</span><span class="ico">+</span></div><div class="faq-a"><strong>Information Literacy (IL)</strong> = वह Skill Set जो एक Person में होनी चाहिए — Recognise, Locate, Evaluate, Use। यह एक <strong>Outcome</strong> है। <strong>Information Literacy Instruction (ILI)</strong> = वह Teaching/Training Program जो IL Skills Develop करता है। यह एक <strong>Process/Program</strong> है। ILI = Library-based Education; Library Tours, Database Workshops, Research Skills Seminars। Librarian का Role = ILI deliver करना → Students को IL Competent बनाना। ACRL का Standards/Framework = ILI का Foundation।</div></div>
+
+<!-- INTERNAL LINKS -->
+<div class="int-links">
+  <h3>🔗 संबंधित Topics</h3>
+  <div class="link-grid">
+    <a href="ugc-net-lis-unit2-9-users-user-studies-user-education.html" class="lnk">👥 Unit 2.9 — User Studies</a>
+    <a href="ugc-net-lis-unit2-8-library-legislation-india.html" class="lnk">⚖️ Unit 2.8 — Library Legislation</a>
+    <a href="ugc-net-lis-unit2-7-lis-education-india.html" class="lnk">🎓 Unit 2.7 — LIS Education</a>
+    <a href="ugc-net-lis-unit2-5-users-information-literacy.html" class="lnk">💼 Unit 2.5 — LIS Profession</a>
+    <a href="ugc-net-library-science-complete-syllabus.html" class="lnk">📋 Syllabus Index</a>
+  </div>
+</div>
+
+<!-- JSON-LD SCHEMA -->
+<h2 class="sec" id="schema"><span class="ico ico-blue">&lt;/&gt;</span>JSON-LD Schema</h2>
+<div class="schema-wrap"><pre id="schemaCode">&lt;script type="application/ld+json"&gt;
+{"@context":"https://schema.org","@type":"Article","headline":"सूचना साक्षरता | Information Literacy Areas Standards Types Models | Big6 ACRL SCONUL UNESCO MIL | UGC NET LIS Unit 2.10 Hindi","description":"Information Literacy — ALA 1989 Definition, Zurkowski 1974, Prague Declaration 2003, Alexandria Proclamation 2005, Big6 Model (Eisenberg &amp; Berkowitz 1990), ACRL Standards 2000, ACRL Framework 2016, SCONUL Seven Pillars 1999/2011, UNESCO MIL, Metaliteracy, Trends — UGC NET LIS Unit 2.10","inLanguage":"hi","keywords":"Information Literacy ALA 1989, Big6 Model Eisenberg Berkowitz 1990, ACRL Framework 2016, SCONUL Seven Pillars 1999, Prague Declaration 2003, Alexandria Proclamation 2005, UNESCO MIL, Zurkowski 1974, UGC NET LIS Unit 2.10"}
+&lt;/script&gt;</pre><button class="copy-btn" onclick="copySchema()">📋 Schema Copy करें</button></div>
+
+</div><!-- end .wrap -->
+
+<div class="foot">
+  <strong>UGC NET LIS Blog</strong> | Unit II · Topic 2.10 — Information Literacy<br>
+  <span>Zurkowski 1974 · ALA 1989 · Big6 1990 · SCONUL 1999 · ACRL 2000/2016 · Prague 2003 · Alexandria 2005 · UNESCO MIL · Metaliteracy</span>
+</div>
+
+<script>
+// Read progress bar
+window.addEventListener('scroll', () => {
+  const d = document.documentElement;
+  const pct = (d.scrollTop / (d.scrollHeight - d.clientHeight)) * 100;
+  document.getElementById('read-bar').style.width = pct + '%';
+});
+
+// FAQ toggle
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-a').style.display = 'none';
+  });
+  if (!wasOpen) {
+    item.classList.add('open');
+    item.querySelector('.faq-a').style.display = 'block';
+    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+// Copy Schema
+function copySchema() {
+  const txt = document.getElementById('schemaCode').innerText;
+  navigator.clipboard.writeText(txt).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = '✅ Copied!';
+    setTimeout(() => btn.textContent = '📋 Schema Copy करें', 2200);
+  });
+}
+</script>
+</body>
+</html>
